@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { styles } from './titlebar-styles.js';
-import ScrollableAnchor from 'react-scrollable-anchor';
 
 // anchors and name are props
 export class Titlebar extends Component {
