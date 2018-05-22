@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import { Titlebar } from './device/desktop/components/titlebar';
-import { Intro } from './device/desktop/containers/intro';
+import { DesktopTitlebar } from './device/desktop/components/titlebar';
+import { DesktopIntro } from './device/desktop/containers/intro';
+
+import { MobileTitlebar } from './device/mobile/components/titlebar';
+import { MobileIntro } from './device/mobile/containers/intro';
+
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Media from "react-media";
 
@@ -18,7 +22,11 @@ class App extends Component {
   isMobile() {
     return (
       <div>
-        <h1 style={{ textAlign: 'center' }}>You are on a mobile phone</h1>
+        <MobileTitlebar name={this.state.titlebarState.name} />
+        <MobileIntro />
+        <MobileIntro />
+        <MobileIntro />
+        <MobileIntro />
       </div>
     );
   }
@@ -26,18 +34,18 @@ class App extends Component {
   isDesktop() {
     return (
       <div>
-        <Titlebar anchors={this.state.titlebarState.anchors} name={this.state.titlebarState.name} />
+        <DesktopTitlebar anchors={this.state.titlebarState.anchors} name={this.state.titlebarState.name} />
         <ScrollableAnchor id={`home`}>
-          <Intro />
+          <DesktopIntro />
         </ScrollableAnchor>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[0]}`}>
-          <Intro />
+          <DesktopIntro />
         </ScrollableAnchor>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[1]}`}>
-          <Intro />
+          <DesktopIntro />
         </ScrollableAnchor>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[2]}`}>
-          <Intro />
+          <DesktopIntro />
         </ScrollableAnchor>
       </div>
     );

@@ -7,7 +7,7 @@ import {
   medium
 } from './../../../images/networking-icons';
 
-export class Intro extends Component {
+export class DesktopIntro extends Component {
   render() {
     return (
       <div style={styles.orientationContainer}>

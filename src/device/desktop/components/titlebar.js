@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { styles } from './titlebar-styles.js';
 
 // anchors and name are props
-export class Titlebar extends Component {
+export class DesktopTitlebar extends Component {
   renderAnchors() {
     // element is the anchor name, and index is built-in with .map()...
     // displaying the current iterated index
