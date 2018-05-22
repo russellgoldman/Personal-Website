@@ -6,40 +6,47 @@ export const styles = {
     display: 'flex',
     flex: 1,
     flexDirection: 'row',
-    height: '90vh',
+    height: '100vh',
   },
   introContainer: {
-    marginLeft: '6vw',
+    marginLeft: '8vw',
     display: 'flex',
     flex: 6,
     flexDirection: 'column',
     flexWrap: 'wrap',
-    height: '100%'
+    height: '100%',
+    justifyContent: 'center'
   },
   logoContainer: {
-    flex: 4
+    flex: 9
   },
   title: {
     flex: 1,
     fontFamily: 'Roboto',
     fontSize: '65px',
-    marginBottom: '5px'
+    justifyContent: 'center',
+    marginTop: '1px',
+    marginBottom: '1px'
   },
   titleAccent: {
     fontFamily: 'Roboto-Bold',
     color: `${titleAccent}`
   },
   subtitleContainer: {
-    flex: 1,
+    flex: 8,
     flexWrap: 'wrap',
     fontFamily: 'Roboto',
     color: `${subtitle}`,
-    fontSize: '30px',
-    lineHeight: '1.5'
+    fontSize: '25px',
+    lineHeight: '1.5',
+    justifyContent: 'center',
+    marginBottom: '30px'
   },
   iconsContainer: {
-    display: 'flex',
-    flex: 1
+    flex: 1,
+    justifyContent: 'center',
+    marginTop: '5px',
+    marginBottom: '5px'
   },
   icon: {
     width: '55px',

@@ -12,22 +12,20 @@ export class Intro extends Component {
     return (
       <div style={styles.orientationContainer}>
         <div style={styles.introContainer}>
-          <div style={{ flex: 11 }} />
+          <div style={{ flex: 8 }} />
           <div style={styles.logoContainer}>
             <img src={websiteLogo} alt="RG" />
           </div>
           <p style={styles.title}>
             Hey there, I'm <span style={styles.titleAccent}>Russell</span>.
           </p>
-          <div style={{ flex: 13 }}>
-            <div style={styles.subtitleContainer}>
-              <p>
-                I'm a <span style={{ color: 'black' }}><b>full-stack web / mobile developer </b></span>
-                from Toronto, Ontario, going into my 3rd year of Computer Science studies at
-                <a href="https://www.wlu.ca/" target="_blank" rel='noopener noreferrer'
-                style={{ textDecoration: 'none', color: 'inherit' }}><span> Wilfrid Laurier University</span></a>.
-              </p>
-            </div>
+          <div style={styles.subtitleContainer}>
+            <p>
+              I'm a <span style={{ color: 'black' }}><b>full-stack web / mobile developer </b></span>
+              from Toronto, Ontario, going into my 3rd year of Computer Science studies at
+              <a href="https://www.wlu.ca/" target="_blank" rel='noopener noreferrer'
+              style={{ textDecoration: 'none', color: 'inherit' }}><span> Wilfrid Laurier University</span></a>.
+            </p>
           </div>
           <div style={styles.iconsContainer}>
             <a href="https://www.linkedin.com/in/russell-goldman-35483986/" target="_blank" rel='noopener noreferrer'>
