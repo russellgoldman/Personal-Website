@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { styles } from './titlebar-styles.js';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 // anchors and name are props
 export class Titlebar extends Component {
@@ -8,16 +9,19 @@ export class Titlebar extends Component {
     // displaying the current iterated index
     return this.props.anchors.map((element, index) => (
         <div style={styles.anchor} key={index}>
-          <p key={index}>{element}</p>
+          <a href={`#${element}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+            <p key={index}>{element}</p>
+          </a>
         </div>
     ));
   }
 
-
   render() {
     return (
       <div style={styles.titlebarContainer}>
-        <div style={styles.nameContainer}>{this.props.name}<p style={styles.name}></p></div>
+        <a href="#home" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <div style={styles.nameContainer}>{this.props.name}<p style={styles.name}></p></div>
+        </a>
         <div style={styles.anchorContainer}>
           {this.renderAnchors()}
         </div>

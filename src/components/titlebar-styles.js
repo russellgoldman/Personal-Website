@@ -7,7 +7,7 @@ export const styles = {
     display: 'flex',
     flex: 1,
     flexDirection: 'row',
-    boxShadow: `2px 4px 10px ${shadow}`,
+    boxShadow: `2px 3px 10px ${shadow}`,
     backgroundColor: 'white',
     maxHeight: '60px',
     position: 'sticky',
@@ -17,17 +17,17 @@ export const styles = {
   nameContainer: {
     display: 'flex',
     flex: 1,
-    alignItems: 'center',
-    marginLeft: '40px'
-  },
-  name: {
+    alignItems: 'flex-end',
+    marginLeft: '40px',
+    marginTop: '2px'
   },
   anchorContainer: {
     display: 'flex',
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'flex-end',
-    marginRight: '30px'
+    marginRight: '30px',
+    alignItems: 'center'
   },
   anchor: {
     marginLeft: '30px',
