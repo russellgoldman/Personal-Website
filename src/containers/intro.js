@@ -24,19 +24,19 @@ export class Intro extends Component {
               <p>
                 I'm a <span style={{ color: 'black' }}><b>full-stack web / mobile developer </b></span>
                 from Toronto, Ontario, going into my 3rd year of Computer Science studies at
-                <a href="https://www.wlu.ca/" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
-                <span> Wilfrid Laurier University</span></a>.
+                <a href="https://www.wlu.ca/" target="_blank" rel='noopener noreferrer'
+                style={{ textDecoration: 'none', color: 'inherit' }}><span> Wilfrid Laurier University</span></a>.
               </p>
             </div>
           </div>
           <div style={styles.iconsContainer}>
-            <a href="https://www.linkedin.com/in/russell-goldman-35483986/" target="_blank" rel="noopener">
+            <a href="https://www.linkedin.com/in/russell-goldman-35483986/" target="_blank" rel='noopener noreferrer'>
               <img src={linkedin} alt="RG" style={styles.icon} />
             </a>
-            <a href="https://github.com/russellgoldman" target="_blank" rel="noopener">
+            <a href="https://github.com/russellgoldman" target="_blank" rel='noopener noreferrer'>
               <img src={github} alt="RG" style={styles.icon} />
             </a>
-            <a href="https://medium.com/@russellgoldman1" target="_blank" rel="noopener">
+            <a href="https://medium.com/@russellgoldman1" target="_blank" rel='noopener noreferrer'>
               <img src={medium} alt="RG" style={styles.icon} />
             </a>
           </div>
