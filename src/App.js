@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Titlebar } from './components/titlebar';
-import { Intro } from './containers/intro';
+import { Titlebar } from './device/desktop/components/titlebar';
+import { Intro } from './device/desktop/containers/intro';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Media from "react-media";
 
@@ -46,7 +46,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Media query="(max-width: 900px)">
+        <Media query="(max-width: 1000px)">
           {matches =>
             matches ? (
               this.isMobile()

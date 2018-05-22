@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { styles } from './intro-styles';
-import { websiteLogo } from './../images/';
+import { websiteLogo } from './../../../images/';
 import {
   linkedin,
   github,
   medium
-} from './../images/networking-icons';
+} from './../../../images/networking-icons';
 
 export class Intro extends Component {
   render() {
@@ -24,7 +24,7 @@ export class Intro extends Component {
               I'm a <span style={{ color: 'black' }}><b>full-stack web / mobile developer </b></span>
               from Toronto, Ontario, going into my 3rd year of Computer Science studies at
               <a href="https://www.wlu.ca/" target="_blank" rel='noopener noreferrer'
-              style={{ textDecoration: 'none', color: 'inherit' }}><span> Wilfrid Laurier University</span></a>.
+              style={{ textDecoration: 'none', color: '#34026F', opacity: '0.65' }}><span> Wilfrid Laurier University</span></a>.
             </p>
           </div>
           <div style={styles.iconsContainer}>
