@@ -8,69 +8,35 @@ export default class DesktopIconCarousel extends Component {
     this.state = {
       icons: this.props.icons,
       maxRender: this.props.maxRender,
-      renderFunc: null,
-      firstIndex: 0,   // for the iterative rendering of icons
-      conditionalStyle: {
-        carouselContainer: styles.carouselContainerSix
-      }
+      firstIndex: 15,   // for the iterative rendering of icons
     }
   }
 
   componentDidMount() {
-    switch(this.state.maxRender) {
-      case 2:
-        this.setState({renderFunc: this.renderTwo()});
-        break;
-      case 3:
-        this.setState({renderFunc: this.renderThree()});
-        break;
-      case 4:
-        this.setState({renderFunc: this.renderFour()});
-        break;
-      case 5:
-        this.setState({renderFunc: this.renderFive()});
-        break;
-      case 6:
-        this.setState({renderFunc: this.renderSix()});
-        break;
-      default:
-        this.setState({renderFunc: this.renderSix()});
-        break;
+    if (this.state.firstIndex > this.state.icons.length - 1) {
+      this.setState((prevState) => ({
+        firstIndex: prevState.firstIndex % this.state.icons.length
+      }));
     }
   }
 
-
-  renderTwo() {
-    return (
-      <p>I am rendering two icons</p>
-    );
-  }
-
-  renderThree() {
-    return (
-      <p>I am rendering three icons</p>
-    );
-  }
-
-  renderFour() {
-    return (
-      <p>I am rendering four icons</p>
-    );
-  }
-
-  renderFive() {
-    return (
-      <p>I am rendering five icons</p>
-    );
-  }
-
-  renderSix() {
+  renderIcons() {
     let iconSelection = [];
-    for (let i = 0; i < this.state.icons.length; i++) {
-      if (i < this.state.maxRender) {
-        iconSelection.push(this.state.icons[i]);
+    let modifiedIndex = 0;
+    let renderCount = 0;
+
+    console.log('I was called')
+    for (let i = this.state.firstIndex; i < this.state.firstIndex + this.state.icons.length; i++) {
+      modifiedIndex = i;
+      if (i > this.state.icons.length - 1) {
+        modifiedIndex %= this.state.icons.length
+      }
+      if (renderCount < this.state.maxRender) {
+        iconSelection.push(this.state.icons[modifiedIndex]);
+        renderCount++;
       }
     }
+    console.log(iconSelection);
 
     return iconSelection.map((icon, index) => (
       <div style={styles.icon} key={index}>
@@ -82,11 +48,28 @@ export default class DesktopIconCarousel extends Component {
   shiftLeft() {
     if (this.state.firstIndex === 0) {
       // the first index will now be the last index
+      this.setState({ firstIndex: this.state.icons.length - 1 });
     }
+    else {
+      this.setState((prevState) => ({
+        firstIndex: prevState.firstIndex - 1,
+      }));
+      this.setState({ click: true });
+    }
+    console.log(this.state.firstIndex);
   }
 
   shiftRight() {
-    console.log('You shifted right');
+    if (this.state.firstIndex === this.state.icons.length - 1) {
+      // the first index will now be the last index
+      this.setState({ firstIndex: 0 });
+    }
+    else {
+      this.setState((prevState) => ({
+        firstIndex: prevState.firstIndex + 1,
+      }));
+    }
+    console.log(this.state.firstIndex);
   }
 
   render() {
@@ -95,13 +78,14 @@ export default class DesktopIconCarousel extends Component {
         <div style={styles.titleContainer}>
           <p style={styles.title}>My Toolkit</p>
         </div>
-        <div style={this.state.conditionalStyle.carouselContainer}>
+        <div style={styles.carouselContainer}>
           <div style={styles.leftArrowContainer}>
             <img src={leftArrow} alt="Left Arrow" style={styles.leftArrow}
               onClick={() => this.shiftLeft()} />
           </div>
           <div style={styles.iconsContainer}>
-            {this.state.renderFunc}
+            {console.log('over here')}
+            {this.renderIcons()}
           </div>
           <div style={styles.rightArrowContainer}>
             <img src={rightArrow} alt="Right Arrow" style={styles.rightArrow}

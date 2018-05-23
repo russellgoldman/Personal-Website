@@ -14,12 +14,12 @@ export const styles = {
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
-    height: '75px',
+    height: '80px',
     borderRadius: '10px',
     marginLeft: `${titleMarginX}vw`,
     marginRight: `${titleMarginX}vw`
   },
-  carouselContainerSix: {
+  carouselContainer: {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
@@ -40,7 +40,7 @@ export const styles = {
     width: '60px',
     height: '60px',
     marginLeft: '-4.7vw',
-    opacity: '0.6',
+    opacity: '0.4',
     backgroundColor: '#dbdbdb',
     borderRadius: '50%',
     boxShadow: `3px 4px 2px ${shadow2}`,
@@ -55,7 +55,7 @@ export const styles = {
     width: '60px',
     height: '60px',
     marginRight: '-4.7vw',
-    opacity: '0.6',
+    opacity: '0.4',
     backgroundColor: '#dbdbdb',
     borderRadius: '50%',
     boxShadow: `3px 4px 2px ${shadow2}`,
