@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { styles } from './iconCarousel-styles';
 import { leftArrow, rightArrow } from './../../../images';
+import Media from "react-media";
 
 export default class DesktopIconCarousel extends Component {
   constructor(props) {
@@ -8,7 +9,7 @@ export default class DesktopIconCarousel extends Component {
     this.state = {
       icons: this.props.icons,
       maxRender: this.props.maxRender,
-      firstIndex: 15,   // for the iterative rendering of icons
+      firstIndex: 0,   // for the iterative rendering of icons
     }
   }
 
@@ -70,6 +71,11 @@ export default class DesktopIconCarousel extends Component {
       }));
     }
     console.log(this.state.firstIndex);
+  }
+
+  changeMargin() {
+    styles.leftArrow.marginLeft = '-7vw';
+    styles.rightArrow.marginRight = '-7vw';
   }
 
   render() {

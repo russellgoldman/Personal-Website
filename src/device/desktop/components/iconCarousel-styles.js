@@ -1,4 +1,4 @@
-const containerMarginX = 27;
+const containerMarginX = 20;
 const titleMarginX = containerMarginX + 0.5;
 const shadow = '#c5c5c5';
 const shadow2 = '#838383';
@@ -39,7 +39,7 @@ export const styles = {
   leftArrow: {
     width: '60px',
     height: '60px',
-    marginLeft: '-4.7vw',
+    marginLeft: '-6em',
     opacity: '0.4',
     backgroundColor: '#dbdbdb',
     borderRadius: '50%',
@@ -54,7 +54,7 @@ export const styles = {
   rightArrow: {
     width: '60px',
     height: '60px',
-    marginRight: '-4.7vw',
+    marginRight: '-6em',
     opacity: '0.4',
     backgroundColor: '#dbdbdb',
     borderRadius: '50%',
@@ -66,8 +66,8 @@ export const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
-    marginLeft: '2%',
-    marginRight: '2%'
+    marginLeft: '1vw',
+    marginRight: '1vw'
   },
   iconContainer: {
     display: 'flex',
@@ -76,10 +76,10 @@ export const styles = {
     flexWrap: 'wrap',
   },
   icon: {
-    width: '80%',
-    height: '85%',
-    marginLeft: '2%',
-    marginRight: '2%',
-    marginTop: '1.5%'
+    width: '70%',
+    height: '80%',
+    marginLeft: '1vw',
+    marginRight: '1vw',
+    marginTop: '0.3em'
   }
 };

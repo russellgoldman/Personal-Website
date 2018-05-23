@@ -12,7 +12,8 @@
     "react-responsive": "^4.1.0",
     "react-scripts": "1.1.4",
     "react-scrollable-anchor": "^0.6.1",
-    "react-svg": "^4.0.2"
+    "react-svg": "^4.0.2",
+    "react-tooltip": "^3.6.0"
   },
   "scripts": {
     "predeploy": "npm run build",
