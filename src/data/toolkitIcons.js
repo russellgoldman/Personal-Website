@@ -22,12 +22,12 @@ export const ToolkitIcons = [
   },
   {
     id: '1',
-    name: 'ReactJS & React Native',
+    name: 'React',
     imgPath: `${react}`
   },
   {
     id: '2',
-    name: 'Node.js',
+    name: 'Node',
     imgPath: `${node}`
   },
   {
@@ -47,7 +47,7 @@ export const ToolkitIcons = [
   },
   {
     id: '6',
-    name: 'Express.js',
+    name: 'Express',
     imgPath: `${express}`
   },
   {
