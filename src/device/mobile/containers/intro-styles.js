@@ -12,7 +12,7 @@ export const styles = {
   },
   title: {
     flex: 5,
-    fontFamily: 'Roboto',
+    fontFamily: 'Roboto-Bold',
     fontSize: '45px',
     textAlign: 'center',
     marginBottom: '25px',
