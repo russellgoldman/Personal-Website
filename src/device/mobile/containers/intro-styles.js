@@ -14,9 +14,10 @@ export const styles = {
   title: {
     flex: 5,
     fontFamily: 'Roboto',
-    fontSize: '60px',
+    fontSize: '45px',
     textAlign: 'center',
-    marginBottom: '25px'
+    marginBottom: '25px',
+    lineHeight: '1.3'
   },
   titleAccent: {
     fontFamily: 'Roboto-Bold',
