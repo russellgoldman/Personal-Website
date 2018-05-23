@@ -77,7 +77,7 @@ export const styles = {
   },
   icon: {
     width: '70%',
-    height: '80%',
+    height: '85%',
     marginLeft: '1vw',
     marginRight: '1vw',
     marginTop: '0.3em'

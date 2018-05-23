@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactTooltip from 'react-tooltip';
 import { styles } from './intro-styles';
 import { websiteLogo } from './../../../images/';
 import {
@@ -29,13 +30,16 @@ export class DesktopIntro extends Component {
           </div>
           <div style={styles.iconsContainer}>
             <a href="https://www.linkedin.com/in/russell-goldman-35483986/" target="_blank" rel='noopener noreferrer'>
-              <img src={linkedin} alt="RG" style={styles.icon} />
+              <img src={linkedin} alt="RG" style={styles.icon} data-tip="Linkedin" />
+              <ReactTooltip place="top" type="dark" effect="solid"/>
             </a>
             <a href="https://github.com/russellgoldman" target="_blank" rel='noopener noreferrer'>
-              <img src={github} alt="RG" style={styles.icon} />
+              <img src={github} alt="RG" style={styles.icon} data-tip="GitHub" />
+              <ReactTooltip place="top" type="dark" effect="solid"/>
             </a>
             <a href="https://medium.com/@russellgoldman1" target="_blank" rel='noopener noreferrer'>
-              <img src={medium} alt="RG" style={styles.icon} />
+              <img src={medium} alt="RG" style={styles.icon} data-tip="Medium" />
+              <ReactTooltip place="top" type="dark" effect="solid"/>
             </a>
           </div>
           <div style={{ flex: 15 }} />

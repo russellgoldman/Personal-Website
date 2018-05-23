@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { styles } from './iconCarousel-styles';
 import { leftArrow, rightArrow } from './../../../images';
-import Media from "react-media";
+import ReactTooltip from 'react-tooltip';
 
 export default class DesktopIconCarousel extends Component {
   constructor(props) {
@@ -41,7 +41,9 @@ export default class DesktopIconCarousel extends Component {
 
     return iconSelection.map((icon, index) => (
       <div style={styles.icon} key={index}>
-        <img src={icon.imgPath} alt={icon.name} style={styles.icon}/>
+        <img src={icon.imgPath} alt={icon.name} style={styles.icon}
+          data-tip={icon.name} />
+        <ReactTooltip place="top" type="dark" effect="solid"/>
       </div>
     ));
   }
@@ -90,7 +92,6 @@ export default class DesktopIconCarousel extends Component {
               onClick={() => this.shiftLeft()} />
           </div>
           <div style={styles.iconsContainer}>
-            {console.log('over here')}
             {this.renderIcons()}
           </div>
           <div style={styles.rightArrowContainer}>
