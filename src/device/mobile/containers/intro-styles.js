@@ -3,7 +3,6 @@ const subtitle = '#8c8989';
 
 export const styles = {
   introContainer: {
-    marginTop: '1vh',
     display: 'flex',
     flex: 1,
     flexDirection: 'column',
@@ -24,14 +23,14 @@ export const styles = {
     color: `${titleAccent}`
   },
   subtitleContainer: {
-    flex: 7,
+    flex: 5,
     flexWrap: 'wrap',
     fontFamily: 'Roboto',
     color: `${subtitle}`,
     fontSize: '20px',
     lineHeight: '1.7',
     textAlign: 'center',
-    marginBottom: '35px'
+    marginBottom: '20px'
   },
   iconsContainer: {
     flex: 1,
