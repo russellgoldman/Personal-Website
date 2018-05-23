@@ -76,10 +76,10 @@ export const styles = {
     flexWrap: 'wrap',
   },
   icon: {
-    width: '70%',
+    width: '65%',
     height: '85%',
     marginLeft: '1vw',
     marginRight: '1vw',
-    marginTop: '0.3em'
+    marginTop: '0.35em'
   }
 };
