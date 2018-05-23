@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { DesktopTitlebar } from './device/desktop/components/titlebar';
 import { DesktopIntro } from './device/desktop/containers/intro';
+import { DesktopAbout } from './device/desktop/containers/about';
 
 import { MobileTitlebar } from './device/mobile/components/titlebar';
 import { MobileIntro } from './device/mobile/containers/intro';
@@ -39,7 +40,7 @@ class App extends Component {
           <DesktopIntro />
         </ScrollableAnchor>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[0]}`}>
-          <DesktopIntro />
+          <DesktopAbout />
         </ScrollableAnchor>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[1]}`}>
           <DesktopIntro />
