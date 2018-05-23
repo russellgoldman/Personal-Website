@@ -1,6 +1,5 @@
 import React from 'react';
 import { styles } from './intro-styles';
-import { websiteLogo } from './../../../images/';
 import {
   linkedin,
   github,
@@ -10,9 +9,6 @@ import {
 export const MobileIntro = () => {
   return (
     <div style={styles.introContainer}>
-      <div style={styles.logoContainer}>
-        <img src={websiteLogo} alt="RG" style={styles.logo} />
-      </div>
       <p style={styles.title}>
         Hey there, I'm <span style={styles.titleAccent}>Russell</span>.
       </p>
@@ -21,7 +17,7 @@ export const MobileIntro = () => {
           I'm a <span style={{ color: 'black' }}><b>full-stack web / mobile developer </b></span>
           from Toronto, Ontario, going into my 3rd year of Computer Science studies at
           <a href="https://www.wlu.ca/" target="_blank" rel='noopener noreferrer'
-          style={{ textDecoration: 'none', color: '#34026F', opacity: '0.' }}><span> Wilfrid Laurier University</span></a>.
+          style={{ textDecoration: 'none', color: '#8c8989', opacity: '0.' }}><span><i> Wilfrid Laurier University</i></span></a>.
         </p>
       </div>
       <div style={styles.iconsContainer}>

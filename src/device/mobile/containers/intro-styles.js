@@ -3,22 +3,13 @@ const subtitle = '#8c8989';
 
 export const styles = {
   introContainer: {
-    marginTop: '8vh',
+    marginTop: '1vh',
     display: 'flex',
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
     marginLeft: '10vw',
     marginRight: '10vw'
-  },
-  logoContainer: {
-    display: 'flex',
-    flex: 1,
-    marginBottom: '10px'
-  },
-  logo: {
-    width: '80px',
-    height: '80px'
   },
   title: {
     flex: 10,

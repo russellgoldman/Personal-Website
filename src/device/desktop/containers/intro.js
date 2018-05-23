@@ -21,10 +21,10 @@ export class DesktopIntro extends Component {
           </p>
           <div style={styles.subtitleContainer}>
             <p>
-              I'm a <span style={{ color: 'black' }}><b>full-stack web / mobile developer </b></span>
-              from Toronto, Ontario, going into my 3rd year of Computer Science studies at
-              <a href="https://www.wlu.ca/" target="_blank" rel='noopener noreferrer'
-              style={{ textDecoration: 'none', color: '#34026F', opacity: '0.65' }}><span> Wilfrid Laurier University</span></a>.
+            I'm a <span style={{ color: 'black' }}><b>full-stack web / mobile developer </b></span>
+            from Toronto, Ontario, going into my 3rd year of Computer Science studies at
+            <a href="https://www.wlu.ca/" target="_blank" rel='noopener noreferrer'
+            style={{ textDecoration: 'none', color: '#8c8989', opacity: '0.' }}><span><i> Wilfrid Laurier University</i></span></a>.
             </p>
           </div>
           <div style={styles.iconsContainer}>
