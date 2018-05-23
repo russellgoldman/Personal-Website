@@ -11,7 +11,7 @@ export const styles = {
     marginRight: '10vw'
   },
   title: {
-    flex: 5,
+    flex: 3,
     fontFamily: 'Roboto-Bold',
     fontSize: '45px',
     textAlign: 'center',
@@ -30,7 +30,7 @@ export const styles = {
     fontSize: '20px',
     lineHeight: '1.7',
     textAlign: 'center',
-    marginBottom: '20px'
+    marginBottom: '30px'
   },
   iconsContainer: {
     flex: 1,
