@@ -12,23 +12,23 @@ export const styles = {
     marginRight: '10vw'
   },
   title: {
-    flex: 10,
+    flex: 5,
     fontFamily: 'Roboto',
     fontSize: '60px',
     textAlign: 'center',
-    marginBottom: '30px'
+    marginBottom: '25px'
   },
   titleAccent: {
     fontFamily: 'Roboto-Bold',
     color: `${titleAccent}`
   },
   subtitleContainer: {
-    flex: 10,
+    flex: 7,
     flexWrap: 'wrap',
     fontFamily: 'Roboto',
     color: `${subtitle}`,
-    fontSize: '25px',
-    lineHeight: '1.5',
+    fontSize: '20px',
+    lineHeight: '1.7',
     textAlign: 'center',
     marginBottom: '35px'
   },
