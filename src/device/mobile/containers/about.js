@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MobileIconCarousel from './../components/iconCarousel';
 import { ToolkitIcons } from './../../../data/toolkitIcons';
 import { styles } from './about-styles';
 import { bioImage } from './../../../images/';
@@ -18,7 +17,7 @@ export class MobileAbout extends Component {
       <div style={styles.outerContainer}>
         <div style={styles.imageContainer}>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src={bioImage} style={styles.bioImage}/>
+            <img src={bioImage} alt="Russell Goldman" style={styles.bioImage}/>
           </div>
         </div>
         <div style={styles.textContainer}>
