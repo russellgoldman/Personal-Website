@@ -6,7 +6,7 @@ export const styles = {
     display: 'flex',
     flex: 1,
     flexDirection: 'row',
-    height: '100vh',
+    height: '85vh',
   },
   introContainer: {
     marginLeft: '8vw',
@@ -18,7 +18,7 @@ export const styles = {
     justifyContent: 'center'
   },
   logoContainer: {
-    flex: 9
+    flex: 8
   },
   title: {
     flex: 1,
@@ -33,20 +33,18 @@ export const styles = {
     color: `${titleAccent}`
   },
   subtitleContainer: {
-    flex: 8,
+    flex: 11,
     flexWrap: 'wrap',
     fontFamily: 'Roboto',
     color: `${subtitle}`,
     fontSize: '25px',
     lineHeight: '1.5',
     justifyContent: 'center',
-    marginBottom: '30px'
   },
   iconsContainer: {
     flex: 1,
     justifyContent: 'center',
     marginTop: '5px',
-    marginBottom: '5px'
   },
   icon: {
     width: '55px',

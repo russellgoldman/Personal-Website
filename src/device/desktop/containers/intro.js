@@ -13,7 +13,7 @@ export class DesktopIntro extends Component {
     return (
       <div style={styles.orientationContainer}>
         <div style={styles.introContainer}>
-          <div style={{ flex: 8 }} />
+          <div style={{ flex: 6 }} />
           <div style={styles.logoContainer}>
             <img src={websiteLogo} alt="RG" />
           </div>
@@ -42,7 +42,7 @@ export class DesktopIntro extends Component {
               <ReactTooltip place="top" type="dark" effect="solid"/>
             </a>
           </div>
-          <div style={{ flex: 15 }} />
+          <div style={{ flex: 3 }} />
         </div>
         <div style={{ flex: 3 }} />
       </div>

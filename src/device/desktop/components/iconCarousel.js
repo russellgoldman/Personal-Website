@@ -26,7 +26,6 @@ export default class DesktopIconCarousel extends Component {
     let modifiedIndex = 0;
     let renderCount = 0;
 
-    console.log('I was called')
     for (let i = this.state.firstIndex; i < this.state.firstIndex + this.state.icons.length; i++) {
       modifiedIndex = i;
       if (i > this.state.icons.length - 1) {
@@ -57,7 +56,6 @@ export default class DesktopIconCarousel extends Component {
       this.setState((prevState) => ({
         firstIndex: prevState.firstIndex - 1,
       }));
-      this.setState({ click: true });
     }
     console.log(this.state.firstIndex);
   }
@@ -75,10 +73,10 @@ export default class DesktopIconCarousel extends Component {
     console.log(this.state.firstIndex);
   }
 
-  changeMargin() {
-    styles.leftArrow.marginLeft = '-7vw';
-    styles.rightArrow.marginRight = '-7vw';
-  }
+  // changeMargin() {
+  //   styles.leftArrow.marginLeft = '-7vw';
+  //   styles.rightArrow.marginRight = '-7vw';
+  // }
 
   render() {
     return (
