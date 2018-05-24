@@ -46,29 +46,49 @@ export default class DesktopIconCarousel extends Component {
     ));
   }
 
-  shiftLeft() {
-    if (this.state.firstIndex === 0) {
-      // the first index will now be the last index
-      this.setState({ firstIndex: this.state.icons.length - 1 });
-    }
-    else {
-      this.setState((prevState) => ({
-        firstIndex: prevState.firstIndex - 1,
-      }));
+  shiftLeftByMaxRender() {
+    let tempIndex = this.state.firstIndex;
+    if (this.state.firstIndex < this.state.maxRender) {
+      this.setState({
+        firstIndex: tempIndex - this.state.maxRender + this.state.icons.length
+      });
+    } else {
+      this.setState({
+        firstIndex: tempIndex - this.state.maxRender
+      });
     }
   }
 
-  shiftRight() {
-    if (this.state.firstIndex === this.state.icons.length - 1) {
-      // the first index will now be the last index
-      this.setState({ firstIndex: 0 });
-    }
-    else {
-      this.setState((prevState) => ({
-        firstIndex: prevState.firstIndex + 1,
-      }));
-    }
+  shiftRightByMaxRender() {
+    let tempIndex = this.state.firstIndex;
+    this.setState({
+      firstIndex: (tempIndex + this.state.maxRender) % this.state.icons.length
+    });
   }
+
+  // shiftLeft() {
+  //   if (this.state.firstIndex === 0) {
+  //     // the first index will now be the last index
+  //     this.setState({ firstIndex: this.state.icons.length - 1 });
+  //   }
+  //   else {
+  //     this.setState((prevState) => ({
+  //       firstIndex: prevState.firstIndex - 1,
+  //     }));
+  //   }
+  // }
+  //
+  // shiftRight() {
+  //   if (this.state.firstIndex === this.state.icons.length - 1) {
+  //     // the first index will now be the last index
+  //     this.setState({ firstIndex: 0 });
+  //   }
+  //   else {
+  //     this.setState((prevState) => ({
+  //       firstIndex: prevState.firstIndex + 1,
+  //     }));
+  //   }
+  // }
 
   render() {
     return (
@@ -79,14 +99,14 @@ export default class DesktopIconCarousel extends Component {
         <div style={styles.carouselContainer}>
           <div style={styles.leftArrowContainer}>
             <img src={leftArrow} alt="Left Arrow" style={styles.leftArrow}
-              onClick={() => this.shiftLeft()} />
+              onClick={() => this.shiftLeftByMaxRender()} />
           </div>
           <div style={styles.iconsContainer}>
             {this.renderIcons()}
           </div>
           <div style={styles.rightArrowContainer}>
             <img src={rightArrow} alt="Right Arrow" style={styles.rightArrow}
-              onClick={() => this.shiftRight()} />
+              onClick={() => this.shiftRightByMaxRender()} />
           </div>
         </div>
       </div>
