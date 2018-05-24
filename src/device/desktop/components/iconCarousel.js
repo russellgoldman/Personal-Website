@@ -36,7 +36,6 @@ export default class DesktopIconCarousel extends Component {
         renderCount++;
       }
     }
-    console.log(iconSelection);
 
     return iconSelection.map((icon, index) => (
       <div style={styles.icon} key={index}>
@@ -57,7 +56,6 @@ export default class DesktopIconCarousel extends Component {
         firstIndex: prevState.firstIndex - 1,
       }));
     }
-    console.log(this.state.firstIndex);
   }
 
   shiftRight() {
@@ -70,13 +68,7 @@ export default class DesktopIconCarousel extends Component {
         firstIndex: prevState.firstIndex + 1,
       }));
     }
-    console.log(this.state.firstIndex);
   }
-
-  // changeMargin() {
-  //   styles.leftArrow.marginLeft = '-7vw';
-  //   styles.rightArrow.marginRight = '-7vw';
-  // }
 
   render() {
     return (
