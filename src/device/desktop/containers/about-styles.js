@@ -44,7 +44,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    marginBottom: '2em',
+    marginBottom: '2.5em',
     marginTop: '-4em'
   },
   bioImage: {

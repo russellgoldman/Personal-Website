@@ -44,6 +44,7 @@ export class DesktopAbout extends Component {
             </div>
           </div>
         </div>
+        <div style={{ marginBottom: '2em' }}></div>
         <div style={styles.carouselContainer}>
           <DesktopIconCarousel icons={this.state.icons}
             maxRender={this.state.maxRender}/>

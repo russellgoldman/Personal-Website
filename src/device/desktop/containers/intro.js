@@ -30,7 +30,7 @@ export class DesktopIntro extends Component {
           </div>
           <div style={styles.iconsContainer}>
             <a href="https://www.linkedin.com/in/russell-goldman-35483986/" target="_blank" rel='noopener noreferrer'>
-              <img src={linkedin} alt="RG" style={styles.icon} data-tip="Linkedin" />
+              <img src={linkedin} alt="RG" style={styles.icon} data-tip="LinkedIn" />
               <ReactTooltip place="top" type="dark" effect="solid"/>
             </a>
             <a href="https://github.com/russellgoldman" target="_blank" rel='noopener noreferrer'>
