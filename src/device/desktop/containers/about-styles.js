@@ -42,12 +42,12 @@ export const styles = {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    marginBottom: '5em',
-    marginTop: '-4em'
+    marginBottom: '7em',
+    marginTop: '-5em'
   },
   bioImage: {
-    height: '70%',
-    minHeight: '70%',
+    height: '350px',
+    minHeight: '350px',
     borderRadius: '30px'
   },
   button: {
