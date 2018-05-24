@@ -5,22 +5,20 @@ export const styles = {
     flexDirection: 'column',
     flex: 1,
     height: '80vh',
-    marginLeft: '8vw',
-    marginRight: '8vw'
+    marginLeft: '8em',
+    marginRight: '8em'
   },
   innerContainer: {
     display: 'flex',
     flex: 4,
     flexDirection: 'row',
     height: '100%',
-    marginBottom: '1em'
   },
   carouselContainer: {
     flex: 1
   },
   imageContainer: {
     display: 'flex',
-    flex: 2,
     justifyContent: 'center',
     alignItems: 'center',
     maxWidth: '25em'
@@ -30,7 +28,7 @@ export const styles = {
     flex: 3,
     flexDirection: 'column',
     height: '100%',
-    marginLeft: '4vw',
+    marginLeft: '3em'
   },
   textContainer: {
     display: 'flex',
@@ -39,27 +37,29 @@ export const styles = {
     fontFamily: 'Roboto',
     lineHeight: '2',
     justifyContent: 'center',
-    marginTop: '-2em'
+    height: '100%'
   },
   buttonContainer: {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    marginBottom: '20px'
+    marginBottom: '5em',
+    marginTop: '-4em'
   },
   bioImage: {
-    height: '100%',
+    height: '70%',
     borderRadius: '30px'
   },
   button: {
     fontSize: '26px',
     fontFamily: 'Roboto',
     letterSpacing: '3px',
-    flex: 2,
+    flex: 3,
     backgroundColor: '#00ABCD',
     color: 'white',
     borderRadius: '10px',
     justifyContent: 'flex-start',
+    alignItems: 'center',
     height: '60px'
   },
   linkContainer: {
