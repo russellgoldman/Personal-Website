@@ -26,13 +26,12 @@ export class DesktopAbout extends Component {
           </div>
           <div style={styles.bioContainer}>
             <div style={styles.textContainer}>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Integer a dignissim tortor. Nulla maximus risus eros, eu vestibulum elit finibus quis.
-              Aliquam tempor, est vitae pellentesque tincidunt, libero enim lobortis diam, vitae faucibus lorem tortor id sem.
-              Cras porta bibendum turpis, in pharetra velit consequat quis. Integer egestas tempus lacus vel dignissim.
-              Mauris gravida ultrices suscipit. Vestibulum consectetur odio id ante viverra dignissim.
-              Praesent non purus nec ipsum lobortis feugiat eget eget mi. Praesent cursus dolor odio, et mattis dui ornare porttitor.
-              </p>
+              <p>Russell Goldman is a Computer Science undergrad going into his 3rd year at Laurier.
+              During his spare time, he volunteers with a local high school robotics team, associates with
+              an international fraternity, and improves upon his software skills by participating
+              in hackathons and developing open-source software. He is currently dedicating a large amount
+              of his free time to mastering React (JS / Native) and NodeJS. He hopes to provide value at a software firm
+              during the summer of 2019.</p>
             </div>
             <div style={styles.buttonContainer}>
               <a href="https://drive.google.com/open?id=1pVsK5KqG6EgkJEE_ylNuQfWAGOZlGiHe" target="_blank"
