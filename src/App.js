@@ -5,6 +5,7 @@ import { DesktopAbout } from './device/desktop/containers/about';
 
 import { MobileTitlebar } from './device/mobile/components/titlebar';
 import { MobileIntro } from './device/mobile/containers/intro';
+import { MobileAbout } from './device/mobile/containers/about';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Media from "react-media";
@@ -30,7 +31,7 @@ class App extends Component {
       <div>
         <MobileTitlebar name={this.state.titlebarState.name} />
         <MobileIntro />
-        <MobileIntro />
+        <MobileAbout />
         <MobileIntro />
         <MobileIntro />
       </div>

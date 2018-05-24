@@ -1,6 +1,5 @@
 export const styles = {
   outerContainer: {
-    marginTop: '10vh',
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
@@ -48,6 +47,7 @@ export const styles = {
   },
   bioImage: {
     height: '70%',
+    minHeight: '70%',
     borderRadius: '30px'
   },
   button: {
