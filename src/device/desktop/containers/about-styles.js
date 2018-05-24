@@ -1,6 +1,6 @@
 export const styles = {
   outerContainer: {
-    marginTop: '2.5em',
+    marginTop: '4em',
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
@@ -38,7 +38,7 @@ export const styles = {
     lineHeight: '2',
     justifyContent: 'center',
     height: '100%',
-    marginBottom: '3em'
+    marginBottom: '4em'
   },
   buttonContainer: {
     display: 'flex',

@@ -44,7 +44,7 @@ export const styles = {
   iconsContainer: {
     flex: 1,
     justifyContent: 'center',
-    marginTop: '5px',
+    marginTop: '5px'
   },
   icon: {
     width: '55px',
