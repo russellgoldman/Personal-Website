@@ -32,8 +32,6 @@ class App extends Component {
         <MobileTitlebar name={this.state.titlebarState.name} />
         <MobileIntro />
         <MobileAbout />
-        <MobileIntro />
-        <MobileIntro />
       </div>
     );
   }

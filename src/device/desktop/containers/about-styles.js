@@ -44,12 +44,12 @@ export const styles = {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    marginBottom: '4em',
+    marginBottom: '2em',
     marginTop: '-4em'
   },
   bioImage: {
-    height: '450px',
-    minHeight: '450px',
+    height: '400px',
+    minHeight: '400px',
     borderRadius: '30px'
   },
   button: {
