@@ -1,5 +1,6 @@
 export const styles = {
   outerContainer: {
+    marginTop: '2.5em',
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
@@ -27,7 +28,7 @@ export const styles = {
     flex: 3,
     flexDirection: 'column',
     height: '100%',
-    marginLeft: '3em'
+    marginLeft: '5em'
   },
   textContainer: {
     display: 'flex',
@@ -36,18 +37,19 @@ export const styles = {
     fontFamily: 'Roboto',
     lineHeight: '2',
     justifyContent: 'center',
-    height: '100%'
+    height: '100%',
+    marginBottom: '3em'
   },
   buttonContainer: {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    marginBottom: '7em',
-    marginTop: '-5em'
+    marginBottom: '4em',
+    marginTop: '-4em'
   },
   bioImage: {
-    height: '350px',
-    minHeight: '350px',
+    height: '450px',
+    minHeight: '450px',
     borderRadius: '30px'
   },
   button: {

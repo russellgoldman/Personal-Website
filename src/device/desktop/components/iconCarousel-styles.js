@@ -23,7 +23,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    height: '100px',
+    height: '110px',
     background: '#f2f2f2',
     borderRadius: '10px',
     marginLeft: `${containerMarginX}vw`,

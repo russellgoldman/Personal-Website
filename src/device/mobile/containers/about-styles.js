@@ -27,7 +27,7 @@ export const styles = {
     justifyContent: 'center',
     marginLeft: '15vw',
     marginRight: '15vw',
-    marginBottom: '3.5vh'
+    marginBottom: '4vh'
   },
   buttonContainer: {
     display: 'flex',
