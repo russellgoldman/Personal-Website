@@ -27,7 +27,6 @@ export class MobileAbout extends Component {
           Cras porta bibendum turpis, in pharetra velit consequat quis. Integer egestas tempus lacus vel dignissim.
           Mauris gravida ultrices suscipit. Vestibulum consectetur odio id ante viverra dignissim.
           Praesent non purus nec ipsum lobortis feugiat eget eget mi. Praesent cursus dolor odio, et mattis dui ornare porttitor.
-          Praesent non purus nec ipsum lobortis feugiat eget eget mi. Praesent cursus dolor odio, et mattis dui ornare porttitor.
           </p>
         </div>
         <div style={styles.buttonContainer}>
