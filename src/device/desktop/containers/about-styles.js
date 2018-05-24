@@ -13,7 +13,7 @@ export const styles = {
     flex: 4,
     flexDirection: 'row',
     height: '100%',
-    marginBottom: '2em'
+    marginBottom: '1em'
   },
   carouselContainer: {
     flex: 1
@@ -30,7 +30,7 @@ export const styles = {
     flex: 3,
     flexDirection: 'column',
     height: '100%',
-    marginLeft: '3vw',
+    marginLeft: '4vw',
   },
   textContainer: {
     display: 'flex',

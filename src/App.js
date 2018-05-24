@@ -8,6 +8,11 @@ import { MobileIntro } from './device/mobile/containers/intro';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Media from "react-media";
+import { configureAnchors } from 'react-scrollable-anchor'
+
+// Offset all anchors by -60 to account for a fixed header
+// and scroll more quickly than the default 400ms
+configureAnchors({offset: -100, scrollDuration: 400})
 
 class App extends Component {
   constructor(props) {
