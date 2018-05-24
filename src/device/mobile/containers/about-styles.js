@@ -49,7 +49,6 @@ export const styles = {
     color: 'white',
     borderRadius: '10px',
     justifyContent: 'center',
-    height: '60px',
-    marginBottom: '20vh'
+    height: '60px'
   }
 };
