@@ -15,12 +15,12 @@ export class DesktopIntro extends Component {
         <div style={styles.introContainer}>
           <div style={{ flex: 6 }} />
           <div style={styles.logoContainer}>
-            <img src={websiteLogo} alt="RG" />
+            <img src={websiteLogo} alt="RG" className="animated slideInUp"/>
           </div>
-          <p style={styles.title}>
+          <p style={styles.title} className="animated slideInUp">
             Hey there, I'm <span style={styles.titleAccent}>Russell</span>.
           </p>
-          <div style={styles.subtitleContainer}>
+          <div style={styles.subtitleContainer} className="animated slideInRight">
             <p>
             I'm a <span style={{ color: 'black' }}><b>full-stack web / mobile developer </b></span>
             from Toronto, Ontario, going into my 3rd year of Computer Science studies at
@@ -28,7 +28,7 @@ export class DesktopIntro extends Component {
             style={{ textDecoration: 'none', color: '#8c8989', opacity: '0.' }}><span><i> Wilfrid Laurier University</i></span></a>.
             </p>
           </div>
-          <div style={styles.iconsContainer}>
+          <div style={styles.iconsContainer} className="animated slideInUp">
             <a href="https://www.linkedin.com/in/russell-goldman-35483986/" target="_blank" rel='noopener noreferrer'>
               <img src={linkedin} alt="RG" style={styles.icon} data-tip="LinkedIn" />
               <ReactTooltip place="top" type="dark" effect="solid"/>

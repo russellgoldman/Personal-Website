@@ -13,9 +13,6 @@ export class DesktopAbout extends Component {
     }
   }
 
-  // Born and raised in the suburbs of Toronto, I grew up possessing an active interest
-  // in technology. It always felt like 'magic' to me, and although naive,...
-
   render() {
     return (
       <div style={styles.outerContainer}>

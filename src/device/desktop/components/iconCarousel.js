@@ -10,6 +10,7 @@ export default class DesktopIconCarousel extends Component {
       icons: this.props.icons,
       maxRender: this.props.maxRender,
       firstIndex: 0,   // for the iterative rendering of icons
+      fade: ''
     }
   }
 
@@ -38,8 +39,8 @@ export default class DesktopIconCarousel extends Component {
     }
 
     return iconSelection.map((icon, index) => (
-      <div style={styles.icon} key={index}>
-        <img src={icon.imgPath} alt={icon.name} style={styles.icon}
+      <div style={styles.icon} key={ Math.random() * Math.random() }>
+        <img src={icon.imgPath} alt={icon.name} style={styles.icon} className={`animated ${this.state.fade}`}
           data-tip={icon.name} />
         <ReactTooltip place="top" type="dark" effect="solid"/>
       </div>
@@ -47,6 +48,7 @@ export default class DesktopIconCarousel extends Component {
   }
 
   shiftLeftByMaxRender() {
+    this.setState({ fade: 'fadeOutLeft' });
     let tempIndex = this.state.firstIndex;
     if (this.state.firstIndex < this.state.maxRender) {
       this.setState({
@@ -57,38 +59,17 @@ export default class DesktopIconCarousel extends Component {
         firstIndex: tempIndex - this.state.maxRender
       });
     }
+    this.setState({ fade: 'fadeInRight' });
   }
 
   shiftRightByMaxRender() {
+    this.setState({ fade: 'fadeOutRight' });
     let tempIndex = this.state.firstIndex;
     this.setState({
       firstIndex: (tempIndex + this.state.maxRender) % this.state.icons.length
     });
+    this.setState({ fade: 'fadeInLeft' });
   }
-
-  // shiftLeft() {
-  //   if (this.state.firstIndex === 0) {
-  //     // the first index will now be the last index
-  //     this.setState({ firstIndex: this.state.icons.length - 1 });
-  //   }
-  //   else {
-  //     this.setState((prevState) => ({
-  //       firstIndex: prevState.firstIndex - 1,
-  //     }));
-  //   }
-  // }
-  //
-  // shiftRight() {
-  //   if (this.state.firstIndex === this.state.icons.length - 1) {
-  //     // the first index will now be the last index
-  //     this.setState({ firstIndex: 0 });
-  //   }
-  //   else {
-  //     this.setState((prevState) => ({
-  //       firstIndex: prevState.firstIndex + 1,
-  //     }));
-  //   }
-  // }
 
   render() {
     return (
