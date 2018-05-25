@@ -22,7 +22,7 @@ export class DesktopAbout extends Component {
               style={styles.bioImage} className="animated rollIn"/>
           </div>
           <div style={styles.bioContainer}>
-            <div style={styles.textContainer}>
+            <div style={styles.textContainer} className="animated fadeIn">
               <p>Russell Goldman is a Computer Science undergrad going into his 3rd year at Laurier.
               During his spare time, he volunteers with a local high school robotics team, associates with
               an international fraternity, and improves upon his software skills by participating
@@ -30,7 +30,7 @@ export class DesktopAbout extends Component {
               of his free time to mastering React (JS / Native) and NodeJS. He hopes to provide value at a software firm
               during the summer of 2019.</p>
             </div>
-            <div style={styles.buttonContainer}>
+            <div style={styles.buttonContainer} className="animated fadeIn">
               <a href="https://drive.google.com/open?id=1pVsK5KqG6EgkJEE_ylNuQfWAGOZlGiHe" target="_blank"
                 rel='noopener noreferrer' style={styles.linkContainer}>
                 <button style={styles.button}>RESUME</button>
