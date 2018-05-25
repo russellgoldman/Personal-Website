@@ -66,7 +66,7 @@ export default class DesktopIconCarousel extends Component {
         firstIndex: tempIndex - this.state.maxRender
       });
     }
-    this.setState({ iconAnimation: 'fadeInRight' });
+    this.setState({ iconAnimation: 'slideInRight' });
     this.setState({ lastClick: 'left' });
   }
 
@@ -80,7 +80,7 @@ export default class DesktopIconCarousel extends Component {
     this.setState({
       firstIndex: (tempIndex + this.state.maxRender) % this.state.icons.length
     });
-    this.setState({ iconAnimation: 'fadeInLeft' });
+    this.setState({ iconAnimation: 'slideInLeft' });
     this.setState({ lastClick: 'right' });
   }
 

@@ -11,6 +11,9 @@ import react from './react.svg';
 import sql from './sql.svg';
 import django from './django.svg';
 import redux from './redux.svg';
+import html from './html.svg';
+import css from './css.svg';
+import sass from './sass.svg';
 
 export {
   android,
@@ -25,5 +28,8 @@ export {
   react,
   sql,
   django,
-  redux
+  redux,
+  html,
+  css,
+  sass
 };

@@ -11,7 +11,10 @@ import {
   react,
   sql,
   django,
-  redux
+  redux,
+  html,
+  css,
+  sass
 } from './../images/toolkit-icons';
 
 export const ToolkitIcons = [
@@ -79,5 +82,20 @@ export const ToolkitIcons = [
     id: '12',
     name: 'Mocha',
     imgPath: `${mocha}`
+  },
+  {
+    id: '13',
+    name: 'HTML',
+    imgPath: `${html}`
+  },
+  {
+    id: '14',
+    name: 'CSS',
+    imgPath: `${css}`
+  },
+  {
+    id: '15',
+    name: 'Sass',
+    imgPath: `${sass}`
   },
 ];
