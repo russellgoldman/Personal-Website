@@ -19,7 +19,7 @@ export class DesktopAbout extends Component {
         <div style={styles.innerContainer}>
           <div style={styles.imageContainer}>
             <img src={bioImage} alt="Russell Goldman"
-              style={styles.bioImage} className="animated rollIn"/>
+              style={styles.bioImage} className="animated slideInLeft"/>
           </div>
           <div style={styles.bioContainer}>
             <div style={styles.textContainer} className="animated fadeIn">
