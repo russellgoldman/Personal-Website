@@ -74,3 +74,23 @@ class App extends Component {
 }
 
 export default App;
+
+const styles = {
+  HeaderContainer: {
+    display: 'flex',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '100px',
+    width: '100vw',
+    height: '80px',
+    backgroundColor: 'white',
+    color: 'black',
+    borderTop: ' 2px solid black',
+    borderBottom: ' 2px solid black'
+  },
+  Header: {
+    fontFamily: 'Roboto',
+    fontSize: '46px'
+  }
+}

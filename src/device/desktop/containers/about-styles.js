@@ -5,8 +5,8 @@ export const styles = {
     flexDirection: 'column',
     flex: 1,
     height: '80vh',
-    marginLeft: '8em',
-    marginRight: '8em'
+    marginLeft: '14em',
+    marginRight: '14vw'
   },
   innerContainer: {
     display: 'flex',
@@ -33,19 +33,18 @@ export const styles = {
   textContainer: {
     display: 'flex',
     flexDirection: 'column',
-    flex: 7,
+    flex: 4,
     fontFamily: 'Roboto',
     lineHeight: '2',
     justifyContent: 'center',
     height: '100%',
-    marginBottom: '4em'
+    marginBottom: '-3em'
   },
   buttonContainer: {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    marginBottom: '2em',
-    marginTop: '-4em'
+    marginBottom: '2em'
   },
   bioImage: {
     height: '400px',

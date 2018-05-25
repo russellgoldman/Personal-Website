@@ -10,7 +10,10 @@ export default class DesktopIconCarousel extends Component {
       icons: this.props.icons,
       maxRender: this.props.maxRender,
       firstIndex: 0,   // for the iterative rendering of icons
-      fade: 'zoomInUp'
+      iconAnimation: 'zoomInUp',
+      leftArrowButtonClick: '',
+      rightArrowButtonClick: '',
+      lastClick: ''   // 'left', 'right', or ''
     }
   }
 
@@ -40,7 +43,7 @@ export default class DesktopIconCarousel extends Component {
 
     return iconSelection.map((icon, index) => (
       <div style={styles.icon} key={ Math.random() * Math.random() }>
-        <img src={icon.imgPath} alt={icon.name} style={styles.icon} className={`animated ${this.state.fade}`}
+        <img src={icon.imgPath} alt={icon.name} style={styles.icon} className={`animated ${this.state.iconAnimation}`}
           data-tip={icon.name} />
         <ReactTooltip place="top" type="dark" effect="solid"/>
       </div>
@@ -48,7 +51,11 @@ export default class DesktopIconCarousel extends Component {
   }
 
   shiftLeftByMaxRender() {
-    this.setState({ fade: 'fadeOutLeft' });
+    this.setState({ leftArrowButtonClick: 'bounceIn' });
+    if (this.state.lastClick === 'right') {
+      this.setState({ leftArrowButtonClick: 'bounceIn' });
+      this.setState({ rightArrowButtonClick: '' });
+    }
     let tempIndex = this.state.firstIndex;
     if (this.state.firstIndex < this.state.maxRender) {
       this.setState({
@@ -59,16 +66,22 @@ export default class DesktopIconCarousel extends Component {
         firstIndex: tempIndex - this.state.maxRender
       });
     }
-    this.setState({ fade: 'fadeInRight' });
+    this.setState({ iconAnimation: 'fadeInRight' });
+    this.setState({ lastClick: 'left' });
   }
 
   shiftRightByMaxRender() {
-    this.setState({ fade: 'fadeOutRight' });
+    this.setState({ rightArrowButtonClick: 'bounceIn' });
+    if (this.state.lastClick === 'left') {
+      this.setState({ leftArrowButtonClick: '' });
+      this.setState({ rightArrowButtonClick: 'bounceIn' });
+    }
     let tempIndex = this.state.firstIndex;
     this.setState({
       firstIndex: (tempIndex + this.state.maxRender) % this.state.icons.length
     });
-    this.setState({ fade: 'fadeInLeft' });
+    this.setState({ iconAnimation: 'fadeInLeft' });
+    this.setState({ lastClick: 'right' });
   }
 
   render() {
@@ -78,14 +91,14 @@ export default class DesktopIconCarousel extends Component {
           <p style={styles.title}>My Toolkit</p>
         </div>
         <div style={styles.carouselContainer}>
-          <div style={styles.leftArrowContainer}>
+          <div style={styles.leftArrowContainer} key={ Math.random() } className={`animated ${this.state.leftArrowButtonClick}`}>
             <img src={leftArrow} alt="Left Arrow" style={styles.leftArrow}
               onClick={() => this.shiftLeftByMaxRender()} />
           </div>
           <div style={styles.iconsContainer}>
             {this.renderIcons()}
           </div>
-          <div style={styles.rightArrowContainer}>
+          <div style={styles.rightArrowContainer} key={ Math.random() } className={`animated ${this.state.rightArrowButtonClick}`}>
             <img src={rightArrow} alt="Right Arrow" style={styles.rightArrow}
               onClick={() => this.shiftRightByMaxRender()} />
           </div>
