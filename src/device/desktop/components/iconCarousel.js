@@ -10,7 +10,7 @@ export default class DesktopIconCarousel extends Component {
       icons: this.props.icons,
       maxRender: this.props.maxRender,
       firstIndex: 0,   // for the iterative rendering of icons
-      fade: ''
+      fade: 'zoomInUp'
     }
   }
 
