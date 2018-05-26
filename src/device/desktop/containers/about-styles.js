@@ -5,8 +5,8 @@ export const styles = {
     flexDirection: 'column',
     flex: 1,
     height: '80vh',
-    marginLeft: '14em',
-    marginRight: '14vw'
+    marginLeft: '10em',
+    marginRight: '10vw'
   },
   innerContainer: {
     display: 'flex',
@@ -28,7 +28,7 @@ export const styles = {
     flex: 3,
     flexDirection: 'column',
     height: '100%',
-    marginLeft: '5em'
+    marginLeft: '4em'
   },
   textContainer: {
     display: 'flex',
@@ -38,13 +38,13 @@ export const styles = {
     lineHeight: '2',
     justifyContent: 'center',
     height: '100%',
-    marginBottom: '-3em'
+    marginBottom: '1em'
   },
   buttonContainer: {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    marginBottom: '2em'
+    marginBottom: '-0.5em'
   },
   bioImage: {
     height: '400px',
