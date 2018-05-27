@@ -61,7 +61,8 @@ export const styles = {
     borderRadius: '10px',
     justifyContent: 'flex-start',
     alignItems: 'center',
-    height: '50px'
+    height: '50px',
+    outline: 'none'
   },
   linkContainer: {
     display: 'flex',

@@ -25,7 +25,7 @@ export const ToolkitIcons = [
   },
   {
     id: '1',
-    name: 'React',
+    name: 'React (JS / Native)',
     imgPath: `${react}`
   },
   {
