@@ -25,7 +25,7 @@ export class DesktopAbout extends Component {
             <div style={styles.textContainer} className="animated fadeIn">
               <p>Russell Goldman is a Computer Science undergrad going into his 3rd year at Laurier.
               During his spare time, he volunteers with a local high school robotics team, associates with
-              an international fraternity, and improves upon his software skills by participating
+              an international fraternity, and improves upon his programming skills by participating
               in hackathons and developing open-source software. He is currently dedicating a large amount
               of his free time to mastering React (JS / Native) and NodeJS. He hopes to provide value at a software firm
               during the summer of 2019.</p>
