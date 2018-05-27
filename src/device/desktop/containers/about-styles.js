@@ -1,6 +1,6 @@
 export const styles = {
   outerContainer: {
-    marginTop: '6em',
+    marginTop: '4em',
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
@@ -38,13 +38,13 @@ export const styles = {
     lineHeight: '2',
     justifyContent: 'center',
     height: '100%',
-    marginBottom: '0.5em'
+    marginBottom: '-2em'
   },
   buttonContainer: {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    marginBottom: '2em'
+    marginBottom: '2.5em'
   },
   bioImage: {
     height: '400px',
