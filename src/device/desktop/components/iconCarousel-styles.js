@@ -37,9 +37,9 @@ export const styles = {
     alignItems: 'center'
   },
   leftArrow: {
-    width: '50px',
-    height: '50px',
-    marginLeft: '-5em',
+    width: '45px',
+    height: '45px',
+    marginLeft: '-4.5em',
     opacity: '0.5',
     backgroundColor: '#dbdbdb',
     borderRadius: '50%',
@@ -52,9 +52,9 @@ export const styles = {
     justifyContent: 'flex-end',
   },
   rightArrow: {
-    width: '50px',
-    height: '50px',
-    marginRight: '-5em',
+    width: '45px',
+    height: '45px',
+    marginRight: '-4.5em',
     opacity: '0.5',
     backgroundColor: '#dbdbdb',
     borderRadius: '50%',
