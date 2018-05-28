@@ -1,7 +1,6 @@
-const containerMarginX = 17.5;
-const titleMarginX = containerMarginX + 0.5;
-const shadow = '#c5c5c5';
-const shadow2 = '#838383';
+const containerMarginX = 20;
+const titleMarginX = containerMarginX - 0.5;
+const selectedAccent = '#00ABCD';
 
 export const styles = {
   title: {
@@ -14,7 +13,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
-    height: '80px',
+    height: '90px',
     borderRadius: '10px',
     marginLeft: `${titleMarginX}vw`,
     marginRight: `${titleMarginX}vw`
@@ -23,13 +22,9 @@ export const styles = {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    height: '90px',
-    background: '#f2f2f2',
-    borderRadius: '10px',
+    height: '80px',
     marginLeft: `${containerMarginX}vw`,
-    marginRight: `${containerMarginX}vw`,
-    opacity: '0.85',
-    boxShadow: `3px 4px 3px ${shadow}`,
+    marginRight: `${containerMarginX}vw`
   },
   leftArrowContainer: {
     display: 'flex',
@@ -39,11 +34,9 @@ export const styles = {
   leftArrow: {
     width: '40px',
     height: '40px',
-    marginLeft: '-4.25em',
-    opacity: '0.5',
-    backgroundColor: '#dbdbdb',
-    borderRadius: '50%',
-    boxShadow: `3px 4px 2px ${shadow2}`,
+    marginLeft: '-4.5em',
+    opacity: '0.85',
+    borderRadius: '50%'
   },
   rightArrowContainer: {
     display: 'flex',
@@ -52,34 +45,35 @@ export const styles = {
     justifyContent: 'flex-end',
   },
   rightArrow: {
-    width: '45px',
-    height: '45px',
-    marginRight: '-4.25em',
-    opacity: '0.5',
-    backgroundColor: '#dbdbdb',
-    borderRadius: '50%',
-    boxShadow: `3px 4px 2px ${shadow2}`,
+    width: '40px',
+    height: '40px',
+    marginRight: '-4.5em',
+    opacity: '0.85',
+    borderRadius: '50%'
   },
-  iconsContainer: {
+  bannersContainer: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    width: '100%',
-    marginLeft: '1vw',
-    marginRight: '1vw'
+    width: '100%'
   },
-  iconContainer: {
+  bannerContainer: {
     display: 'flex',
     flex: 1,
     justifyContent: 'center',
     flexWrap: 'wrap',
   },
-  icon: {
-    width: '65%',
-    height: '85%',
-    marginLeft: '1vw',
-    marginRight: '1vw',
-    marginTop: '0.35em'
+  banner: {
+    width: '96%',
+    height: 'auto',
+    marginTop: '0.2em',
+    border: `6px solid black`,
+  },
+  bannerSelected: {
+    width: '96%',
+    height: 'auto',
+    marginTop: '0.2em',
+    border: `6px solid ${selectedAccent}`,
   }
 };
