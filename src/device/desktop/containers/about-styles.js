@@ -5,7 +5,7 @@ export const styles = {
     flexDirection: 'column',
     flex: 1,
     height: '80vh',
-    marginLeft: '10em',
+    marginLeft: '12em',
     marginRight: '10vw'
   },
   innerContainer: {
@@ -19,6 +19,7 @@ export const styles = {
   },
   imageContainer: {
     display: 'flex',
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     maxWidth: '25em'
@@ -28,7 +29,7 @@ export const styles = {
     flex: 3,
     flexDirection: 'column',
     height: '100%',
-    marginLeft: '4em'
+    marginLeft: '3em'
   },
   textContainer: {
     display: 'flex',
@@ -38,17 +39,16 @@ export const styles = {
     lineHeight: '2',
     justifyContent: 'center',
     height: '100%',
-    marginBottom: '-2em'
+    marginBottom: '-3em'
   },
   buttonContainer: {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    marginBottom: '2.5em'
+    marginBottom: '3.5em'
   },
   bioImage: {
-    height: '400px',
-    minHeight: '400px',
+    width: '350px',
     borderRadius: '30px'
   },
   button: {

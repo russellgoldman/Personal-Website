@@ -1,4 +1,4 @@
-const containerMarginX = 17.5;
+const containerMarginX = 13;
 const titleMarginX = containerMarginX + 0.5;
 const shadow = '#c5c5c5';
 const shadow2 = '#838383';
