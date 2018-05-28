@@ -26,7 +26,6 @@ export default class DesktopProjectCarousel extends Component {
   selectProject(index, desc) {
     if (desc === 'arrowClick') {
       this.state.callbackFromParent(index);
-      console.log('were here at', index);
     } else {
       this.setState({ selectedIndex: index });
       this.state.callbackFromParent(this.state.firstIndex + index);
