@@ -28,16 +28,20 @@ export default class DesktopProjectCarousel extends Component {
     }
   }
 
+  selectProject(index) {
+    this.setState({ lastClick: 'project' });
+    this.setState({ selectedIndex: index });
+  }
+
   renderSelectedBanner(banner, index) {
     if (index === this.state.selectedIndex) {
-      console.log(index);
       return (
         <div style={styles.bannerContainer}>
           <img src={banner} alt={banner.name} style={styles.bannerSelected}
-            className={`animated ${this.state.bannerAnimation}`} />
-          <div style={styles.bannerTextContainer}>
+            onClick={() => this.selectProject(index)} />
+          <div style={styles.bannerTextContainer} onClick={() => this.selectProject(index)}>
             <p style={styles.bannerText}>
-              {this.state.projectNames[index].toUpperCase()}
+              {this.state.projectNames[this.state.firstIndex + index].toUpperCase()}
             </p>
           </div>
         </div>
@@ -46,10 +50,10 @@ export default class DesktopProjectCarousel extends Component {
       return (
         <div style={styles.bannerContainer}>
           <img src={banner} alt={banner.name} style={styles.banner}
-            className={`animated ${this.state.bannerAnimation}`} />
-          <div style={styles.bannerTextContainer}>
+            onClick={() => this.selectProject(index)} />
+          <div style={styles.bannerTextContainer} onClick={() => this.selectProject(index)}>
             <p style={styles.bannerText}>
-              {this.state.projectNames[index].toUpperCase()}
+              {this.state.projectNames[this.state.firstIndex + index].toUpperCase()}
             </p>
           </div>
         </div>
@@ -81,9 +85,14 @@ export default class DesktopProjectCarousel extends Component {
   }
 
   shiftLeftByMaxRender() {
-    this.setState({ leftArrowButtonClick: 'bounceIn' });
-    if (this.state.lastClick === 'right') {
+    this.setState({ selectedIndex: 0 });
+    if (this.state.lastClick == 'left') {
       this.setState({ leftArrowButtonClick: 'bounceIn' });
+    } else if (this.state.lastClick === 'right') {
+      this.setState({ leftArrowButtonClick: 'bounceIn' });
+      this.setState({ rightArrowButtonClick: '' });
+    } else if (this.state.lastClick === 'project') {
+      this.setState({ leftArrowButtonClick: '' });
       this.setState({ rightArrowButtonClick: '' });
     }
     let tempIndex = this.state.firstIndex;
@@ -101,10 +110,15 @@ export default class DesktopProjectCarousel extends Component {
   }
 
   shiftRightByMaxRender() {
-    this.setState({ rightArrowButtonClick: 'bounceIn' });
-    if (this.state.lastClick === 'left') {
+    this.setState({ selectedIndex: 0 });
+    if (this.state.lastClick === 'right') {
+      this.setState({ rightArrowButtonClick: 'bounceIn' });
+    } else if (this.state.lastClick === 'left') {
       this.setState({ leftArrowButtonClick: '' });
       this.setState({ rightArrowButtonClick: 'bounceIn' });
+    } else if (this.state.lastClick === 'project') {
+      this.setState({ leftArrowButtonClick: '' });
+      this.setState({ rightArrowButtonClick: '' });
     }
     let tempIndex = this.state.firstIndex;
     this.setState({

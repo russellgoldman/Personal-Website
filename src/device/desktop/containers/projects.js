@@ -29,8 +29,6 @@ export class DesktopProjects extends Component {
       this.setState({ currentProject: indexFromChild })
     };
 
-    console.log(this.getProjectNames());
-
     return (
       <div>
         <DesktopProjectCarousel callbackFromParent={this.fetchCurrentProject}

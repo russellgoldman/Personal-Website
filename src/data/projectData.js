@@ -34,28 +34,28 @@ export const projectData = [
   },
   {
     id: 4,
-    name: 'My ass',
+    name: 'Project 4',
     title: 'Gelato - Gamified Education Tool',
     description: '',
     bannerImgPath: `${nova}`
   },
   {
     id: 5,
-    name: 'LOL',
+    name: 'Project 5',
     title: 'Nova - AI Mental Health Chatbot',
     description: '',
     bannerImgPath: `${nova}`
   },
   {
     id: 6,
-    name: 'still here',
+    name: 'Project 6',
     title: 'Portfolio Site',
     description: '',
     bannerImgPath: `${nova}`
   },
   {
     id: 7,
-    name: 'fuck everything',
+    name: 'Project 7',
     title: 'Scribble - React Native Application',
     description: '',
     bannerImgPath: `${nova}`
