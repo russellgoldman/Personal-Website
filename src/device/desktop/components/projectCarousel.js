@@ -11,7 +11,7 @@ export default class DesktopProjectCarousel extends Component {
       banners: this.props.banners,
       projectNames: this.props.projectNames,
       maxRender: this.props.maxRender,
-      selectedIndex: 0,
+      selectedIndex: 0,     // 0 --> (maxRender - 1), -1 if none
       firstIndex: 0,   // for the iterative rendering of banners
     }
   }
@@ -26,6 +26,11 @@ export default class DesktopProjectCarousel extends Component {
 
   selectProject(index) {
     this.setState({ selectedIndex: index });
+    if (index === -1) {
+      this.state.callbackFromParent(-1);
+    } else {
+      this.state.callbackFromParent(this.state.firstIndex + index);
+    }
   }
 
   renderSelectedBanner(banner, index) {
@@ -80,7 +85,7 @@ export default class DesktopProjectCarousel extends Component {
   }
 
   shiftLeftByMaxRender() {
-    this.setState({ selectedIndex: 0 });
+    this.selectProject(-1);
     let tempIndex = this.state.firstIndex;
     if (this.state.firstIndex < this.state.maxRender) {
       this.setState({
@@ -95,7 +100,7 @@ export default class DesktopProjectCarousel extends Component {
   }
 
   shiftRightByMaxRender() {
-    this.setState({ selectedIndex: 0 });
+    this.selectProject(-1);
     let tempIndex = this.state.firstIndex;
     this.setState({
       firstIndex: (tempIndex + this.state.maxRender) % this.state.banners.length
@@ -110,14 +115,14 @@ export default class DesktopProjectCarousel extends Component {
           <p style={styles.title}>My Projects</p>
         </div>
         <div style={styles.carouselContainer}>
-          <div style={styles.leftArrowContainer} key={ Math.random() } className={`animated ${this.state.leftArrowButtonClick}`}>
+          <div style={styles.leftArrowContainer} key={ Math.random() }>
             <img src={leftArrow} alt="Left Arrow" style={styles.leftArrow}
               onClick={() => this.shiftLeftByMaxRender()} />
           </div>
           <div style={styles.bannersContainer}>
             {this.renderBanners()}
           </div>
-          <div style={styles.rightArrowContainer} key={ Math.random() } className={`animated ${this.state.rightArrowButtonClick}`}>
+          <div style={styles.rightArrowContainer} key={ Math.random() }>
             <img src={rightArrow} alt="Right Arrow" style={styles.rightArrow}
               onClick={() => this.shiftRightByMaxRender()} />
           </div>

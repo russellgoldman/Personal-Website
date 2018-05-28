@@ -8,7 +8,8 @@ export class DesktopProjects extends Component {
     this.state = {
       currentProject: 0,   // index of current selected project
       maxRender: 4,
-      projectData: projectData
+      projectData: projectData,
+      previousProject: -1
     }
   }
 
@@ -24,16 +25,33 @@ export class DesktopProjects extends Component {
     })
   }
 
+  renderProject() {
+    if (this.state.currentProject === -1) {
+      return (
+        <p style={{ marginLeft: '45vw', marginRight: '45vw', fontSize: '20px', textAlign: 'center' }}>
+          Please select a project from the bar above
+        </p>
+      );
+    } else {
+      return (
+        <p style={{ marginLeft: '45vw', marginRight: '45vw', fontSize: '20px', textAlign: 'center' }}>
+          Rendering {this.state.projectData[this.state.currentProject].name}
+        </p>
+      );
+    }
+  }
+
   render() {
     const fetchCurrentProject = (indexFromChild) => {
-      this.setState({ currentProject: indexFromChild })
+      this.setState({ previousProject: this.state.currentProject });
+      this.setState({ currentProject: indexFromChild });
     };
-
     return (
       <div>
-        <DesktopProjectCarousel callbackFromParent={this.fetchCurrentProject}
+        <DesktopProjectCarousel callbackFromParent={fetchCurrentProject}
           maxRender={this.state.maxRender} banners={this.getBanners()}
           projectNames={this.getProjectNames()}/>
+        {this.renderProject()}
       </div>
     );
   }
