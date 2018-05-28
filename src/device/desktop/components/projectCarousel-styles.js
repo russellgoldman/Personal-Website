@@ -75,7 +75,7 @@ export const styles = {
   },
   bannerTextContainer: {
     position: 'absolute',
-    top: '25%',
+    top: '0.5vw',
     height: '50%',
     width: '100%',
     marginTop: '0%',
