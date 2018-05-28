@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { styles } from './projectCarousel-styles';
 import { leftArrow, rightArrow } from './../../../images';
-import ReactTooltip from 'react-tooltip';
 
 export default class DesktopProjectCarousel extends Component {
   constructor(props) {
@@ -11,7 +10,7 @@ export default class DesktopProjectCarousel extends Component {
       banners: this.props.banners,
       projectNames: this.props.projectNames,
       maxRender: this.props.maxRender,
-      selectedIndex: 0,     // 0 --> (maxRender - 1), -1 if none
+      selectedIndex: 0,     // 0 --> (maxRender - 1)
       firstIndex: 0,   // for the iterative rendering of banners
     }
   }
@@ -24,11 +23,12 @@ export default class DesktopProjectCarousel extends Component {
     }
   }
 
-  selectProject(index) {
-    this.setState({ selectedIndex: index });
-    if (index === -1) {
-      this.state.callbackFromParent(-1);
+  selectProject(index, desc) {
+    if (desc === 'arrowClick') {
+      this.state.callbackFromParent(index);
+      console.log('were here at', index);
     } else {
+      this.setState({ selectedIndex: index });
       this.state.callbackFromParent(this.state.firstIndex + index);
     }
   }
@@ -38,7 +38,7 @@ export default class DesktopProjectCarousel extends Component {
       return (
         <div style={styles.bannerContainer} key={ Math.random() * Math.random() }>
           <img src={banner} alt={banner.name} style={styles.bannerSelected}
-            onClick={() => this.selectProject(index)} />
+            onClick={() => this.selectProject(index, '')} />
           <div style={styles.bannerTextContainer} onClick={() => this.selectProject(index)}>
             <p style={styles.bannerText}>
               {this.state.projectNames[this.state.firstIndex + index].toUpperCase()}
@@ -50,7 +50,7 @@ export default class DesktopProjectCarousel extends Component {
       return (
         <div style={styles.bannerContainer} key={ Math.random() * Math.random() }>
           <img src={banner} alt={banner.name} style={styles.banner}
-            onClick={() => this.selectProject(index)} />
+            onClick={() => this.selectProject(index, '')} />
           <div style={styles.bannerTextContainer} onClick={() => this.selectProject(index)}>
             <p style={styles.bannerText}>
               {this.state.projectNames[this.state.firstIndex + index].toUpperCase()}
@@ -85,7 +85,13 @@ export default class DesktopProjectCarousel extends Component {
   }
 
   shiftLeftByMaxRender() {
-    this.selectProject(-1);
+    if (this.state.firstIndex - this.state.maxRender < 0) {
+      this.setState({ selectedIndex: (this.state.banners.length - this.state.maxRender) % this.state.maxRender });
+      this.selectProject(this.state.banners.length - this.state.maxRender, 'arrowClick');
+    } else {
+      this.setState({ selectedIndex: (this.state.firstIndex - this.state.maxRender) % this.state.maxRender });
+      this.selectProject(this.state.firstIndex - this.state.maxRender, 'arrowClick');
+    }
     let tempIndex = this.state.firstIndex;
     if (this.state.firstIndex < this.state.maxRender) {
       this.setState({
@@ -100,7 +106,13 @@ export default class DesktopProjectCarousel extends Component {
   }
 
   shiftRightByMaxRender() {
-    this.selectProject(-1);
+    if (this.state.firstIndex + this.state.maxRender >= this.state.banners.length) {
+      this.setState({ selectedIndex: 0 });
+      this.selectProject(0, 'arrowClick');
+    } else {
+      this.setState({ selectedIndex: (this.state.firstIndex + this.state.maxRender) % this.state.maxRender })
+      this.selectProject(this.state.firstIndex + this.state.maxRender, 'arrowClick');
+    }
     let tempIndex = this.state.firstIndex;
     this.setState({
       firstIndex: (tempIndex + this.state.maxRender) % this.state.banners.length

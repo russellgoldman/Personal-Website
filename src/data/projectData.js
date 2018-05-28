@@ -59,5 +59,33 @@ export const projectData = [
     title: 'Scribble - React Native Application',
     description: '',
     bannerImgPath: `${nova}`
+  },
+  {
+    id: 4,
+    name: 'Project 8',
+    title: 'Gelato - Gamified Education Tool',
+    description: '',
+    bannerImgPath: `${nova}`
+  },
+  {
+    id: 5,
+    name: 'Project 9',
+    title: 'Nova - AI Mental Health Chatbot',
+    description: '',
+    bannerImgPath: `${nova}`
+  },
+  {
+    id: 6,
+    name: 'Project 10',
+    title: 'Portfolio Site',
+    description: '',
+    bannerImgPath: `${nova}`
+  },
+  {
+    id: 7,
+    name: 'Project 11',
+    title: 'Scribble - React Native Application',
+    description: '',
+    bannerImgPath: `${nova}`
   }
 ];

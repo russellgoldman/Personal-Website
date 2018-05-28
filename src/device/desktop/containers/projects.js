@@ -8,8 +8,7 @@ export class DesktopProjects extends Component {
     this.state = {
       currentProject: 0,   // index of current selected project
       maxRender: 4,
-      projectData: projectData,
-      previousProject: -1
+      projectData: projectData
     }
   }
 
@@ -43,7 +42,6 @@ export class DesktopProjects extends Component {
 
   render() {
     const fetchCurrentProject = (indexFromChild) => {
-      this.setState({ previousProject: this.state.currentProject });
       this.setState({ currentProject: indexFromChild });
     };
     return (
