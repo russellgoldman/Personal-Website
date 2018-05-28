@@ -9,6 +9,7 @@ export default class DesktopProjectCarousel extends Component {
     this.state = {
       callbackFromParent: this.props.callbackFromParent,
       banners: this.props.banners,
+      projectNames: this.props.projectNames,
       maxRender: this.props.maxRender,
       selectedIndex: 0,
       firstIndex: 0,   // for the iterative rendering of banners
@@ -30,13 +31,27 @@ export default class DesktopProjectCarousel extends Component {
   renderSelectedBanner(banner, index) {
     if (index === this.state.selectedIndex) {
       return (
-        <img src={banner} alt={banner.name} style={styles.bannerSelected}
-          className={`animated ${this.state.bannerAnimation}`} />
+        <div style={styles.bannerContainer}>
+          <img src={banner} alt={banner.name} style={styles.bannerSelected}
+            className={`animated ${this.state.bannerAnimation}`} />
+          <div style={styles.bannerTextContainer}>
+            <p style={styles.bannerText}>
+              {this.state.projectNames[index].toUpperCase()}
+            </p>
+          </div>
+        </div>
       );
     } else {
       return (
-        <img src={banner} alt={banner.name} style={styles.banner}
-          className={`animated ${this.state.bannerAnimation}`} />
+        <div style={styles.bannerContainer}>
+          <img src={banner} alt={banner.name} style={styles.banner}
+            className={`animated ${this.state.bannerAnimation}`} />
+          <div style={styles.bannerTextContainer}>
+            <p style={styles.bannerText}>
+              {this.state.projectNames[index].toUpperCase()}
+            </p>
+          </div>
+        </div>
       );
     }
   }

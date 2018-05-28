@@ -18,15 +18,24 @@ export class DesktopProjects extends Component {
     });
   }
 
+  getProjectNames() {
+    return this.state.projectData.map((project) => {
+      return project.name;
+    })
+  }
+
   render() {
     const fetchCurrentProject = (indexFromChild) => {
       this.setState({ currentProject: indexFromChild })
     };
 
+    console.log(this.getProjectNames());
+
     return (
       <div>
         <DesktopProjectCarousel callbackFromParent={this.fetchCurrentProject}
-          maxRender={this.state.maxRender} banners={this.getBanners()} />
+          maxRender={this.state.maxRender} banners={this.getBanners()}
+          projectNames={this.getProjectNames()}/>
       </div>
     );
   }

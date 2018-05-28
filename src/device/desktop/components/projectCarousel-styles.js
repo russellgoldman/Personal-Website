@@ -1,4 +1,4 @@
-const containerMarginX = 20;
+const containerMarginX = 10;
 const titleMarginX = containerMarginX - 0.5;
 const selectedAccent = '#00ABCD';
 
@@ -13,7 +13,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
-    height: '90px',
+    height: '12vh',
     borderRadius: '10px',
     marginLeft: `${titleMarginX}vw`,
     marginRight: `${titleMarginX}vw`
@@ -22,9 +22,8 @@ export const styles = {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    height: '80px',
-    marginLeft: `${containerMarginX}vw`,
-    marginRight: `${containerMarginX}vw`
+    height: '100%',
+    marginLeft: `${containerMarginX}vw`
   },
   leftArrowContainer: {
     display: 'flex',
@@ -59,10 +58,8 @@ export const styles = {
     width: '100%'
   },
   bannerContainer: {
-    display: 'flex',
-    flex: 1,
-    justifyContent: 'center',
-    flexWrap: 'wrap',
+    position: 'relative',
+    width: '90%'
   },
   banner: {
     width: '96%',
@@ -75,5 +72,24 @@ export const styles = {
     height: 'auto',
     marginTop: '0.2em',
     border: `6px solid ${selectedAccent}`,
+  },
+  bannerTextContainer: {
+    position: 'absolute',
+    top: '60%',
+    left: '50%',
+    height: '30%',
+    width: '50%',
+    marginTop: '-15%',
+    marginRight: '0px',
+    marginBottom: '0px',
+    marginLeft: '-25%'
+  },
+  bannerText: {
+    fontFamily: 'Roboto-Bold',
+    fontSize: '20px',
+    color: 'white',
+    textAlign: 'center',
+    letterSpacing: '3px',
+    textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black'
   }
 };
