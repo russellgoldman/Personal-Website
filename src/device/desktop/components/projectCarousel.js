@@ -30,6 +30,7 @@ export default class DesktopProjectCarousel extends Component {
 
   renderSelectedBanner(banner, index) {
     if (index === this.state.selectedIndex) {
+      console.log(index);
       return (
         <div style={styles.bannerContainer}>
           <img src={banner} alt={banner.name} style={styles.bannerSelected}

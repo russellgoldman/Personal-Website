@@ -13,7 +13,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
-    height: '12vh',
+    height: '80px',
     borderRadius: '10px',
     marginLeft: `${titleMarginX}vw`,
     marginRight: `${titleMarginX}vw`
@@ -23,7 +23,8 @@ export const styles = {
     flexDirection: 'row',
     flex: 1,
     height: '100%',
-    marginLeft: `${containerMarginX}vw`
+    marginLeft: `${containerMarginX}vw`,
+    marginRight: `${containerMarginX}vw`
   },
   leftArrowContainer: {
     display: 'flex',
@@ -55,34 +56,29 @@ export const styles = {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    width: '100%'
   },
   bannerContainer: {
     position: 'relative',
-    width: '90%'
+    width: '100%'
   },
   banner: {
-    width: '96%',
-    height: 'auto',
+    height: '3.5vw',
+    width: '20vw',
     marginTop: '0.2em',
     border: `6px solid black`,
   },
   bannerSelected: {
-    width: '96%',
-    height: 'auto',
+    height: '3.5vw',
+    width: '20vw',
     marginTop: '0.2em',
     border: `6px solid ${selectedAccent}`,
   },
   bannerTextContainer: {
     position: 'absolute',
-    top: '60%',
-    left: '50%',
-    height: '30%',
-    width: '50%',
-    marginTop: '-15%',
-    marginRight: '0px',
-    marginBottom: '0px',
-    marginLeft: '-25%'
+    top: '25%',
+    height: '50%',
+    width: '100%',
+    marginTop: '0%',
   },
   bannerText: {
     fontFamily: 'Roboto-Bold',
