@@ -5,7 +5,7 @@ export const styles = {
     flexDirection: 'column',
     flex: 1,
     height: '80vh',
-    marginLeft: '12em',
+    marginLeft: '10em',
     marginRight: '10vw'
   },
   innerContainer: {
@@ -38,30 +38,31 @@ export const styles = {
     fontFamily: 'Roboto',
     lineHeight: '2',
     justifyContent: 'center',
-    height: '100%',
-    marginBottom: '-3em'
+    height: '100%'
   },
   buttonContainer: {
     display: 'flex',
     flexDirection: 'row',
-    flex: 1,
-    marginBottom: '3.5em'
+    flex: 1
   },
   bioImage: {
     width: '350px',
-    borderRadius: '30px'
+    height: '370px',
+    borderRadius: '30px',
+    marginRight: '50px'
   },
   button: {
     fontSize: '26px',
     fontFamily: 'Roboto',
     letterSpacing: '3px',
-    flex: 3,
+    flex: 1,
     backgroundColor: '#00ABCD',
     color: 'white',
     borderRadius: '10px',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'center',
     height: '50px',
+    width: '100%',
     outline: 'none'
   },
   linkContainer: {

@@ -7,7 +7,8 @@ export const styles = {
     flex: 1,
     marginLeft: '10px',
     fontFamily: 'Roboto',
-    fontSize: '30px'
+    fontSize: '30px',
+    marginRight: '-50px'
   },
   titleContainer: {
     display: 'flex',

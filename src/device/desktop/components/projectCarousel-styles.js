@@ -82,7 +82,7 @@ export const styles = {
   },
   bannerText: {
     fontFamily: 'Roboto-Bold',
-    fontSize: '20px',
+    fontSize: '17px',
     color: 'white',
     textAlign: 'center',
     letterSpacing: '3px',

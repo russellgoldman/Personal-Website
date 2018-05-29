@@ -60,7 +60,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Media query="(max-width: 1224px)">
+        <Media query="(max-width: 1000px)">
           {matches =>
             matches ? (
               this.isMobile()
