@@ -9,6 +9,7 @@ import {
   node,
   python,
   react,
+  reactnative,
   sql,
   django,
   redux,
@@ -25,76 +26,81 @@ export const ToolkitIcons = [
   },
   {
     id: '1',
-    name: 'React (JS / Native)',
+    name: 'ReactJS',
     imgPath: `${react}`
   },
   {
     id: '2',
+    name: 'React Native',
+    imgPath: `${reactnative}`
+  },
+  {
+    id: '3',
     name: 'Node',
     imgPath: `${node}`
   },
   {
-    id: '3',
+    id: '4',
     name: 'Python',
     imgPath: `${python}`
   },
   {
-    id: '4',
+    id: '5',
     name: 'Java',
     imgPath: `${Java}`
   },
   {
-    id: '5',
+    id: '6',
     name: 'C',
     imgPath: `${c}`
   },
   {
-    id: '6',
+    id: '7',
     name: 'Express',
     imgPath: `${express}`
   },
   {
-    id: '7',
+    id: '8',
     name: 'MongoDB',
     imgPath: `${mongodb}`
   },
   {
-    id: '8',
+    id: '9',
     name: 'Redux',
     imgPath: `${redux}`
   },
   {
-    id: '9',
+    id: '10',
     name: 'Android',
     imgPath: `${android}`
   },
   {
-    id: '10',
+    id: '11',
     name: 'Django',
     imgPath: `${django}`
   },
   {
-    id: '11',
+    id: '12',
     name: 'SQL',
     imgPath: `${sql}`
   },
   {
-    id: '12',
+    id: '13',
     name: 'Mocha',
     imgPath: `${mocha}`
   },
   {
-    id: '13',
+    id: '14',
     name: 'HTML',
     imgPath: `${html}`
   },
   {
-    id: '14',
+    id: '15',
     name: 'CSS',
     imgPath: `${css}`
   },
   {
-    id: '15',
+    id: '16',
     name: 'Sass',
     imgPath: `${sass}`
   },

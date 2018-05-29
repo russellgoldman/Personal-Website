@@ -63,23 +63,16 @@ export const styles = {
   iconsContainer: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center',
     width: '100%',
     marginLeft: '1vw',
-    marginRight: '1vw'
-  },
-  iconContainer: {
-    display: 'flex',
-    flex: 1,
-    justifyContent: 'center',
-    flexWrap: 'wrap',
+    marginRight: '2vw'
   },
   icon: {
-    width: '65%',
-    height: '85%',
+    width: '70px',
+    height: '70px',
     marginLeft: '1vw',
-    marginRight: '1vw',
-    marginTop: '0.35em'
+    marginRight: '1vw'
   }
 };

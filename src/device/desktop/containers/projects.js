@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DesktopProjectCarousel from '../components/projectCarousel';
 import { projectData } from './../../../data/projectData';
+import { DesktopProjectContainer } from './projectContainer';
 
 export class DesktopProjects extends Component {
   constructor(props) {
@@ -24,22 +25,6 @@ export class DesktopProjects extends Component {
     })
   }
 
-  renderProject() {
-    if (this.state.currentProject === -1) {
-      return (
-        <p style={{ marginLeft: '45vw', marginRight: '45vw', fontSize: '20px', textAlign: 'center' }}>
-          Please select a project from the bar above
-        </p>
-      );
-    } else {
-      return (
-        <p style={{ marginLeft: '45vw', marginRight: '45vw', fontSize: '20px', textAlign: 'center' }}>
-          Rendering {this.state.projectData[this.state.currentProject].name}
-        </p>
-      );
-    }
-  }
-
   render() {
     const fetchCurrentProject = (indexFromChild) => {
       this.setState({ currentProject: indexFromChild });
@@ -49,7 +34,7 @@ export class DesktopProjects extends Component {
         <DesktopProjectCarousel callbackFromParent={fetchCurrentProject}
           maxRender={this.state.maxRender} banners={this.getBanners()}
           projectNames={this.getProjectNames()}/>
-        {this.renderProject()}
+        <DesktopProjectContainer projectData={this.state.projectData} currentProject={this.state.currentProject}/>
       </div>
     );
   }
