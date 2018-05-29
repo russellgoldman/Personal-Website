@@ -44,9 +44,15 @@ class App extends Component {
         <ScrollableAnchor id={`home`}>
           <DesktopIntro />
         </ScrollableAnchor>
+        <div style={styles.HeaderContainer}>
+          <div style={styles.Header}>About</div>
+        </div>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[0]}`}>
           <DesktopAbout />
         </ScrollableAnchor>
+        <div style={styles.HeaderContainer}>
+          <div style={styles.Header}>Projects</div>
+        </div>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[1]}`}>
           <DesktopProjects />
         </ScrollableAnchor>
@@ -84,14 +90,12 @@ const styles = {
     alignItems: 'center',
     marginTop: '100px',
     width: '100vw',
-    height: '80px',
-    backgroundColor: 'white',
-    color: 'black',
-    borderTop: ' 2px solid black',
-    borderBottom: ' 2px solid black'
+    height: '60px',
+    backgroundColor: '#00ABCD',
+    color: 'white'
   },
   Header: {
     fontFamily: 'Roboto',
-    fontSize: '46px'
+    fontSize: '40px'
   }
 }

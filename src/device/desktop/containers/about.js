@@ -42,13 +42,12 @@ export class DesktopAbout extends Component {
             </a>
             <div style={{ flex: 1 }}></div>
           </div>*/}
-          <div style={{ marginBottom: '0em' }}></div>
+          <div style={{ paddingTop: '1em' }}></div>
           <div style={styles.carouselContainer}>
             <DesktopIconCarousel icons={this.state.icons}
               maxRender={this.state.maxRender}/>
           </div>
         </div>
-        <div style={{ marginBottom: '20em' }}></div>
       </div>
     );
   }

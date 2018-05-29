@@ -1,6 +1,6 @@
 export const styles = {
   outerContainer: {
-    marginTop: '4em',
+    marginTop: '-1.5em',
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
@@ -9,6 +9,7 @@ export const styles = {
     marginRight: '10vw'
   },
   innerContainer: {
+    paddingTop: '4em',
     display: 'flex',
     flex: 4,
     flexDirection: 'row',
@@ -29,7 +30,7 @@ export const styles = {
     flex: 3,
     flexDirection: 'column',
     height: '100%',
-    marginLeft: '3em'
+    marginLeft: '2em'
   },
   textContainer: {
     display: 'flex',
@@ -49,7 +50,7 @@ export const styles = {
     width: '350px',
     height: '370px',
     borderRadius: '30px',
-    marginRight: '50px'
+    marginRight: '30px'
   },
   button: {
     fontSize: '26px',

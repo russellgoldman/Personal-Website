@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import DesktopProjectCarousel from '../components/projectCarousel';
 import { projectData } from './../../../data/projectData';
 import { DesktopProjectContainer } from './projectContainer';
+import { styles } from './projects-styles';
 
 export class DesktopProjects extends Component {
   constructor(props) {
@@ -30,10 +31,12 @@ export class DesktopProjects extends Component {
       this.setState({ currentProject: indexFromChild });
     };
     return (
-      <div>
-        <DesktopProjectCarousel callbackFromParent={fetchCurrentProject}
-          maxRender={this.state.maxRender} banners={this.getBanners()}
-          projectNames={this.getProjectNames()}/>
+      <div style={styles.projectContainer}>
+        <div style={styles.projectCarouselContainer}>
+          <DesktopProjectCarousel callbackFromParent={fetchCurrentProject}
+            maxRender={this.state.maxRender} banners={this.getBanners()}
+            projectNames={this.getProjectNames()}/>
+        </div>
         <DesktopProjectContainer projectData={this.state.projectData} currentProject={this.state.currentProject}/>
       </div>
     );
