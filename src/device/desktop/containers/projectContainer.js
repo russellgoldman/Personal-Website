@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import { styles } from './projectContainer-styles';
 import { ToolkitIcons } from './../../../data/toolkitIcons';
 import DesktopIconView from './../components/iconView';
+import ReactTooltip from 'react-tooltip';
+import {
+  linkedin,
+  github,
+  medium
+} from './../../../images/networking-icons';
 
 export class DesktopProjectContainer extends Component {
   constructor(props) {
@@ -58,6 +64,11 @@ export class DesktopProjectContainer extends Component {
         <div style={styles.informationContainer}>
           <p style={styles.title}>
             {this.state.projectData[this.state.currentProject].title}
+            <span style={{ paddingLeft: '0.5em' }}>
+              <a href={this.state.projectData[this.state.currentProject].github} target="_blank" rel='noopener noreferrer'>
+                <img src={github} alt="GitHub" style={styles.github} />
+              </a>
+            </span>
           </p>
           <p style={styles.description}>
             {this.state.projectData[this.state.currentProject].description}

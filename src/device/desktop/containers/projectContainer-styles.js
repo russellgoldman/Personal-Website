@@ -46,5 +46,9 @@ export const styles = {
   toolsContainer: {
     marginTop: '-1em',
     flex: 4
+  },
+  github: {
+    width: '30px',
+    height: '30px'
   }
 };
