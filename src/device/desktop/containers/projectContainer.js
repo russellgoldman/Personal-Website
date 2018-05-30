@@ -51,6 +51,9 @@ export class DesktopProjectContainer extends Component {
     return (
       <div style={styles.outerContainer}>
         <div style={styles.imageContainer}>
+          <img src={this.state.projectData[this.state.currentProject].profileImgPath}
+            alt={this.state.projectData[this.state.currentProject].title}
+            style={styles.image} />
         </div>
         <div style={styles.informationContainer}>
           <p style={styles.title}>
@@ -60,7 +63,7 @@ export class DesktopProjectContainer extends Component {
             {this.state.projectData[this.state.currentProject].description}
           </p>
           <div style={styles.toolsContainer}>
-
+            <p>Tools</p>
           </div>
         </div>
       </div>
