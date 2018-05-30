@@ -2,40 +2,49 @@ const containerMarginX = 10;
 
 export const styles = {
   outerContainer: {
+    marginTop: '0em',
     display: 'flex',
     flexDirection: 'row',
     marginLeft: `${containerMarginX}vw`,
     marginRight: `${containerMarginX}vw`,
     backgroundColor: 'white',
-    height: '76%'
+    height: '85%'
   },
   imageContainer: {
     display: 'flex',
-    flexBasis: '40%',
+    flexBasis: '30%',
     backgroundColor: 'white',
-    alignItems: 'center',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    paddingRight: '4vw'
   },
   image: {
+    marginTop: '2em',
     height: '90%',
     width: '100%',
-    maxHeight: '90%'
+    maxHeight: '70%'
   },
   informationContainer: {
     display: 'flex',
     flexBasis: '60%',
     flexDirection: 'column',
-    marginLeft: '2vw',
-    marginRight: '2vw'
+    marginRight: '3vw'
   },
   title: {
     flex: '2',
     fontFamily: 'Roboto',
-    fontSize: '30px'
+    fontSize: '30px',
+    maxHeight: '5%'
   },
   description: {
-    flex: 7
+    marginTop: '-0.5em',
+    flex: 3,
+    fontFamily: 'Roboto',
+    fontSize: '14px',
+    lineHeight: 2
   },
   toolsContainer: {
-    flex: 3
+    marginTop: '-1em',
+    flex: 4
   }
 };

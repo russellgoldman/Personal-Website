@@ -1,10 +1,9 @@
 export const styles = {
   outerContainer: {
-    marginTop: '-1.5em',
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
-    height: '80vh',
+    height: '85vh',
     marginLeft: '10em',
     marginRight: '10vw'
   },

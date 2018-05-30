@@ -1,9 +1,11 @@
-import novaBanner from './novaBanner.png';
 import gelatoBanner from './gelatoBanner.png';
+import novaBanner from './novaBanner.png';
 import gelato from './gelato.svg';
+import nova from './nova.png';
 
 export {
-  novaBanner,
   gelatoBanner,
-  gelato
+  novaBanner,
+  gelato,
+  nova
 }

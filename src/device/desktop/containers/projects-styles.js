@@ -1,8 +1,7 @@
 export const styles = {
   projectContainer: {
-    marginTop: '-3em',
-    height: '90vh',
-    backgroundColor: 'grey'
+    marginTop: '-0.8em',
+    height: '90vh'
   },
   projectCarouselContainer: {
     paddingTop: '3em',

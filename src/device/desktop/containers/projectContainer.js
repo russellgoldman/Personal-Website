@@ -63,7 +63,7 @@ export class DesktopProjectContainer extends Component {
             {this.state.projectData[this.state.currentProject].description}
           </p>
           <div style={styles.toolsContainer}>
-            <p>Tools</p>
+            {this.renderTools()}
           </div>
         </div>
       </div>

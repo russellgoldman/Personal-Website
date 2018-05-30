@@ -14,7 +14,7 @@ import { configureAnchors } from 'react-scrollable-anchor'
 
 // Offset all anchors by -60 to account for a fixed header
 // and scroll more quickly than the default 400ms
-configureAnchors({offset: -100, scrollDuration: 400})
+configureAnchors({offset: -45, scrollDuration: 400})
 
 class App extends Component {
   constructor(props) {
@@ -90,12 +90,12 @@ const styles = {
     alignItems: 'center',
     marginTop: '100px',
     width: '100vw',
-    height: '60px',
+    height: '50px',
     backgroundColor: '#00ABCD',
     color: 'white'
   },
   Header: {
     fontFamily: 'Roboto',
-    fontSize: '40px'
+    fontSize: '36px'
   }
 }
