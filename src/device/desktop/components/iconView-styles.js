@@ -1,14 +1,13 @@
 const containerMarginX = 40;
-const titleMarginX = containerMarginX + 0.5;
+const titleMarginXLeft = containerMarginX;
+const titleMarginXRight = containerMarginX;
 const shadow = '#c5c5c5';
 
 export const styles = {
   title: {
     flex: 1,
-    marginLeft: '10px',
     fontFamily: 'Roboto',
-    fontSize: '30px',
-    marginRight: '-50px'
+    fontSize: '30px'
   },
   titleContainer: {
     display: 'flex',
@@ -16,8 +15,8 @@ export const styles = {
     flex: 1,
     height: '80px',
     borderRadius: '10px',
-    marginLeft: `${titleMarginX}vw`,
-    marginRight: `${titleMarginX}vw`
+    marginLeft: `${titleMarginXLeft}vw`,
+    marginRight: `${titleMarginXRight}vw`,
   },
   viewContainer: {
     display: 'flex',

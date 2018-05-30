@@ -15,7 +15,9 @@ import {
   redux,
   html,
   css,
-  sass
+  sass,
+  ios,
+  swift
 } from './../images/toolkit-icons';
 
 export const ToolkitIcons = [
@@ -104,4 +106,14 @@ export const ToolkitIcons = [
     name: 'Sass',
     imgPath: `${sass}`
   },
+  // {
+  //   id: '17',
+  //   name: 'iOS',
+  //   imgPath: `${ios}`
+  // },
+  // {
+  //   id: '18',
+  //   name: 'Swift',
+  //   imgPath: `${swift}`
+  // },
 ];

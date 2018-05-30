@@ -14,7 +14,9 @@ import redux from './redux.svg';
 import html from './html.svg';
 import css from './css.svg';
 import sass from './sass.svg';
-import reactnative from './reactnative.png'
+import reactnative from './reactnative.png';
+import ios from './ios.svg';
+import swift from './swift.svg';
 
 export {
   android,
@@ -33,5 +35,7 @@ export {
   html,
   css,
   sass,
-  reactnative
+  reactnative,
+  ios,
+  swift
 };

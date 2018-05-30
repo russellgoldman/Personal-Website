@@ -1,8 +1,10 @@
 export const styles = {
   projectContainer: {
-    marginTop: '-3em'
+    marginTop: '-3em',
+    height: '90vh',
+    backgroundColor: 'grey'
   },
   projectCarouselContainer: {
-    paddingTop: '3em'
+    paddingTop: '3em',
   }
 };

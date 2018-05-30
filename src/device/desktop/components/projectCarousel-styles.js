@@ -56,20 +56,20 @@ export const styles = {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+    width: '100%'
   },
   bannerContainer: {
     position: 'relative',
-    width: '100%'
   },
   banner: {
     height: '3.5vw',
-    width: '20vw',
+    width: '19.35vw',
     marginTop: '0.2em',
     border: `6px solid black`,
   },
   bannerSelected: {
     height: '3.5vw',
-    width: '20vw',
+    width: '19.35vw',
     marginTop: '0.2em',
     border: `6px solid ${selectedAccent}`,
   },

@@ -23,7 +23,7 @@ export const projectData = [
     title: 'Nova - AI Mental Health Chatbot',
     description: '',
     bannerImgPath: `${nova}`,
-    toolsUsed: ['Android', 'Node']
+    toolsUsed: ['Java', 'Android', 'Node']
   },
   {
     id: 2,
