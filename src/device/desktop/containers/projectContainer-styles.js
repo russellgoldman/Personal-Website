@@ -2,7 +2,7 @@ const containerMarginX = 10;
 
 export const styles = {
   outerContainer: {
-    marginTop: '0em',
+    marginTop: '0.5em',
     display: 'flex',
     flexDirection: 'row',
     marginLeft: `${containerMarginX}vw`,
@@ -39,8 +39,8 @@ export const styles = {
   description: {
     marginTop: '-0.5em',
     flex: 3,
-    fontFamily: 'Roboto',
-    fontSize: '14px',
+    fontFamily: 'Roboto-Light',
+    fontSize: '20px',
     lineHeight: 2
   },
   toolsContainer: {

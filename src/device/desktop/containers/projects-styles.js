@@ -4,6 +4,6 @@ export const styles = {
     height: '90vh'
   },
   projectCarouselContainer: {
-    paddingTop: '3em',
+    paddingTop: '0.5em',
   }
 };

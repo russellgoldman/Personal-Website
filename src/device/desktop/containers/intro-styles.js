@@ -18,7 +18,7 @@ export const styles = {
     justifyContent: 'center'
   },
   logoContainer: {
-    flex: 8
+    flex: 6
   },
   title: {
     flex: 1,
@@ -33,7 +33,7 @@ export const styles = {
     color: `${titleAccent}`
   },
   subtitleContainer: {
-    flex: 11,
+    flex: 6,
     flexWrap: 'wrap',
     fontFamily: 'Roboto',
     color: `${subtitle}`,
@@ -42,7 +42,7 @@ export const styles = {
     justifyContent: 'center',
   },
   iconsContainer: {
-    flex: 1,
+    flex: 3.5,
     justifyContent: 'center',
     marginTop: '5px'
   },

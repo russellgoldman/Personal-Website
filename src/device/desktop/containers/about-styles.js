@@ -7,11 +7,10 @@ export const styles = {
     marginRight: '10vw'
   },
   innerContainer: {
-    marginTop: '4vw',
+    marginTop: '5vw',
     display: 'flex',
     flex: 4,
     flexDirection: 'row',
-    marginBottom: '1vw'
   },
   carouselContainer: {
     flex: 1
@@ -33,7 +32,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'column',
     lineHeight: '2',
-    marginTop: '-1.5vw'
+    marginTop: '-1.25vw'
   },
   textSmall: {
     fontFamily: 'Roboto',
@@ -57,7 +56,7 @@ export const styles = {
     width: '300px',
     height: '300px',
     borderRadius: '30px',
-    marginLeft: '-2.5vw'
+    marginLeft: '-3.5vw'
   },
   bioImageMedium: {
     width: '350px',

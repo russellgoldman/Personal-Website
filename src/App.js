@@ -14,7 +14,7 @@ import { configureAnchors } from 'react-scrollable-anchor'
 
 // Offset all anchors by -60 to account for a fixed header
 // and scroll more quickly than the default 400ms
-configureAnchors({offset: -45, scrollDuration: 400})
+configureAnchors({offset: -175, scrollDuration: 500})
 
 class App extends Component {
   constructor(props) {
@@ -32,6 +32,9 @@ class App extends Component {
       <div>
         <MobileTitlebar name={this.state.titlebarState.name} />
         <MobileIntro />
+        <div style={styles.MobileHeaderContainer}>
+          <div style={styles.Header}>About</div>
+        </div>
         <MobileAbout />
       </div>
     );
@@ -44,13 +47,13 @@ class App extends Component {
         <ScrollableAnchor id={`home`}>
           <DesktopIntro />
         </ScrollableAnchor>
-        <div style={styles.HeaderContainer}>
+        <div style={styles.DesktopHeaderContainer}>
           <div style={styles.Header}>About</div>
         </div>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[0]}`}>
           <DesktopAbout />
         </ScrollableAnchor>
-        <div style={styles.HeaderContainer}>
+        <div style={styles.DesktopHeaderContainer}>
           <div style={styles.Header}>Projects</div>
         </div>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[1]}`}>
@@ -82,20 +85,34 @@ class App extends Component {
 
 export default App;
 
+const shadow = '#c5c5c5';
 const styles = {
-  HeaderContainer: {
+  DesktopHeaderContainer: {
     display: 'flex',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: '100px',
-    width: '100vw',
-    height: '50px',
-    backgroundColor: '#00ABCD',
-    color: 'white'
+    marginLeft: '45vw',
+    marginRight: '45vw',
+    height: '70px',
+    color: 'black',
+    borderBottom: '3px solid black'
+  },
+  MobileHeaderContainer: {
+    display: 'flex',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '100px',
+    marginLeft: '42.5vw',
+    marginRight: '42.5vw',
+    height: '70px',
+    color: 'black',
+    borderBottom: '3px solid black'
   },
   Header: {
-    fontFamily: 'Roboto',
-    fontSize: '36px'
+    fontFamily: 'Roboto-Bold',
+    fontSize: '40px'
   }
 }

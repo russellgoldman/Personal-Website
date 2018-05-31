@@ -10,7 +10,7 @@ export const projectData = [
     id: 0,
     name: 'Gelato',
     title: 'Gelato - Gamified Education Tool',
-    description: 'Gelato is a React.js web app that allows teachers to put together education content such as quizzes and other practice material into a dashboard which the app then uses to populate questions with a game. The student section functions like an RPG game based on the content the teacher has made for their class. It was built at the Equithon Hackathon at the University of Waterloo in a team of 4.',
+    description: 'Gelato is a React.js web app that allows teachers to put together education content such as quizzes and other practice material into a dashboard which the app then uses to populate questions with a game. The student section functions like an RPG game based on the content the teacher has made for their class. It was built at the Equithon Hackathon at the University of Waterloo in a team of four.',
     github: 'https://github.com/russellgoldman/Project-Gelato',
     bannerImgPath: `${gelatoBanner}`,
     profileImgPath: `${gelato}`,
