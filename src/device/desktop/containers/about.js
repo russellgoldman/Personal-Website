@@ -4,6 +4,7 @@ import { ToolkitIcons } from './../../../data/toolkitIcons';
 import { styles } from './about-styles';
 import { bioImage } from './../../../images/';
 import Media from 'react-media';
+import Fade from 'react-reveal/Fade';
 
 export class DesktopAbout extends Component {
   constructor(props) {
@@ -104,22 +105,24 @@ export class DesktopAbout extends Component {
         <div style={styles.outerContainer}>
           <div style={styles.innerContainer}>
             <div style={styles.imageContainer}>
-              {this.renderResponsiveImage()}
+              <Fade clear>{this.renderResponsiveImage()}</Fade>
             </div>
             <div style={styles.bioContainer}>
-              {this.renderResponsiveText()}
+              <Fade clear>{this.renderResponsiveText()}</Fade>
               <div className="animated fadeIn">
                 <a href="https://drive.google.com/open?id=1pVsK5KqG6EgkJEE_ylNuQfWAGOZlGiHe" target="_blank"
                   rel='noopener noreferrer' style={styles.linkContainer}>
-                  {this.renderResponsiveButton()}
+                  <Fade clear>{this.renderResponsiveButton()}</Fade>
                 </a>
               </div>
             </div>
           </div>
           <div style={{ marginTop: '2.5%' }}></div>
           <div style={styles.carouselContainer}>
-            <DesktopIconCarousel icons={this.state.icons}
-              maxRender={this.state.maxRender}/>
+            <Fade clear>
+              <DesktopIconCarousel icons={this.state.icons}
+                maxRender={this.state.maxRender}/>
+            </Fade>
           </div>
           <div style={{ marginBottom: '7.5%' }}></div>
         </div>

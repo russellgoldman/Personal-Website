@@ -3,6 +3,7 @@ import DesktopProjectCarousel from '../components/projectCarousel';
 import { projectData } from './../../../data/projectData';
 import { DesktopProjectContainer } from './projectContainer';
 import { styles } from './projects-styles';
+import Fade from 'react-reveal/Fade';
 
 export class DesktopProjects extends Component {
   constructor(props) {
@@ -33,9 +34,11 @@ export class DesktopProjects extends Component {
     return (
       <div style={styles.projectContainer}>
         <div style={styles.projectCarouselContainer}>
-          <DesktopProjectCarousel callbackFromParent={fetchCurrentProject}
-            maxRender={this.state.maxRender} banners={this.getBanners()}
-            projectNames={this.getProjectNames()}/>
+          <Fade clear>
+            <DesktopProjectCarousel callbackFromParent={fetchCurrentProject}
+              maxRender={this.state.maxRender} banners={this.getBanners()}
+              projectNames={this.getProjectNames()}/>
+          </Fade>
         </div>
         <DesktopProjectContainer projectData={this.state.projectData} currentProject={this.state.currentProject}/>
       </div>

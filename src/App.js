@@ -11,6 +11,7 @@ import { MobileAbout } from './device/mobile/containers/about';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Media from "react-media";
 import { configureAnchors } from 'react-scrollable-anchor';
+import Fade from 'react-reveal/Fade';
 
 // Offset all anchors by -60 to account for a fixed header
 // and scroll more quickly than the default 400ms
@@ -48,13 +49,13 @@ class App extends Component {
           <DesktopIntro />
         </ScrollableAnchor>
         <div style={styles.DesktopHeaderContainer}>
-          <div style={styles.Header}>About</div>
+          <Fade clear><div style={styles.Header}>About</div></Fade>
         </div>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[0]}`}>
           <DesktopAbout />
         </ScrollableAnchor>
         <div style={styles.DesktopHeaderContainer}>
-          <div style={styles.Header}>Projects</div>
+          <Fade clear><div style={styles.Header}>Projects</div></Fade>
         </div>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[1]}`}>
           <DesktopProjects />
