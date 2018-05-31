@@ -23,7 +23,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    height: '90px',
+    height: '70px',
     background: '#f2f2f2',
     borderRadius: '10px',
     marginLeft: `${containerMarginX}vw`,
@@ -70,8 +70,8 @@ export const styles = {
     marginRight: '2vw'
   },
   icon: {
-    width: '70px',
-    height: '70px',
+    width: '50px',
+    height: '50px',
     marginLeft: '1vw',
     marginRight: '1vw'
   }

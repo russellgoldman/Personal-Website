@@ -5,8 +5,12 @@ import { websiteLogo } from './../../../images/';
 import {
   linkedin,
   github,
-  medium
+  medium,
+  linkedinHover,
+  githubHover,
+  mediumHover
 } from './../../../images/networking-icons';
+import HoverImage from 'react-hover-image';
 
 export class DesktopIntro extends Component {
   render() {
@@ -30,16 +34,13 @@ export class DesktopIntro extends Component {
           </div>
           <div style={styles.iconsContainer} className="animated slideInUp">
             <a href="https://www.linkedin.com/in/russell-goldman-35483986/" target="_blank" rel='noopener noreferrer'>
-              <img src={linkedin} alt="RG" style={styles.icon} data-tip="LinkedIn" />
-              <ReactTooltip place="top" type="dark" effect="solid"/>
+              <HoverImage src={linkedin} hoverSrc={linkedinHover} style={styles.icon} />
             </a>
             <a href="https://github.com/russellgoldman" target="_blank" rel='noopener noreferrer'>
-              <img src={github} alt="RG" style={styles.icon} data-tip="GitHub" />
-              <ReactTooltip place="top" type="dark" effect="solid"/>
+              <HoverImage src={github} hoverSrc={githubHover} style={styles.icon} />
             </a>
             <a href="https://medium.com/@russellgoldman1" target="_blank" rel='noopener noreferrer'>
-              <img src={medium} alt="RG" style={styles.icon} data-tip="Medium" />
-              <ReactTooltip place="top" type="dark" effect="solid"/>
+              <HoverImage src={medium} hoverSrc={mediumHover} style={styles.icon} />
             </a>
           </div>
           <div style={{ flex: 3 }} />

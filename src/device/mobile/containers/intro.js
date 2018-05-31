@@ -22,13 +22,13 @@ export const MobileIntro = () => {
       </div>
       <div style={styles.iconsContainer}>
         <a href="https://www.linkedin.com/in/russell-goldman-35483986/" target="_blank" rel='noopener noreferrer'>
-          <img src={linkedin} alt="RG" style={styles.icon} />
+          <img src={linkedin} alt="LinkedIn" style={styles.icon} />
         </a>
         <a href="https://github.com/russellgoldman" target="_blank" rel='noopener noreferrer'>
-          <img src={github} alt="RG" style={styles.icon} />
+          <img src={github} alt="GitHub" style={styles.icon} />
         </a>
         <a href="https://medium.com/@russellgoldman1" target="_blank" rel='noopener noreferrer'>
-          <img src={medium} alt="RG" style={styles.icon} />
+          <img src={medium} alt="Medium" style={styles.icon} />
         </a>
       </div>
       <div style={{ flex: 15 }} />

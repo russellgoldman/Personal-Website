@@ -33,7 +33,7 @@ export const styles = {
   title: {
     flex: '2',
     fontFamily: 'Roboto',
-    fontSize: '30px',
+    fontSize: '32px',
     maxHeight: '5%'
   },
   description: {

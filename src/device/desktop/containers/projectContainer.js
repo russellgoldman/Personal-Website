@@ -6,8 +6,10 @@ import ReactTooltip from 'react-tooltip';
 import {
   linkedin,
   github,
-  medium
+  medium,
+  githubHover
 } from './../../../images/networking-icons';
+import HoverImage from 'react-hover-image';
 
 export class DesktopProjectContainer extends Component {
   constructor(props) {
@@ -64,9 +66,9 @@ export class DesktopProjectContainer extends Component {
         <div style={styles.informationContainer}>
           <p style={styles.title}>
             {this.state.projectData[this.state.currentProject].title}
-            <span style={{ paddingLeft: '0.5em' }}>
+            <span style={{ marginLeft: '50vw', marginTop: '-1.10em', display: 'block' }}>
               <a href={this.state.projectData[this.state.currentProject].github} target="_blank" rel='noopener noreferrer'>
-                <img src={github} alt="GitHub" style={styles.github} />
+                <HoverImage src={github} hoverSrc={githubHover} style={styles.github} />
               </a>
             </span>
           </p>
