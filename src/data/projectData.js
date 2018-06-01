@@ -1,8 +1,10 @@
 import {
   gelatoBanner,
   novaBanner,
+  rgBanner,
   gelato,
-  nova
+  nova,
+  rg
 } from './../images/projects';
 
 export const projectData = [
@@ -37,8 +39,8 @@ export const projectData = [
     title: 'Portfolio Site',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget nulla id nulla convallis pellentesque vitae non nibh. Vivamus sed tincidunt turpis, vel sollicitudin est. Aenean a arcu non est ornare pretium eu sit amet mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse luctus fringilla augue, vel dictum lorem cursus rhoncus. Aliquam accumsan tincidunt nunc quis hendrerit. Morbi ultricies mattis enim faucibus venenatis. Sed in turpis quis lectus fermentum gravida. Aenean interdum augue arcu, eget convallis velit pharetra egestas. Nam vel ultrices mauris, in efficitur leo. Quisque viverra, nisl eget sagittis dictum, sapien felis bibendum sapien, sed tempor metus nisi id tellus. Nulla fringilla elementum tortor id bibendum.',
     github: 'https://github.com/russellgoldman/Personal-Website',
-    bannerImgPath: `${novaBanner}`,
-    profileImgPath: `${gelato}`,
+    bannerImgPath: `${rgBanner}`,
+    profileImgPath: `${rg}`,
     toolsUsed: [
       'JavaScript',
       'ReactJS',

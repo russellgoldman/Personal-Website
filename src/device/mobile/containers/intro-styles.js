@@ -8,7 +8,8 @@ export const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     marginLeft: '10vw',
-    marginRight: '10vw'
+    marginRight: '10vw',
+    marginTop: '15vw'
   },
   title: {
     flex: 3,

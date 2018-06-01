@@ -15,7 +15,7 @@ import Fade from 'react-reveal/Fade';
 
 // Offset all anchors by -60 to account for a fixed header
 // and scroll more quickly than the default 400ms
-configureAnchors({offset: -140, scrollDuration: 500})
+configureAnchors({offset: -160, scrollDuration: 500})
 
 class App extends Component {
   constructor(props) {

@@ -117,7 +117,7 @@ export class DesktopAbout extends Component {
               </div>
             </div>
           </div>
-          <div style={{ marginTop: '2.5%' }}></div>
+          <div style={{ marginTop: '5%' }}></div>
           <div style={styles.carouselContainer}>
             <Fade clear>
               <DesktopIconCarousel icons={this.state.icons}

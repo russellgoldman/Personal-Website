@@ -32,7 +32,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'column',
     lineHeight: '2',
-    marginTop: '-1.25vw'
+    marginTop: '-0.1vw'
   },
   textSmall: {
     fontFamily: 'Roboto',
@@ -81,7 +81,7 @@ export const styles = {
     height: '40px',
     maxWidth: '25%',
     outline: 'none',
-    marginTop: '0.5em'
+    marginTop: '1em'
   },
   buttonMedium: {
     fontSize: '22px',
@@ -94,7 +94,7 @@ export const styles = {
     height: '45px',
     maxWidth: '25%',
     outline: 'none',
-    marginTop: '1em'
+    marginTop: '1.25em'
   },
   buttonLarge: {
     fontSize: '30px',
@@ -107,7 +107,7 @@ export const styles = {
     height: '60px',
     maxWidth: '30%',
     outline: 'none',
-    marginTop: '1em'
+    marginTop: '1.25em'
   },
   linkContainer: {
     display: 'flex',

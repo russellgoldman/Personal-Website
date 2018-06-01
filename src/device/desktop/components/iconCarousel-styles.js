@@ -1,5 +1,5 @@
 const containerMarginX = 8;
-const titleMarginX = containerMarginX + 0.5;
+const titleMarginX = containerMarginX - 0.5;
 const shadow = '#c5c5c5';
 const shadow2 = '#838383';
 
@@ -14,7 +14,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
-    height: '80px',
+    height: '55px',
     borderRadius: '10px',
     marginLeft: `${titleMarginX}vw`,
     marginRight: `${titleMarginX}vw`
