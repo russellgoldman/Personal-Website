@@ -49,13 +49,13 @@ class App extends Component {
           <DesktopIntro />
         </ScrollableAnchor>
         <div style={styles.DesktopHeaderContainer}>
-          <Fade clear><div style={styles.Header}>About</div></Fade>
+          <Fade clear><div style={styles.DesktopHeader}>About</div></Fade>
         </div>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[0]}`}>
           <DesktopAbout />
         </ScrollableAnchor>
         <div style={styles.DesktopHeaderContainer}>
-          <Fade clear><div style={styles.Header}>Projects</div></Fade>
+          <Fade clear><div style={styles.DesktopHeader}>Projects</div></Fade>
         </div>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[1]}`}>
           <DesktopProjects />
