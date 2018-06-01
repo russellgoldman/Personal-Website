@@ -13,7 +13,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
-    height: '70px',
+    height: '45px',
     borderRadius: '10px',
     maxWidth: '30vw',
     zIndex: 1

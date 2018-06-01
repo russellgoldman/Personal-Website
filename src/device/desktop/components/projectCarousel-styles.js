@@ -1,5 +1,5 @@
 const containerMarginX = 10;
-const titleMarginX = containerMarginX - 0.5;
+const titleMarginX = containerMarginX + 0.65;
 const selectedAccent = '#00ABCD';
 
 export const styles = {
@@ -10,10 +10,11 @@ export const styles = {
     fontSize: '30px'
   },
   titleContainer: {
+    marginTop: '2.5em',
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
-    height: '80px',
+    height: '55px',
     borderRadius: '10px',
     marginLeft: `${titleMarginX}vw`,
     marginRight: `${titleMarginX}vw`
@@ -71,18 +72,17 @@ export const styles = {
     height: '3.5vw',
     width: '19.35vw',
     marginTop: '0.2em',
-    border: `6px solid ${selectedAccent}`,
+    border: `6px solid ${selectedAccent}`
   },
   bannerTextContainer: {
     position: 'absolute',
-    top: '0.5vw',
+    top: '1vw',
     height: '50%',
     width: '100%',
-    marginTop: '0%',
   },
   bannerText: {
     fontFamily: 'Roboto-Bold',
-    fontSize: '16px',
+    fontSize: '1.5vw',
     color: 'white',
     textAlign: 'center',
     letterSpacing: '3px',

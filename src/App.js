@@ -106,8 +106,8 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: '100px',
-    marginLeft: '32.5vw',
-    marginRight: '32.5vw',
+    marginLeft: '40vw',
+    marginRight: '40vw',
     height: '70px',
     color: 'black',
     borderBottom: '3px solid black'

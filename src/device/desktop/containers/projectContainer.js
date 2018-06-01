@@ -11,6 +11,7 @@ import {
 } from './../../../images/networking-icons';
 import HoverImage from 'react-hover-image';
 import Fade from 'react-reveal/Fade';
+import { Image } from 'react-bootstrap';
 
 export class DesktopProjectContainer extends Component {
   constructor(props) {
@@ -61,9 +62,11 @@ export class DesktopProjectContainer extends Component {
       <div style={styles.outerContainer}>
         <div style={styles.imageContainer}>
           <Fade clear>
-            <img src={this.state.projectData[this.state.currentProject].profileImgPath}
+          <Image src={this.state.projectData[this.state.currentProject].profileImgPath} responsive rounded
+          style={styles.image} />
+            {/*<img src={this.state.projectData[this.state.currentProject].profileImgPath}
               alt={this.state.projectData[this.state.currentProject].title}
-              style={styles.image} />
+              style={styles.image} />*/}
           </Fade>
         </div>
         <div style={styles.informationContainer}>

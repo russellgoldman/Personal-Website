@@ -2,6 +2,7 @@ const shadow = '#e5e5e5';
 
 export const styles = {
   titlebarContainer: {
+    paddingTop: '0.5em',
     fontFamily: 'Roboto',
     fontSize: '20px',
     display: 'flex',
