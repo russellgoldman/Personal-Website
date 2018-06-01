@@ -34,7 +34,7 @@ class App extends Component {
         <MobileTitlebar name={this.state.titlebarState.name} />
         <MobileIntro />
         <div style={styles.MobileHeaderContainer}>
-          <div style={styles.Header}>About</div>
+          <div style={styles.MobileHeader}>About</div>
         </div>
         <MobileAbout />
       </div>
@@ -94,8 +94,8 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: '100px',
-    marginLeft: '45vw',
-    marginRight: '45vw',
+    marginLeft: '45.5vw',
+    marginRight: '45.5vw',
     height: '70px',
     color: 'black',
     borderBottom: '3px solid black'
@@ -106,14 +106,18 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: '100px',
-    marginLeft: '42.5vw',
-    marginRight: '42.5vw',
+    marginLeft: '32.5vw',
+    marginRight: '32.5vw',
     height: '70px',
     color: 'black',
     borderBottom: '3px solid black'
   },
-  Header: {
+  DesktopHeader: {
     fontFamily: 'Roboto-Bold',
     fontSize: '40px'
+  },
+  MobileHeader: {
+    fontFamily: 'Roboto-Bold',
+    fontSize: '35px'
   }
 }
