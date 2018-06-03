@@ -3,6 +3,7 @@ import { DesktopTitlebar } from './device/desktop/components/titlebar';
 import { DesktopIntro } from './device/desktop/containers/intro';
 import { DesktopAbout } from './device/desktop/containers/about';
 import { DesktopProjects } from './device/desktop/containers/projects';
+import { DesktopContact } from './device/desktop/containers/contact';
 
 import { MobileTitlebar } from './device/mobile/components/titlebar';
 import { MobileIntro } from './device/mobile/containers/intro';
@@ -66,7 +67,7 @@ class App extends Component {
           <DesktopProjects />
         </ScrollableAnchor>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[2]}`}>
-          <DesktopIntro />
+          <DesktopContact />
         </ScrollableAnchor>
       </div>
     );

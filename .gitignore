@@ -21,3 +21,5 @@ yarn-debug.log*
 yarn-error.log*
 
 /public/animate.min.css
+
+/src/data/privateData.js
