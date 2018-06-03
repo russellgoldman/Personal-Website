@@ -18,7 +18,6 @@ export class DesktopContact extends Component {
   }
 
   render() {
-    console.log(this.state.email);
     return (
       <div>
         <div style={styles.outerContainer}>
