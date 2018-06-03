@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import { styles } from './projectContainer-styles';
 import { ToolkitIcons } from './../../../data/toolkitIcons';
-import DesktopIconView from './../components/iconView';
-import ReactTooltip from 'react-tooltip';
+import MobileIconView from './../components/iconView';
 import {
   linkedin,
   github,
   medium,
   githubHover
 } from './../../../images/networking-icons';
-import HoverImage from 'react-hover-image';
 import Fade from 'react-reveal/Fade';
 import { Image } from 'react-bootstrap';
 
-export class DesktopProjectContainer extends Component {
+export class MobileProjectContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,7 +41,7 @@ export class DesktopProjectContainer extends Component {
     });
 
     return (
-      <DesktopIconView icons={tools} maxRender={this.calcMaxRenderSize(tools)}/>
+      <MobileIconView icons={tools} maxRender={this.calcMaxRenderSize(tools)}/>
     );
   }
 
@@ -62,29 +60,29 @@ export class DesktopProjectContainer extends Component {
       <div style={styles.outerContainer}>
         <div style={styles.imageContainer}>
           <Fade clear>
-          <Image src={this.state.projectData[this.state.currentProject].profileImgPath} responsive rounded
+          <img src={this.state.projectData[this.state.currentProject].profileImgPath}
           style={styles.image} />
           </Fade>
         </div>
-        <div style={styles.informationContainer}>
-          <Fade clear>
-            <p style={styles.title}>
-              {this.state.projectData[this.state.currentProject].title}
-              <span style={{ marginLeft: '50vw', marginTop: '-1.6em', display: 'block' }}>
-                <a href={this.state.projectData[this.state.currentProject].github} target="_blank" rel='noopener noreferrer'>
-                  <HoverImage src={github} hoverSrc={githubHover} style={styles.github} />
-                </a>
-              </span>
-            </p>
-          </Fade>
-          <Fade clear>
-            <p style={styles.description}>
-              {this.state.projectData[this.state.currentProject].description}
-            </p>
-          </Fade>
-          <div style={styles.toolsContainer}>
-            {this.renderTools()}
+        <Fade clear>
+          <p style={styles.title}>
+            {this.state.projectData[this.state.currentProject].title}
+          </p>
+        </Fade>
+        <Fade clear>
+          <div style={styles.githubContainer}>
+            <a href={this.state.projectData[this.state.currentProject].github} target="_blank" rel='noopener noreferrer'>
+              <img src={github} style={styles.github} />
+            </a>
           </div>
+        </Fade>
+        <Fade clear>
+          <p style={styles.description}>
+            {this.state.projectData[this.state.currentProject].description}
+          </p>
+        </Fade>
+        <div style={styles.toolsContainer}>
+          {this.renderTools()}
         </div>
       </div>
     );

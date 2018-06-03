@@ -38,7 +38,7 @@ export const ToolkitIcons = [
   },
   {
     id: '3',
-    name: 'Node',
+    name: 'NodeJS',
     imgPath: `${node}`
   },
   {

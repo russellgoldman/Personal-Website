@@ -52,8 +52,7 @@ export const styles = {
     flex: 4
   },
   github: {
-    width: '30px',
-    height: '30px',
-    marginBottom: '2em'
+    width: '35px',
+    height: '35px'
   }
 };

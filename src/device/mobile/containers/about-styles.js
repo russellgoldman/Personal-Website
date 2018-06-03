@@ -21,12 +21,13 @@ export const styles = {
     marginTop: '2.5vh',
     display: 'flex',
     flex: 1,
-    fontFamily: 'Roboto',
+    fontFamily: 'Roboto-Light',
     fontSize: '16px',
     lineHeight: '2.5',
     justifyContent: 'center',
-    marginLeft: '15vw',
-    marginRight: '15vw',
+    textAlign: 'center',
+    marginLeft: '10vw',
+    marginRight: '10vw',
     marginBottom: '4vh'
   },
   buttonContainer: {

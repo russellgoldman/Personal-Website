@@ -7,6 +7,7 @@ import { DesktopProjects } from './device/desktop/containers/projects';
 import { MobileTitlebar } from './device/mobile/components/titlebar';
 import { MobileIntro } from './device/mobile/containers/intro';
 import { MobileAbout } from './device/mobile/containers/about';
+import { MobileProjects } from './device/mobile/containers/projects';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Media from "react-media";
@@ -34,9 +35,13 @@ class App extends Component {
         <MobileTitlebar name={this.state.titlebarState.name} />
         <MobileIntro />
         <div style={styles.MobileHeaderContainer}>
-          <div style={styles.MobileHeader}>About</div>
+          <Fade clear><div style={styles.MobileHeader}>About</div></Fade>
         </div>
         <MobileAbout />
+        <div style={styles.MobileHeaderContainer}>
+          <Fade clear><div style={styles.MobileHeader}>Projects</div></Fade>
+        </div>
+        <MobileProjects />
       </div>
     );
   }
