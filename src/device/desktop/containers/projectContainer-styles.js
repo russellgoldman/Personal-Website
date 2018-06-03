@@ -7,13 +7,11 @@ export const styles = {
     flexDirection: 'row',
     marginLeft: `${containerMarginX}vw`,
     marginRight: `${containerMarginX}vw`,
-    backgroundColor: 'white',
     height: '85%'
   },
   imageContainer: {
     display: 'flex',
     flexBasis: '30%',
-    backgroundColor: 'white',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
     marginLeft: '1.25vw',
@@ -23,7 +21,7 @@ export const styles = {
     marginTop: '2em',
     height: '50%',
     width: '90%',
-    maxHeight: '70%'
+    maxHeight: '70%',
   },
   informationContainer: {
     display: 'flex',

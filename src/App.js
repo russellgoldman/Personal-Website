@@ -125,5 +125,5 @@ const styles = {
   MobileHeader: {
     fontFamily: 'Roboto-Bold',
     fontSize: '35px'
-  }
+  },
 }
