@@ -2,17 +2,14 @@ const backgroundColor = '#4F4F4F';
 
 export const styles = {
   outerContainer: {
+    marginTop: '85vh',
     display: 'flex',
-    backgroundColor: `${backgroundColor}`,
-  },
-  rowSpace: {
-    paddingTop: '1em',
-    flex: 1,
     backgroundColor: `${backgroundColor}`,
   },
   formContainer: {
     paddingTop: '1em',
     marginTop: '2em',
+    marginLeft: '12.5vw',
     display: 'flex',
     flexDirection: 'column',
     flex: 6,
@@ -34,7 +31,7 @@ export const styles = {
   },
   nameBox: {
     flex: 1,
-    width: '30vw',
+    width: '60vw',
     borderRadius: '5px',
     height: '2.5em',
     border: '1px solid white',
@@ -47,7 +44,7 @@ export const styles = {
   },
   emailBox: {
     flex: 1,
-    width: '30vw',
+    width: '60vw',
     borderRadius: '5px',
     height: '2.5em',
     border: '1px solid white',
@@ -60,11 +57,11 @@ export const styles = {
   },
   messageStyle: {
     flex: 1,
-    width: '50vw',
+    width: '75vw',
     borderRadius: '5px',
     height: '7em',
     border: '1px solid white',
-    marginBottom: '1.5em',
+    marginBottom: '2em',
     backgroundColor: `${backgroundColor}`,
     outline: 'none',
     paddingLeft: '10px',
@@ -73,7 +70,7 @@ export const styles = {
   },
   submitButton: {
     flex: 1,
-    width: '20vw',
+    width: '50vw',
     fontSize: '25px',
     fontFamily: 'Roboto',
     letterSpacing: '5px',
@@ -81,17 +78,9 @@ export const styles = {
     color: 'white',
     borderRadius: '10px',
     height: '60px',
-    maxWidth: '30%',
+    maxWidth: '50%',
     outline: 'none',
     border: '0px',
     marginBottom: '3em',
   },
-  logoContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    flex: 3,
-    paddingTop: '1em',
-    marginTop: '2em',
-    alignItems: 'center',
-  }
 };

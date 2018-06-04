@@ -9,6 +9,7 @@ import { MobileTitlebar } from './device/mobile/components/titlebar';
 import { MobileIntro } from './device/mobile/containers/intro';
 import { MobileAbout } from './device/mobile/containers/about';
 import { MobileProjects } from './device/mobile/containers/projects';
+import { MobileContact } from './device/mobile/containers/contact';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Media from 'react-media';
@@ -41,6 +42,7 @@ class App extends Component {
           <Fade clear><div style={styles.MobileHeader}>Projects</div></Fade>
         </div>
         <MobileProjects />
+        <MobileContact />
       </div>
     );
   }
