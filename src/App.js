@@ -15,7 +15,7 @@ import Media from 'react-media';
 import { configureAnchors } from 'react-scrollable-anchor';
 import Fade from 'react-reveal/Fade';
 
-configureAnchors({ offset: -125, scrollDuration: 500 });
+configureAnchors({ offset: -150, scrollDuration: 500 });
 
 class App extends Component {
   constructor(props) {
