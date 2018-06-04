@@ -16,7 +16,6 @@ export const styles = {
     alignItems: 'flex-start',
     marginLeft: '1.25vw',
     marginRight: '1vw',
-    zIndex: '-1',
   },
   image: {
     marginTop: '2em',

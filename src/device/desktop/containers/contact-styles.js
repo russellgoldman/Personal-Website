@@ -4,7 +4,6 @@ export const styles = {
   outerContainer: {
     display: 'flex',
     backgroundColor: `${backgroundColor}`,
-    zIndex: '0',
   },
   rowSpace: {
     paddingTop: '2em',

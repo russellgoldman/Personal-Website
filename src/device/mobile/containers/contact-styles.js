@@ -2,9 +2,10 @@ const backgroundColor = '#4F4F4F';
 
 export const styles = {
   outerContainer: {
-    marginTop: '85vh',
+    marginTop: '20vh',
     display: 'flex',
     backgroundColor: `${backgroundColor}`,
+    zIndex: '0',
   },
   formContainer: {
     paddingTop: '1em',
