@@ -6,5 +6,5 @@ export const styles = {
   },
   projectCarouselContainer: {
     paddingTop: '0.5em',
-  }
+  },
 };
