@@ -7,7 +7,7 @@ export const styles = {
     flexDirection: 'row',
     marginLeft: `${containerMarginX}vw`,
     marginRight: `${containerMarginX}vw`,
-    height: '85%'
+    height: '85%',
   },
   imageContainer: {
     display: 'flex',
@@ -15,7 +15,8 @@ export const styles = {
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
     marginLeft: '1.25vw',
-    marginRight: '1vw'
+    marginRight: '1vw',
+    zIndex: '-1',
   },
   image: {
     marginTop: '2em',
