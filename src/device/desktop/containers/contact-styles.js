@@ -6,12 +6,12 @@ export const styles = {
     backgroundColor: `${backgroundColor}`,
   },
   rowSpace: {
-    paddingTop: '1em',
+    paddingTop: '2em',
     flex: 1,
     backgroundColor: `${backgroundColor}`,
   },
   formContainer: {
-    paddingTop: '1em',
+    paddingTop: '2em',
     marginTop: '2em',
     display: 'flex',
     flexDirection: 'column',
@@ -90,7 +90,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'column',
     flex: 3,
-    paddingTop: '1em',
+    paddingTop: '2em',
     marginTop: '2em',
     alignItems: 'center',
   }
