@@ -1,7 +1,7 @@
 export const styles = {
   projectContainer: {
     marginTop: '-0.8em',
-    height: '90vh',
+    height: '80vh',
     marginBottom: '7.5em',
   },
   projectCarouselContainer: {

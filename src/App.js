@@ -11,13 +11,11 @@ import { MobileAbout } from './device/mobile/containers/about';
 import { MobileProjects } from './device/mobile/containers/projects';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
-import Media from "react-media";
+import Media from 'react-media';
 import { configureAnchors } from 'react-scrollable-anchor';
 import Fade from 'react-reveal/Fade';
 
-// Offset all anchors by -60 to account for a fixed header
-// and scroll more quickly than the default 400ms
-configureAnchors({offset: -160, scrollDuration: 500})
+configureAnchors({ offset: -125, scrollDuration: 500 });
 
 class App extends Component {
   constructor(props) {

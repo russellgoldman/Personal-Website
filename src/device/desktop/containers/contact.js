@@ -44,29 +44,24 @@ export class DesktopContact extends Component {
             </div>
           </Fade>
         </div>
-          <div style={{ backgroundColor: '#4F4F4F', paddingBottom: '1.5em' }}>
-            <Fade clear>
-              <p style={{ textAlign: 'center', fontSize: '30px', fontFamily: 'Roboto-Bold', color: 'white' }}>
-                Developed by Russell Goldman &copy;, {(new Date()).getFullYear()}
+        <div style={{ backgroundColor: '#4F4F4F', paddingBottom: '1.5em' }}>
+          <Fade clear>
+            <p style={{ textAlign: 'center', fontSize: '16px', fontFamily: 'Roboto-Bold', color: 'white' }}>
+              Developed by Russell Goldman &copy;, {(new Date()).getFullYear()}
+            </p>
+          </Fade>
+          <Fade clear>
+            <p style={{ textAlign: 'center', color: '#d1d1d1' }}>This site was made with ReactJS, Flexbox, and GitHub pages.
+              Special thanks to
+              <span>
+                <a href="https://www.gracemmaa.com/" target="_blank" rel='noopener noreferrer'
+                style={{ textDecoration: 'none', color: '#d1d1d1' }}>
+                  <b> Grace Ma </b>
+                </a>
+              </span> for her assistance in helping design UI mockups for this site.
               </p>
-            </Fade>
-            <Fade clear>
-              <p style={{ textAlign: 'center', color: '#d1d1d1' }}>This site was made with ReactJS, Flexbox, and GitHub pages.</p>
-            </Fade>
-            <div>
-              <Fade clear>
-                <p style={{ textAlign: 'center', color: '#d1d1d1' }}>
-                  Special thanks to
-                  <span>
-                    <a href="https://www.gracemmaa.com/" target="_blank" rel='noopener noreferrer'
-                    style={{ textDecoration: 'none', color: '#d1d1d1' }}>
-                      <b> Grace Ma </b>
-                    </a>
-                  </span> for her assistance in helping design UI mockups for this site.
-                </p>
-              </Fade>
-            </div>
-          </div>
+          </Fade>
+        </div>
       </div>
     );
   }
