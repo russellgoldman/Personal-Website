@@ -164,7 +164,7 @@ const styles = {
     fontSize: '35px'
   },
   interestedButton: {
-    marginTop: '4em',
+    marginTop: '6.5em',
     flex: 1,
     width: '90vw',
     marginLeft: '5vw',

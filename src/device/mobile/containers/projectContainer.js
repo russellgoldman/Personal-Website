@@ -81,9 +81,11 @@ export class MobileProjectContainer extends Component {
             {this.state.projectData[this.state.currentProject].description}
           </p>
         </Fade>
-        <div style={styles.toolsContainer}>
-          {this.renderTools()}
-        </div>
+        <Fade clear>
+          <div style={styles.toolsContainer}>
+            {this.renderTools()}
+          </div>
+        </Fade>
       </div>
     );
   }
