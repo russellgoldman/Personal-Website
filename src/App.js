@@ -26,23 +26,60 @@ class App extends Component {
         anchors: ['about', 'projects', 'contact'],
         name: 'Russell Goldman'
       },
+      contactFormShow: false,
     }
+  }
+
+
+
+  renderContactForm() {
+    const hideContactForm = () => {
+      this.toggleForm();
+    };
+
+    if (this.state.contactFormShow) {
+      return (
+        <div>
+          <ScrollableAnchor id={`top`}>
+            <MobileTitlebar name={this.state.titlebarState.name} />
+          </ScrollableAnchor>
+          <MobileContact callbackFromParent={hideContactForm}/>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <MobileTitlebar name={this.state.titlebarState.name} />
+          <MobileIntro />
+          <div style={styles.MobileHeaderContainer}>
+            <Fade clear><div style={styles.MobileHeader}>About</div></Fade>
+          </div>
+          <MobileAbout />
+          <div style={styles.MobileHeaderContainer}>
+            <Fade clear><div style={styles.MobileHeader}>Projects</div></Fade>
+          </div>
+          <MobileProjects />
+            <a href="#top" style={{ textDecoration: 'none' }}>
+              <Fade clear>
+                <button style={styles.interestedButton} onClick={() => this.toggleForm()}
+                type="submit">Interested?</button>
+              </Fade>
+            </a>
+        </div>
+      );
+    }
+  }
+
+  toggleForm() {
+    this.setState((prevState) => ({
+      contactFormShow: !prevState.contactFormShow,
+    }));
   }
 
   isMobile() {
     return (
       <div>
-        <MobileTitlebar name={this.state.titlebarState.name} />
-        <MobileIntro />
-        <div style={styles.MobileHeaderContainer}>
-          <Fade clear><div style={styles.MobileHeader}>About</div></Fade>
-        </div>
-        <MobileAbout />
-        <div style={styles.MobileHeaderContainer}>
-          <Fade clear><div style={styles.MobileHeader}>Projects</div></Fade>
-        </div>
-        <MobileProjects />
-        <MobileContact />
+        {this.renderContactForm()}
       </div>
     );
   }
@@ -125,5 +162,22 @@ const styles = {
   MobileHeader: {
     fontFamily: 'Roboto-Bold',
     fontSize: '35px'
+  },
+  interestedButton: {
+    marginTop: '4em',
+    flex: 1,
+    width: '90vw',
+    marginLeft: '5vw',
+    marginRight: '5vw',
+    fontSize: '40px',
+    fontFamily: 'Roboto',
+    borderRadius: '10px',
+    letterSpacing: '5px',
+    backgroundColor: `#4F4F4F`,
+    color: 'white',
+    height: '80px',
+    outline: 'none',
+    border: '0px',
+    marginBottom: '1em',
   },
 }

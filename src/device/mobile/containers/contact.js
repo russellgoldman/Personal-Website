@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { styles } from './contact-styles';
 import { privateData } from '../../../data/privateData';
 import Fade from 'react-reveal/Fade';
+import { closeX } from '../../../images/';
 
 export class MobileContact extends Component {
   constructor(props) {
@@ -16,9 +17,20 @@ export class MobileContact extends Component {
     };
   }
 
+  hideForm() {
+    this.props.callbackFromParent();
+  }
+
   render() {
     return (
       <div>
+        <div style={styles.closeContainer}>
+          <Fade clear>
+            <a href="#home" style={{ textDecoration: 'none' }}>
+              <img src={closeX} alt="close" style={styles.closeX} onClick={() => this.hideForm()}/>
+            </a>
+          </Fade>
+        </div>
         <div style={styles.outerContainer}>
           <div style={styles.formContainer}>
             <Fade clear><p style={styles.interestedText}>Interested?</p></Fade>

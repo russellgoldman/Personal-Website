@@ -1,16 +1,25 @@
 const backgroundColor = '#4F4F4F';
 
 export const styles = {
+  closeContainer: {
+    paddingTop: '2.5em',
+    display: 'flex',
+    flexDirection: 'row',
+    backgroundColor: `${backgroundColor}`,
+    justifyContent: 'flex-end',
+    paddingRight: '7vw',
+  },
+  closeX: {
+    height: '30px',
+    width: '30px',
+  },
   outerContainer: {
-    marginTop: '20vh',
     display: 'flex',
     backgroundColor: `${backgroundColor}`,
-    zIndex: '0',
   },
   formContainer: {
-    paddingTop: '1em',
-    marginTop: '2em',
-    marginLeft: '12.5vw',
+    marginTop: '3em',
+    marginLeft: '10vw',
     display: 'flex',
     flexDirection: 'column',
     flex: 6,
