@@ -51,7 +51,7 @@ export class DesktopContact extends Component {
             </p>
           </Fade>
           <Fade clear>
-            <p style={{ textAlign: 'center', color: '#d1d1d1' }}>This site was made with ReactJS, Flexbox, and GitHub pages.
+            <p style={{ textAlign: 'center', color: '#d1d1d1' }}>This site was made with ReactJS and Flexbox, as well as hosted with GitHub pages.
               Special thanks to
               <span>
                 <a href="https://www.gracemmaa.com/" target="_blank" rel='noopener noreferrer'
