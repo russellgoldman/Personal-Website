@@ -15,9 +15,11 @@ import {
   redux,
   html,
   css,
+  bootstrap,
   sass,
   ios,
-  swift
+  swift,
+  tensorflow,
 } from './../images/toolkit-icons';
 
 export const ToolkitIcons = [
@@ -103,17 +105,22 @@ export const ToolkitIcons = [
   },
   {
     id: '16',
-    name: 'Sass',
+    name: 'Bootstrap',
+    imgPath: `${bootstrap}`
+  },
+  {
+    id: '17',
+    name: 'Sass (learning in progress)',
     imgPath: `${sass}`
   },
-  // {
-  //   id: '17',
-  //   name: 'iOS',
-  //   imgPath: `${ios}`
-  // },
-  // {
-  //   id: '18',
-  //   name: 'Swift',
-  //   imgPath: `${swift}`
-  // },
+  {
+    id: '18',
+    name: 'iOS (learning in progress)',
+    imgPath: `${ios}`
+  },
+  {
+    id: '19',
+    name: 'Swift (learning in progress)',
+    imgPath: `${swift}`
+  },
 ];

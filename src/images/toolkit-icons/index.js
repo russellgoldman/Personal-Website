@@ -13,10 +13,12 @@ import django from './django.svg';
 import redux from './redux.svg';
 import html from './html.svg';
 import css from './css.svg';
+import bootstrap from './bootstrap.svg';
 import sass from './sass.svg';
 import reactnative from './reactnative.png';
 import ios from './ios.svg';
 import swift from './swift.svg';
+import tensorflow from './tensorflow.svg';
 
 export {
   android,
@@ -34,8 +36,10 @@ export {
   redux,
   html,
   css,
+  bootstrap,
   sass,
   reactnative,
   ios,
-  swift
+  swift,
+  tensorflow
 };

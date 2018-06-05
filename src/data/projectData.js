@@ -2,9 +2,11 @@ import {
   gelatoBanner,
   novaBanner,
   rgBanner,
+  comingSoonBanner,
   gelato,
   nova,
-  rg
+  rg,
+  comingSoon
 } from './../images/projects';
 
 export const projectData = [
@@ -27,7 +29,7 @@ export const projectData = [
     id: 1,
     name: 'Nova',
     title: 'Nova - AI Mental Health Chatbot',
-    description: 'Gelato is a ReactJS web app that allows teachers to put together education content such as quizzes and other practice material into a dashboard which the app then uses to populate questions with a game. The student section functions like an RPG game based on the content the teacher has made for their class. It was built at the Equithon Hackathon hosted at the University of Waterloo in a team of four.',
+    description: 'Nova is an Artificial Intelligence chatbot designed to act as an intelligent and non-judgemental mental health assistant with the ability to redirect students to appropriate on-campus resources at their respective university. It was created in response to the recent increase in suicide attempts at various universities across Ontario, and was developed in a team of 4 at the StarterHacks hackathon hosted at the University of Waterloo.',
     github: 'https://github.com/russellgoldman/Nova',
     bannerImgPath: `${novaBanner}`,
     profileImgPath: `${nova}`,
@@ -37,7 +39,7 @@ export const projectData = [
     id: 2,
     name: 'Portfolio Site',
     title: 'Portfolio Site',
-    description: 'Gelato is a ReactJS web app that allows teachers to put together education content such as quizzes and other practice material into a dashboard which the app then uses to populate questions with a game. The student section functions like an RPG game based on the content the teacher has made for their class. It was built at the Equithon Hackathon hosted at the University of Waterloo in a team of four.',
+    description: `This portfolio site (which you are currently reading) was built as 1 of 3 non-school related, independent software side-projects. The aim of this website was tell a bit more about who I am as a person, my software related accomplishments, and to display my front-end web development skills firsthand. If you're interested in learning more, feel free to shoot me a message in the Contact form located at the bottom of this site!`,
     github: 'https://github.com/russellgoldman/Personal-Website',
     bannerImgPath: `${rgBanner}`,
     profileImgPath: `${rg}`,
@@ -50,12 +52,12 @@ export const projectData = [
   },
   {
     id: 3,
-    name: 'React Native App',
-    title: 'Scribble - React Native App',
-    description: 'Gelato is a ReactJS web app that allows teachers to put together education content such as quizzes and other practice material into a dashboard which the app then uses to populate questions with a game. The student section functions like an RPG game based on the content the teacher has made for their class. It was built at the Equithon Hackathon hosted at the University of Waterloo in a team of four.',
-    github: 'https://github.com/russellgoldman/Project-Gelato',
-    bannerImgPath: `${novaBanner}`,
-    profileImgPath: `${gelato}`,
+    name: 'Coming Soon',
+    title: 'Coming Soon',
+    description: '',
+    github: '',
+    bannerImgPath: `${comingSoonBanner}`,
+    profileImgPath: `${comingSoon}`,
     toolsUsed: [
       'JavaScript',
       'React Native',
@@ -67,122 +69,60 @@ export const projectData = [
   },
   {
     id: 4,
-    name: 'Project 4',
-    title: 'Gelato - Gamified Education Tool',
+    name: 'Coming Soon',
+    title: 'Coming Soon',
     description: '',
-    github: 'https://github.com/russellgoldman/Project-Gelato',
-    bannerImgPath: `${novaBanner}`,
-    profileImgPath: `${gelato}`,
+    github: '',
+    bannerImgPath: `${comingSoonBanner}`,
+    profileImgPath: `${comingSoon}`,
     toolsUsed: [
       'JavaScript',
       'ReactJS',
-      'HTML',
-      'CSS'
+      'Redux',
+      'NodeJS',
+      'MongoDB',
+      'Mocha',
     ]
   },
   {
     id: 5,
-    name: 'Project 5',
-    title: 'Nova - AI Mental Health Chatbot',
+    name: 'Coming Soon',
+    title: 'Coming Soon',
     description: '',
-    github: 'https://github.com/russellgoldman/Project-Gelato',
-    bannerImgPath: `${novaBanner}`,
-    profileImgPath: `${gelato}`,
+    github: '',
+    bannerImgPath: `${comingSoonBanner}`,
+    profileImgPath: `${comingSoon}`,
     toolsUsed: [
-      'JavaScript',
-      'ReactJS',
+      'Django',
       'HTML',
-      'CSS'
+      'CSS',
     ]
   },
   {
     id: 6,
-    name: 'Project 6',
-    title: 'Portfolio Site',
+    name: 'Coming Soon',
+    title: 'Coming Soon',
     description: '',
-    github: 'https://github.com/russellgoldman/Project-Gelato',
-    bannerImgPath: `${novaBanner}`,
-    profileImgPath: `${gelato}`,
+    github: '',
+    bannerImgPath: `${comingSoonBanner}`,
+    profileImgPath: `${comingSoon}`,
     toolsUsed: [
-      'JavaScript',
-      'ReactJS',
-      'HTML',
-      'CSS'
+      'Swift (learning in progress)',
+      'iOS (learning in progress)',
+      'NodeJS',
+      'MongoDB',
     ]
   },
   {
     id: 7,
-    name: 'Project 7',
-    title: 'Scribble - React Native Application',
+    name: 'Coming Soon',
+    title: 'Coming Soon',
     description: '',
-    github: 'https://github.com/russellgoldman/Project-Gelato',
-    bannerImgPath: `${novaBanner}`,
-    profileImgPath: `${gelato}`,
+    github: '',
+    bannerImgPath: `${comingSoonBanner}`,
+    profileImgPath: `${comingSoon}`,
     toolsUsed: [
       'JavaScript',
-      'ReactJS',
-      'HTML',
-      'CSS'
     ]
   },
-  {
-    id: 8,
-    name: 'Project 8',
-    title: 'Gelato - Gamified Education Tool',
-    description: '',
-    github: 'https://github.com/russellgoldman/Project-Gelato',
-    bannerImgPath: `${novaBanner}`,
-    profileImgPath: `${gelato}`,
-    toolsUsed: [
-      'JavaScript',
-      'ReactJS',
-      'HTML',
-      'CSS'
-    ]
-  },
-  {
-    id: 9,
-    name: 'Project 9',
-    title: 'Nova - AI Mental Health Chatbot',
-    description: '',
-    github: 'https://github.com/russellgoldman/Project-Gelato',
-    bannerImgPath: `${novaBanner}`,
-    profileImgPath: `${gelato}`,
-    toolsUsed: [
-      'JavaScript',
-      'ReactJS',
-      'HTML',
-      'CSS'
-    ]
-  },
-  {
-    id: 10,
-    name: 'Project 10',
-    title: 'Portfolio Site',
-    description: '',
-    github: 'https://github.com/russellgoldman/Project-Gelato',
-    bannerImgPath: `${novaBanner}`,
-    profileImgPath: `${gelato}`,
-    toolsUsed: [
-      'JavaScript',
-      'ReactJS',
-      'HTML',
-      'CSS'
-    ]
-  },
-  {
-    id: 11,
-    name: 'Project 11',
-    title: 'Scribble - React Native Application',
-    description: '',
-    github: 'https://github.com/russellgoldman/Project-Gelato',
-    bannerImgPath: `${novaBanner}`,
-    profileImgPath: `${gelato}`,
-    toolsUsed: [
-      'JavaScript',
-      'ReactJS',
-      'HTML',
-      'CSS'
-    ]
-  }
 ];
