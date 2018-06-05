@@ -49,7 +49,7 @@ export class MobileContact extends Component {
             </Fade>
           </div>
         </div>
-        <div style={{ backgroundColor: '#4F4F4F', paddingBottom: '1.5em' }}>
+        <div style={{ backgroundColor: '#4F4F4F', paddingBottom: '1.5em', paddingTop: '0.1em', }}>
           <Fade clear>
             <p style={{ textAlign: 'center', fontSize: '16px', fontFamily: 'Roboto-Bold', color: 'white',
             marginLeft: '5vw', marginRight: '5vw' }}>

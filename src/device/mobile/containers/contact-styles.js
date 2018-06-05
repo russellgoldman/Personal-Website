@@ -3,6 +3,7 @@ const backgroundColor = '#4F4F4F';
 export const styles = {
   closeContainer: {
     paddingTop: '2.5em',
+    paddingBottom: '0.1em',
     display: 'flex',
     flexDirection: 'row',
     backgroundColor: `${backgroundColor}`,
