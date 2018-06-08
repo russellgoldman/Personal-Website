@@ -29,7 +29,7 @@ export const projectData = [
     id: 1,
     name: 'Nova',
     title: 'Nova - AI Mental Health Chatbot',
-    description: 'Nova is an Artificial Intelligence chatbot designed to act as an intelligent and non-judgemental mental health assistant with the ability to redirect students to appropriate on-campus resources at their respective university. It was created in response to the recent increase in suicide attempts at various universities across Ontario, and was developed in a team of 4 at the StarterHacks hackathon hosted at the University of Waterloo.',
+    description: 'Nova is an artificially intelligent chatbot designed to act as an intelligent and non-judgemental mental health assistant with the ability to redirect students to appropriate on-campus resources at their respective university. It was created in response to the recent increase in suicide attempts at various universities across Ontario, and was developed in a team of 4 at the StarterHacks hackathon hosted at the University of Waterloo.',
     github: 'https://github.com/russellgoldman/Nova',
     bannerImgPath: `${novaBanner}`,
     profileImgPath: `${nova}`,
