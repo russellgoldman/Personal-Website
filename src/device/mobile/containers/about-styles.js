@@ -49,6 +49,8 @@ export const styles = {
     backgroundColor: '#00ABCD',
     color: 'white',
     borderRadius: '10px',
+    border: '0px',
+    outline: 'none',
     justifyContent: 'center',
     height: '60px'
   }

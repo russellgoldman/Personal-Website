@@ -76,7 +76,8 @@ export class DesktopAbout extends Component {
 
   renderResponsiveButton() {
     return (
-      <div style={styles.linkContainer}>
+      <a href="https://drive.google.com/open?id=1pVsK5KqG6EgkJEE_ylNuQfWAGOZlGiHe" target="_blank"
+        rel='noopener noreferrer' style={{ textDecoration: 'none', outline: 'none', }}>
         <Media
           query={{ maxWidth: 1300 }}
           render={() =>
@@ -95,7 +96,7 @@ export class DesktopAbout extends Component {
             <button style={styles.buttonLarge}>RESUME</button>
           }
         />
-      </div>
+      </a>
     );
   }
 
@@ -109,11 +110,8 @@ export class DesktopAbout extends Component {
             </div>
             <div style={styles.bioContainer}>
               <Fade clear>{this.renderResponsiveText()}</Fade>
-              <div className="animated fadeIn">
-                <a href="https://drive.google.com/open?id=1pVsK5KqG6EgkJEE_ylNuQfWAGOZlGiHe" target="_blank"
-                  rel='noopener noreferrer' style={styles.linkContainer}>
-                  <Fade clear>{this.renderResponsiveButton()}</Fade>
-                </a>
+              <div className="animated fadeIn" style={styles.linkContainer}>
+                <Fade clear>{this.renderResponsiveButton()}</Fade>
               </div>
             </div>
           </div>
