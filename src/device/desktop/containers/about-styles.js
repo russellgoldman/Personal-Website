@@ -81,7 +81,6 @@ export const styles = {
     height: '40px',
     maxWidth: '25%',
     outline: 'none',
-    marginTop: '1em'
   },
   buttonMedium: {
     fontSize: '22px',
@@ -94,7 +93,6 @@ export const styles = {
     height: '45px',
     maxWidth: '25%',
     outline: 'none',
-    marginTop: '1.25em'
   },
   buttonLarge: {
     fontSize: '30px',
@@ -107,7 +105,6 @@ export const styles = {
     height: '60px',
     maxWidth: '30%',
     outline: 'none',
-    marginTop: '1.25em'
   },
   linkContainer: {
     display: 'flex',
@@ -116,5 +113,6 @@ export const styles = {
     textDecoration: 'none',
     justifyContent: 'center',
     alignItems: 'center',
-  }
+    marginTop: '1.25em',
+  },
 };
