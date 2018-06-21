@@ -123,4 +123,9 @@ export const ToolkitIcons = [
     name: 'Swift (learning in progress)',
     imgPath: `${swift}`
   },
+  {
+    id: '20',
+    name: 'Tensorflow (learning in progress)',
+    imgPath: `${tensorflow}`
+  },
 ];
