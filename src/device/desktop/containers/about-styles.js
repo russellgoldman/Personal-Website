@@ -118,6 +118,6 @@ export const styles = {
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '1.25em',
+    marginTop: '1.75em',
   },
 };

@@ -13,12 +13,12 @@ export class DesktopAbout extends Component {
       icons: ToolkitIcons,
       maxRender: 6,
       text: `Russell Goldman is a Computer Science undergrad going into his 3rd year at Laurier.
-      During his spare time, he volunteers with a local high school robotics team, associates with
-      an international fraternity, and improves upon his programming skills by participating
-      in hackathons and developing open-source software. He is currently dedicating a large amount
-      of his free time to mastering React (JS / Native) and NodeJS. He hopes to provide value at a software firm
-      during the summer of 2019.`
-    }
+      During his spare time, he volunteers by organizing and mentoring hackathons,
+      associates with an international fraternity, and improves upon his programming skills by
+      participating in hackathons and developing open-source software. He is currently
+      dedicating a large amount of his free time to mastering React (JS / Native) and NodeJS.
+      He hopes to provide value at a software firm during the summer of 2019.`,
+    };
   }
 
   renderResponsiveImage() {
