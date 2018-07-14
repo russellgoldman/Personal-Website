@@ -87,5 +87,5 @@ export const styles = {
     textAlign: 'center',
     letterSpacing: '1px',
     textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black'
-  }
+  },
 };
