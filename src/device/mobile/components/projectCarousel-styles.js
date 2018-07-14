@@ -33,9 +33,9 @@ export const styles = {
     alignItems: 'center'
   },
   leftArrow: {
-    width: '35px',
-    height: '35px',
-    marginLeft: '-3.5em',
+    width: '25px',
+    height: '25px',
+    marginLeft: '-2.75em',
     opacity: '0.85',
     borderRadius: '50%'
   },
@@ -46,9 +46,9 @@ export const styles = {
     justifyContent: 'flex-end',
   },
   rightArrow: {
-    width: '40px',
-    height: '40px',
-    marginRight: '-3.5em',
+    width: '25px',
+    height: '25px',
+    marginRight: '-2.75em',
     opacity: '0.85',
     borderRadius: '50%'
   },
@@ -66,13 +66,13 @@ export const styles = {
     height: '11vw',
     width: '35vw',
     marginTop: '0.2em',
-    border: `6px solid black`,
+    border: `3px solid black`,
   },
   bannerSelected: {
     height: '11vw',
     width: '35vw',
     marginTop: '0.2em',
-    border: `6px solid ${selectedAccent}`
+    border: `3px solid ${selectedAccent}`
   },
   bannerTextContainer: {
     position: 'absolute',
@@ -82,7 +82,7 @@ export const styles = {
   },
   bannerText: {
     fontFamily: 'Roboto-Bold',
-    fontSize: '3.25vw',
+    fontSize: '3.75vw',
     color: 'white',
     textAlign: 'center',
     letterSpacing: '1px',
