@@ -2,10 +2,12 @@ import {
   gelatoBanner,
   novaBanner,
   rgBanner,
+  coursehawkBanner,
   comingSoonBanner,
   gelato,
   nova,
   rg,
+  coursehawk,
   comingSoon
 } from './../images/projects';
 
@@ -52,12 +54,12 @@ export const projectData = [
   },
   {
     id: 3,
-    name: 'Coming Soon',
-    title: 'Coming Soon',
+    name: 'CourseHawk',
+    title: 'CourseHawk',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis magna, laoreet a est id, cursus condimentum quam. Praesent a dolor lectus. Nullam eget est massa. Aenean interdum, felis non finibus tempus, sem libero tempus ex, eget congue justo diam sit amet ipsum. In malesuada mollis ante, a lobortis neque ornare non. Quisque volutpat diam ligula, id sollicitudin mauris mollis sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quam.',
     github: '',
-    bannerImgPath: `${comingSoonBanner}`,
-    profileImgPath: `${comingSoon}`,
+    bannerImgPath: `${coursehawkBanner}`,
+    profileImgPath: `${coursehawk}`,
     toolsUsed: [
       'JavaScript',
       'React Native',
