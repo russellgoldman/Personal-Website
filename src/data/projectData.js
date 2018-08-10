@@ -2,10 +2,12 @@ import {
   gelatoBanner,
   novaBanner,
   rgBanner,
+  coursehawkBanner,
   comingSoonBanner,
   gelato,
   nova,
   rg,
+  coursehawk,
   comingSoon
 } from './../images/projects';
 
@@ -52,19 +54,19 @@ export const projectData = [
   },
   {
     id: 3,
-    name: 'Coming Soon',
-    title: 'Coming Soon',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent felis magna, laoreet a est id, cursus condimentum quam. Praesent a dolor lectus. Nullam eget est massa. Aenean interdum, felis non finibus tempus, sem libero tempus ex, eget congue justo diam sit amet ipsum. In malesuada mollis ante, a lobortis neque ornare non. Quisque volutpat diam ligula, id sollicitudin mauris mollis sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quam.',
-    github: '',
-    bannerImgPath: `${comingSoonBanner}`,
-    profileImgPath: `${comingSoon}`,
+    name: 'CourseHawk',
+    title: 'CourseHawk',
+    description: `CourseHawk is a React Native mobile application that makes course search effortless for students at Wilfrid Laurier University. In response to a lack of better alternatives to the school's academic calendar, CourseHawk was born. The course data for the app is fetched from the original source using a custom built Python web scraper to then be exported for use in the app. Currently, the app allows users to view by departments and search by course codes. Future features include user ratings, advanced filters, and wishlists.`,
+    github: 'https://github.com/russellgoldman/CourseHawk',
+    bannerImgPath: `${coursehawkBanner}`,
+    profileImgPath: `${coursehawk}`,
     toolsUsed: [
       'JavaScript',
       'React Native',
       'Redux',
       'NodeJS',
       'MongoDB',
-      'Mocha',
+      'Python',
     ]
   },
   {
