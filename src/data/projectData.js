@@ -56,7 +56,7 @@ export const projectData = [
     id: 3,
     name: 'CourseHawk',
     title: 'CourseHawk',
-    description: `CourseHawk is a React Native mobile application that makes course search effortless for students at Wilfrid Laurier University. In response to a lack of better alternatives to the school's academic calendar, CourseHawk was born. The course data for the app is fetched from the original source using a custom built Python web scraper to then be exported for use in the app. Currently, the app allows users to view by departments and search by course codes. Future features include user ratings, advanced filters, and wishlists.`,
+    description: `CourseHawk is a React Native mobile application available on both iOS and Android, that makes course search effortless for students at Wilfrid Laurier University. In response to a lack of better alternatives to the school's academic calendar, CourseHawk was born. The course data for the app is fetched from the original source using a custom built Python web scraper to then be exported for use in the app. Currently, the app allows users to view by departments and search by course codes. Future features include user ratings, advanced filters, and wishlists.`,
     github: 'https://github.com/russellgoldman/CourseHawk',
     bannerImgPath: `${coursehawkBanner}`,
     profileImgPath: `${coursehawk}`,
