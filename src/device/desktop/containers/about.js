@@ -76,7 +76,7 @@ export class DesktopAbout extends Component {
 
   renderResponsiveButton() {
     return (
-      <a href="https://drive.google.com/file/d/1YOVlQ84rBajrAvTbTgKsR7KkmfYH6gYd/view?usp=sharing" target="_blank"
+      <a href="https://drive.google.com/file/d/1el4Me9A77uO29Olc_cZzQYHVCjEimimq/view?usp=sharing" target="_blank"
         rel='noopener noreferrer' style={{ textDecoration: 'none', outline: 'none', }}>
         <Media
           query={{ maxWidth: 1300 }}
