@@ -11,6 +11,7 @@ import react from './react.svg';
 import sql from './sql.svg';
 import django from './django.svg';
 import redux from './redux.svg';
+import flask from './flask.svg';
 import html from './html.svg';
 import css from './css.svg';
 import bootstrap from './bootstrap.svg';
@@ -34,6 +35,7 @@ export {
   sql,
   django,
   redux,
+  flask,
   html,
   css,
   bootstrap,

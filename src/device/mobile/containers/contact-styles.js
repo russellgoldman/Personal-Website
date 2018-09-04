@@ -19,11 +19,11 @@ export const styles = {
     backgroundColor: `${backgroundColor}`,
   },
   formContainer: {
-    marginTop: '3em',
+    marginTop: '5em',
     marginLeft: '10vw',
     display: 'flex',
     flexDirection: 'column',
-    flex: 6,
+    flex: 1,
     backgroundColor: `${backgroundColor}`,
     color: 'white',
   },

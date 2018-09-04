@@ -10,12 +10,12 @@ export class MobileAbout extends Component {
     this.state = {
       icons: ToolkitIcons,
       maxRender: 3,
-      text: `Russell Goldman is a Computer Science undergrad going into his 3rd year at Laurier.
-      During his spare time, he volunteers by organizing and mentoring hackathons,
-      associates with an international fraternity, and improves upon his programming skills by
-      participating in hackathons and developing open-source software. He is currently
-      dedicating a large amount of his free time to mastering React (JS / Native) and NodeJS.
-      He hopes to provide value at a software firm during the summer of 2019.`,
+      text: `Russell Goldman is a Computer Science undergrad in his 3rd year at Laurier.
+        During his spare time, he volunteers by organizing and mentoring hackathons,
+        associates with an international fraternity, and improves upon his programming skills by
+        participating in hackathons and developing open-source software. He is proficient in
+        React (JS / Native) and is working to expand his Node.js skills in the future.
+        He hopes to provide value at a software firm during the summer of 2019.`,
     };
   }
 
@@ -36,7 +36,7 @@ export class MobileAbout extends Component {
         </Fade>
         <Fade clear>
           <div style={styles.buttonContainer}>
-            <a href="https://drive.google.com/file/d/1YOVlQ84rBajrAvTbTgKsR7KkmfYH6gYd/view?usp=sharing" target="_blank"
+            <a href="https://drive.google.com/file/d/1FexJM5kPre-12H-R1J6zwiYDGkspEPnG/view?usp=sharing" target="_blank"
               rel='noopener noreferrer' style={styles.linkContainer}>
               <button style={styles.button}>RESUME</button>
             </a>

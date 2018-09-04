@@ -13,6 +13,7 @@ import {
   sql,
   django,
   redux,
+  flask,
   html,
   css,
   bootstrap,
@@ -40,7 +41,7 @@ export const ToolkitIcons = [
   },
   {
     id: '3',
-    name: 'NodeJS',
+    name: 'Node.js',
     imgPath: `${node}`
   },
   {
@@ -75,57 +76,57 @@ export const ToolkitIcons = [
   },
   {
     id: '10',
+    name: 'Flask',
+    imgPath: `${flask}`
+  },
+  {
+    id: '11',
     name: 'Android',
     imgPath: `${android}`
   },
   {
-    id: '11',
+    id: '12',
     name: 'Django',
     imgPath: `${django}`
   },
   {
-    id: '12',
+    id: '13',
     name: 'SQL',
     imgPath: `${sql}`
   },
   {
-    id: '13',
+    id: '14',
     name: 'Mocha',
     imgPath: `${mocha}`
   },
   {
-    id: '14',
+    id: '15',
     name: 'HTML',
     imgPath: `${html}`
   },
   {
-    id: '15',
+    id: '16',
     name: 'CSS',
     imgPath: `${css}`
   },
   {
-    id: '16',
+    id: '17',
     name: 'Bootstrap',
     imgPath: `${bootstrap}`
   },
   {
-    id: '17',
+    id: '18',
     name: 'Sass (learning in progress)',
     imgPath: `${sass}`
   },
   {
-    id: '18',
+    id: '19',
     name: 'iOS (learning in progress)',
     imgPath: `${ios}`
   },
   {
-    id: '19',
+    id: '20',
     name: 'Swift (learning in progress)',
     imgPath: `${swift}`
-  },
-  {
-    id: '20',
-    name: 'Tensorflow (learning in progress)',
-    imgPath: `${tensorflow}`
   },
 ];
