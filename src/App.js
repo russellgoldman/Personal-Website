@@ -56,7 +56,7 @@ class App extends Component {
             <Fade clear><div style={styles.MobileHeader}>Projects</div></Fade>
           </div>
           <MobileProjects />
-          <div style={{ marginBottom: '50px' }}/>
+          <div style={{ marginBottom: '150px' }}/>
         </div>
       );
     }
