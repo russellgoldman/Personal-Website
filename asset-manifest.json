@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.65027555.css",
   "main.css.map": "static/css/main.65027555.css.map",
-  "main.js": "static/js/main.bc443090.js",
-  "main.js.map": "static/js/main.bc443090.js.map",
+  "main.js": "static/js/main.a582d6b0.js",
+  "main.js.map": "static/js/main.a582d6b0.js.map",
   "static/media/android.svg": "static/media/android.9178ad6e.svg",
   "static/media/beerBuddy.png": "static/media/beerBuddy.a1f109d6.png",
   "static/media/bioImage.jpg": "static/media/bioImage.3d26d781.jpg",
@@ -10,6 +10,7 @@
   "static/media/c.svg": "static/media/c.65aa0b06.svg",
   "static/media/careWear.png": "static/media/careWear.84ce1515.png",
   "static/media/closeX.svg": "static/media/closeX.aa3e744d.svg",
+  "static/media/contact.svg": "static/media/contact.9a554dd1.svg",
   "static/media/coursehawk.png": "static/media/coursehawk.3429dfa5.png",
   "static/media/css.svg": "static/media/css.15678ffe.svg",
   "static/media/django.svg": "static/media/django.bcf22073.svg",
