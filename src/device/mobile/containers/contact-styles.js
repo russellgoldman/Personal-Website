@@ -19,7 +19,7 @@ export const styles = {
     backgroundColor: `${backgroundColor}`,
   },
   formContainer: {
-    marginTop: '5em',
+    marginTop: '2.5em',
     marginLeft: '10vw',
     display: 'flex',
     flexDirection: 'column',

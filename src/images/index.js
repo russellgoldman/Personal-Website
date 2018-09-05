@@ -4,6 +4,7 @@ import leftArrow from './left-arrow.svg';
 import bioImage from './bioImage.jpg';
 import websiteLogoWhite from './website-logo-white.png';
 import closeX from './closeX.svg';
+import contact from './contact.svg';
 
 export {
   websiteLogo,
@@ -12,4 +13,5 @@ export {
   bioImage,
   websiteLogoWhite,
   closeX,
+  contact,
 };

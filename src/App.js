@@ -33,23 +33,20 @@ class App extends Component {
 
 
   renderContactForm() {
-    const hideContactForm = () => {
+    const toggleContactForm = () => {
       this.toggleForm();
     };
 
     if (this.state.contactFormShow) {
       return (
         <div>
-          <ScrollableAnchor id={`top`}>
-            <MobileTitlebar name={this.state.titlebarState.name} />
-          </ScrollableAnchor>
-          <MobileContact callbackFromParent={hideContactForm}/>
+          <MobileContact callbackFromParent={toggleContactForm}/>
         </div>
       );
     } else {
       return (
         <div>
-          <MobileTitlebar name={this.state.titlebarState.name} />
+          <MobileTitlebar name={this.state.titlebarState.name} callbackFromParent={toggleContactForm} />
           <MobileIntro />
           <div style={styles.MobileHeaderContainer}>
             <Fade clear><div style={styles.MobileHeader}>About</div></Fade>
@@ -59,12 +56,7 @@ class App extends Component {
             <Fade clear><div style={styles.MobileHeader}>Projects</div></Fade>
           </div>
           <MobileProjects />
-            <a href="#top" style={{ textDecoration: 'none' }}>
-              <Fade clear>
-                <button style={styles.interestedButton} onClick={() => this.toggleForm()}
-                type="submit">Interested?</button>
-              </Fade>
-            </a>
+          <div style={{ marginBottom: '50px' }}/>
         </div>
       );
     }
@@ -164,7 +156,7 @@ const styles = {
     fontSize: '35px'
   },
   interestedButton: {
-    marginTop: '0.5em',
+    marginTop: '10px',
     flex: 1,
     width: '90vw',
     marginLeft: '5vw',

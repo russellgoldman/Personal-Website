@@ -17,7 +17,7 @@ export const styles = {
   },
   nameContainer: {
     display: 'flex',
-    flex: 4,
+    flex: 8,
     alignItems: 'center',
     marginTop: '2px',
     marginLeft: '5vw'
@@ -28,7 +28,7 @@ export const styles = {
     alignItems: 'center',
     marginBottom: '2px',
     justifyContent: 'flex-end',
-    marginRight: '10vw'
+    marginRight: '5vw'
   },
   logo: {
     width: '30px',
