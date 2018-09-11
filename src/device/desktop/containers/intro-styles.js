@@ -44,11 +44,14 @@ export const styles = {
   iconsContainer: {
     flex: 3.5,
     justifyContent: 'center',
-    marginTop: '5px'
+    marginTop: '5px',
+  },
+  iconContainer: {
+    //
   },
   icon: {
     width: '55px',
     height: '55px',
-    marginRight: '40px'
-  }
+    marginRight: '40px',
+  },
 };

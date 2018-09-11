@@ -33,13 +33,16 @@ export class DesktopIntro extends Component {
             </p>
           </div>
           <div style={styles.iconsContainer} className="animated slideInUp">
-            <a href="https://www.linkedin.com/in/russell-goldman-35483986/" target="_blank" rel='noopener noreferrer'>
+            <a href="https://www.linkedin.com/in/russell-goldman-35483986/" target="_blank"
+              rel='noopener noreferrer' style={styles.iconContainer}>
               <HoverImage src={linkedin} hoverSrc={linkedinHover} style={styles.icon} />
             </a>
-            <a href="https://github.com/russellgoldman" target="_blank" rel='noopener noreferrer'>
+            <a href="https://github.com/russellgoldman" target="_blank"
+              rel='noopener noreferrer' style={styles.iconContainer}>
               <HoverImage src={github} hoverSrc={githubHover} style={styles.icon} />
             </a>
-            <a href="https://medium.com/@russellgoldman1" target="_blank" rel='noopener noreferrer'>
+            <a href="https://medium.com/@russellgoldman1" target="_blank"
+              rel='noopener noreferrer' style={styles.iconContainer}>
               <HoverImage src={medium} hoverSrc={mediumHover} style={styles.icon} />
             </a>
           </div>
