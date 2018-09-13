@@ -81,7 +81,8 @@ export const styles = {
     width: '100%',
   },
   bannerText: {
-    fontFamily: 'Roboto-Bold',
+    fontFamily: 'Roboto',
+    fontWeight: 'bold',
     fontSize: '1.5vw',
     color: 'white',
     textAlign: 'center',

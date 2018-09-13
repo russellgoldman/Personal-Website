@@ -28,7 +28,9 @@ export const styles = {
   },
   labelStyle: {
     flex: 1,
-    fontFamily: 'Roboto-Light',
+    fontFamily: 'Roboto',
+    fontWeight: '100',
+    fontStyle: 'normal',
     fontSize: '25px',
     marginBottom: '0.5em',
   },

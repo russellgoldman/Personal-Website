@@ -40,10 +40,12 @@ export const styles = {
   description: {
     marginTop: '-0.5em',
     flex: 1,
-    fontFamily: 'Roboto-Light',
+    fontFamily: 'Roboto',
+    fontWeight: '100',
+    fontStyle: 'normal',
     fontSize: '20px',
     lineHeight: 2,
-    marginBottom: '2em'
+    marginBottom: '2em',
   },
   toolsContainer: {
     marginTop: '-1em',

@@ -148,12 +148,14 @@ const styles = {
     borderBottom: '3px solid black'
   },
   DesktopHeader: {
-    fontFamily: 'Roboto-Bold',
-    fontSize: '40px'
+    fontFamily: 'Roboto',
+    fontSize: '40px',
+    fontWeight: 'bold',
   },
   MobileHeader: {
-    fontFamily: 'Roboto-Bold',
-    fontSize: '35px'
+    fontFamily: 'Roboto',
+    fontSize: '35px',
+    fontWeight: 'bold',
   },
   interestedButton: {
     marginTop: '10px',

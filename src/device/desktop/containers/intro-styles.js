@@ -29,8 +29,9 @@ export const styles = {
     marginBottom: '1px'
   },
   titleAccent: {
-    fontFamily: 'Roboto-Bold',
-    color: `${titleAccent}`
+    fontFamily: 'Roboto',
+    color: `${titleAccent}`,
+    fontWeight: 'bold',
   },
   subtitleContainer: {
     flex: 6,

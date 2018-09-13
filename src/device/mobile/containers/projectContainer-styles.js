@@ -32,7 +32,9 @@ export const styles = {
   description: {
     marginTop: '0em',
     flex: 1,
-    fontFamily: 'Roboto-Light',
+    fontFamily: 'Roboto',
+    fontWeight: '100',
+    fontStyle: 'normal',
     fontSize: '16px',
     lineHeight: 2.5,
     marginBottom: '2.5em',

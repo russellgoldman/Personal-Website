@@ -41,16 +41,20 @@ export const styles = {
     marginLeft: '3.5vw'
   },
   textMedium: {
-    fontFamily: 'Roboto-Light',
+    fontFamily: 'Roboto',
     flex: 1,
     fontSize: '18px',
-    marginLeft: '5vw'
+    marginLeft: '5vw',
+    fontWeight: '100',
+    fontStyle: 'normal',
   },
   textLarge: {
-    fontFamily: 'Roboto-Light',
+    fontFamily: 'Roboto',
     flex: 1,
     fontSize: '22.5px',
-    marginLeft: '8vw'
+    marginLeft: '8vw',
+    fontWeight: '100',
+    fontStyle: 'normal',
   },
   bioImageSmall: {
     width: '300px',

@@ -13,15 +13,17 @@ export const styles = {
   },
   title: {
     flex: 3,
-    fontFamily: 'Roboto-Bold',
+    fontFamily: 'Roboto',
+    fontWeight: 'bold',
     fontSize: '45px',
     textAlign: 'center',
     marginBottom: '25px',
     lineHeight: '1.3'
   },
   titleAccent: {
-    fontFamily: 'Roboto-Bold',
-    color: `${titleAccent}`
+    fontFamily: 'Roboto',
+    fontWeight: 'bold',
+    color: `${titleAccent}`,
   },
   subtitleContainer: {
     flex: 5,
@@ -31,7 +33,7 @@ export const styles = {
     fontSize: '20px',
     lineHeight: '1.7',
     textAlign: 'center',
-    marginBottom: '30px'
+    marginBottom: '30px',
   },
   iconsContainer: {
     flex: 1,
