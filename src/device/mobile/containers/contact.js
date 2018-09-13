@@ -51,7 +51,7 @@ export class MobileContact extends Component {
         </div>
         <div style={{ backgroundColor: '#4F4F4F', paddingBottom: '1.5em', paddingTop: '0.1em', }}>
           <Fade clear>
-            <p style={{ textAlign: 'center', fontSize: '16px', fontFamily: 'Roboto-Bold', color: 'white',
+            <p style={{ textAlign: 'center', fontSize: '16px', fontFamily: 'Roboto', fontWeight: 'bold', color: 'white',
             marginLeft: '5vw', marginRight: '5vw' }}>
               Developed by Russell Goldman &copy;, {(new Date()).getFullYear()}
             </p>
