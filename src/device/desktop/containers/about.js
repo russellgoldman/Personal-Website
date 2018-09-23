@@ -14,10 +14,12 @@ export class DesktopAbout extends Component {
       maxRender: 6,
       text: `Russell Goldman is a Computer Science undergrad in his 3rd year at Laurier.
         During his spare time, he volunteers by organizing and mentoring hackathons,
-        associates with an international fraternity, and improves upon his programming skills by
-        participating in hackathons and developing open-source software. He is proficient in
-        React (JS / Native) and is working to expand his Node.js skills in the future.
-        He hopes to provide value at a software firm during the summer of 2019.`,
+        associates and manages risk within the chapter of an international fraternity,
+        works part-time as a Full Stack Developer at a local tech startup, and improves
+        upon his programming skills by participating in hackathons and developing
+        open-source software. He is proficient in React (JS / Native) and is working to
+        expand his Node.js skills in the future. He hopes to provide value at a software
+        firm during the summer of 2019.`,
     };
   }
 
@@ -76,7 +78,7 @@ export class DesktopAbout extends Component {
 
   renderResponsiveButton() {
     return (
-      <a href="https://drive.google.com/file/d/1FexJM5kPre-12H-R1J6zwiYDGkspEPnG/view?usp=sharing" target="_blank"
+      <a href="https://drive.google.com/file/d/1jL8E3CgQH8kHlohKZbhCx0gWVTtjyhIA/view?usp=sharing" target="_blank"
         rel='noopener noreferrer' style={{ textDecoration: 'none', outline: 'none', }}>
         <Media
           query={{ maxWidth: 1300 }}
