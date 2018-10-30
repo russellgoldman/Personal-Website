@@ -15,7 +15,7 @@ import HoverImage from 'react-hover-image';
 export class DesktopIntro extends Component {
   render() {
     return (
-      <div style={styles.orientationContainer} className="animated fadeIn">
+      <div style={styles.orientationContainer}>
         <div style={styles.introContainer}>
           <div style={{ flex: 6 }} />
           <div style={styles.logoContainer}>
