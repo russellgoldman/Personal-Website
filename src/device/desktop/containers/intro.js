@@ -15,16 +15,16 @@ import HoverImage from 'react-hover-image';
 export class DesktopIntro extends Component {
   render() {
     return (
-      <div style={styles.orientationContainer}>
+      <div style={styles.orientationContainer} className="animated fadeIn">
         <div style={styles.introContainer}>
           <div style={{ flex: 6 }} />
           <div style={styles.logoContainer}>
-            <img src={websiteLogo} alt="RG" className="animated slideInUp"/>
+            <img src={websiteLogo} alt="RG"/>
           </div>
-          <p style={styles.title} className="animated slideInUp">
+          <p style={styles.title}>
             Hey there, I'm <span style={styles.titleAccent}>Russell</span>.
           </p>
-          <div style={styles.subtitleContainer} className="animated slideInRight">
+          <div style={styles.subtitleContainer}>
             <p>
             I'm a <span style={{ color: 'black' }}><b>full-stack web / mobile developer </b></span>
             from Toronto, Ontario, in my 3rd year of Computer Science studies at
@@ -32,7 +32,7 @@ export class DesktopIntro extends Component {
             style={{ textDecoration: 'none', color: '#8c8989', opacity: '0.' }}><span><i> Wilfrid Laurier University</i></span></a>.
             </p>
           </div>
-          <div style={styles.iconsContainer} className="animated slideInUp">
+          <div style={styles.iconsContainer}>
             <a href="https://www.linkedin.com/in/russell-goldman-35483986/" target="_blank"
               rel='noopener noreferrer' style={styles.iconContainer}>
               <HoverImage src={linkedin} hoverSrc={linkedinHover} style={styles.icon} />
