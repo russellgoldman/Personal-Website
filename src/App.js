@@ -121,7 +121,7 @@ class App extends Component {
           spinnerColor='#000'
           logoSrc={websiteLogo}
         >
-          <Media query="(max-width: 1200px)">
+          <Media query="(max-width: 1000px)">
             {matches =>
               matches ? (
                 this.isMobile()
