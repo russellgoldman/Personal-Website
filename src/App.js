@@ -16,6 +16,10 @@ import Media from 'react-media';
 import { configureAnchors } from 'react-scrollable-anchor';
 import Fade from 'react-reveal/Fade';
 
+import LoadingScreen from 'react-loading-screen';
+
+import { websiteLogo } from './images';
+
 configureAnchors({ offset: -150, scrollDuration: 500 });
 
 class App extends Component {
@@ -27,10 +31,16 @@ class App extends Component {
         name: 'Russell Goldman'
       },
       contactFormShow: false,
+      loading: true,
     }
   }
 
-
+  componentDidMount() {
+    // the setTimeout just simulates an async action, after which the component will render the content
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 1500);
+  }
 
   renderContactForm() {
     const toggleContactForm = () => {
@@ -105,15 +115,22 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Media query="(max-width: 1000px)">
-          {matches =>
-            matches ? (
-              this.isMobile()
-            ) : (
-              this.isDesktop()
-            )
-          }
-        </Media>
+        <LoadingScreen
+          loading={this.state.loading}
+          bgColor='#fff'
+          spinnerColor='#000'
+          logoSrc={websiteLogo}
+        >
+          <Media query="(max-width: 1000px)">
+            {matches =>
+              matches ? (
+                this.isMobile()
+              ) : (
+                this.isDesktop()
+              )
+            }
+          </Media>
+        </LoadingScreen>
       </div>
     );
   }
