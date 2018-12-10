@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { styles } from './iconView-styles';
-import ReactTooltip from 'react-tooltip';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 export default class DesktopIconView extends Component {
