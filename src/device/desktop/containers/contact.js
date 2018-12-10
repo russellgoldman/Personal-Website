@@ -23,7 +23,7 @@ export class DesktopContact extends Component {
         <div style={styles.outerContainer}>
           <div style={styles.rowSpace} />
           <div style={styles.formContainer}>
-            <Fade clear><p style={styles.interestedText}>Interested?</p></Fade>
+            <Fade clear><p style={styles.interestedText}>Let's Chat</p></Fade>
             <Fade clear>
               <form action={`https://formspree.io/${this.state.email}`} method="POST">
                 <p style={styles.labelStyle}>Name:</p>
