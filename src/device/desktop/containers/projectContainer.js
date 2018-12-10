@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { styles } from './projectContainer-styles';
 import { ToolkitIcons } from './../../../data/toolkitIcons';
 import DesktopIconView from './../components/iconView';
-import ReactTooltip from 'react-tooltip';
 import {
   linkedin,
   github,
