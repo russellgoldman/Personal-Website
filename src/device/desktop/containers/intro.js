@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactTooltip from 'react-tooltip';
 import { styles } from './intro-styles';
 import { websiteLogo } from './../../../images/';
 import {
