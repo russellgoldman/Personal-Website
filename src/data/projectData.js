@@ -18,21 +18,6 @@ import {
 export const projectData = [
   {
     id: 0,
-    name: 'CareWear',
-    title: 'CareWear',
-    description: 'CareWear is a wearable which detects the environmental conditions around a child or pet and reports those results in real time to our React Native mobile application. A parent or pet owner can see those conditions and know if there is a danger to their loved one. It was built with React Native (mobile), Arduino (hardware), and Figma (design) at Hack the 6ix 2018 (hosted by Top Hat in Toronto) in a team of three.',
-    github: 'https://github.com/russellgoldman/CareWear',
-    bannerImgPath: `${careWearBanner}`,
-    profileImgPath: `${careWear}`,
-    toolsUsed: [
-      'JavaScript',
-      'React Native',
-      'HTML',
-      'CSS',
-    ],
-  },
-  {
-    id: 1,
     name: 'CourseHawk',
     title: 'CourseHawk',
     description: `CourseHawk is a React Native mobile application available on both iOS and Android, that makes course search effortless for students at Wilfrid Laurier University. In response to a lack of better alternatives to the school's academic calendar, CourseHawk was born. The course data for the app is fetched from the original source using a Python web scraper to then be exported for use in the app. Currently, the app allows users to view by departments and search by course codes. Future features may include user ratings, advanced filters, and wishlists.`,
@@ -47,6 +32,21 @@ export const projectData = [
       'MongoDB',
       'Python',
     ]
+  },
+  {
+    id: 1,
+    name: 'CareWear',
+    title: 'CareWear',
+    description: 'CareWear is a wearable which detects the environmental conditions around a child or pet and reports those results in real time to our React Native mobile application. A parent or pet owner can see those conditions and know if there is a danger to their loved one. It was built with React Native (mobile), Arduino (hardware), and Figma (design) at Hack the 6ix 2018 (hosted by Top Hat in Toronto) in a team of three.',
+    github: 'https://github.com/russellgoldman/CareWear',
+    bannerImgPath: `${careWearBanner}`,
+    profileImgPath: `${careWear}`,
+    toolsUsed: [
+      'JavaScript',
+      'React Native',
+      'HTML',
+      'CSS',
+    ],
   },
   {
     id: 2,

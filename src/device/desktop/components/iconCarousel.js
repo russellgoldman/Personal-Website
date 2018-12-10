@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { styles } from './iconCarousel-styles';
 import { leftArrow, rightArrow } from './../../../images';
-import ReactTooltip from 'react-tooltip';
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 export default class DesktopIconCarousel extends Component {
   constructor(props) {
@@ -23,6 +23,8 @@ export default class DesktopIconCarousel extends Component {
         firstIndex: prevState.firstIndex % this.state.icons.length
       }));
     }
+
+    this.setState({ iconAnimation: '' });
   }
 
   renderIcons() {
@@ -33,7 +35,7 @@ export default class DesktopIconCarousel extends Component {
     for (let i = this.state.firstIndex; i < this.state.firstIndex + this.state.icons.length; i++) {
       modifiedIndex = i;
       if (i > this.state.icons.length - 1) {
-        modifiedIndex %= this.state.icons.length
+        modifiedIndex %= this.state.icons.length;
       }
       if (renderCount < this.state.maxRender) {
         iconSelection.push(this.state.icons[modifiedIndex]);
@@ -43,9 +45,9 @@ export default class DesktopIconCarousel extends Component {
 
     return iconSelection.map((icon, index) => (
       <div style={styles.icon} key={ Math.random() * Math.random() }>
-        <img src={icon.imgPath} alt={icon.name} style={styles.icon} className={`animated ${this.state.iconAnimation}`}
-          data-tip={icon.name} />
-        <ReactTooltip place="top" type="dark" effect="solid"/>
+        <OverlayTrigger placement="top" overlay={<Tooltip><h5>{icon.name}</h5></Tooltip>}>
+          <img src={icon.imgPath} alt={icon.name} style={styles.icon} className={`animated ${this.state.iconAnimation}`} />
+        </OverlayTrigger>
       </div>
     ));
   }

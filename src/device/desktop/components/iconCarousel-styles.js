@@ -12,7 +12,8 @@ export const styles = {
   },
   titleContainer: {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     flex: 1,
     height: '55px',
     borderRadius: '10px',

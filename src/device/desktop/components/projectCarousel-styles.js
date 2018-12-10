@@ -10,7 +10,7 @@ export const styles = {
     fontSize: '30px'
   },
   titleContainer: {
-    marginTop: '4em',
+    marginTop: '2em',
     display: 'flex',
     flexDirection: 'column',
     flex: 1,

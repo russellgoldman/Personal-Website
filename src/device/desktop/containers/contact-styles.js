@@ -2,6 +2,7 @@ const backgroundColor = '#4F4F4F';
 
 export const styles = {
   outerContainer: {
+    marginTop: '100px',
     display: 'flex',
     backgroundColor: `${backgroundColor}`,
   },

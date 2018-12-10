@@ -114,19 +114,4 @@ export const ToolkitIcons = [
     name: 'Bootstrap',
     imgPath: `${bootstrap}`
   },
-  {
-    id: '18',
-    name: 'Sass (learning in progress)',
-    imgPath: `${sass}`
-  },
-  {
-    id: '19',
-    name: 'iOS (learning in progress)',
-    imgPath: `${ios}`
-  },
-  {
-    id: '20',
-    name: 'Swift (learning in progress)',
-    imgPath: `${swift}`
-  },
 ];
