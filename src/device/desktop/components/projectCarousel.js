@@ -127,14 +127,14 @@ export default class DesktopProjectCarousel extends Component {
         </div>
         <div style={styles.carouselContainer}>
           <div style={styles.leftArrowContainer} key={ Math.random() }>
-            <img src={leftArrow} alt="Left Arrow" style={styles.leftArrow}
+            <img src={leftArrow} style={styles.leftArrow}
               onClick={() => this.shiftLeftByMaxRender()} />
           </div>
           <div style={styles.bannersContainer}>
             {this.renderBanners()}
           </div>
           <div style={styles.rightArrowContainer} key={ Math.random() }>
-            <img src={rightArrow} alt="Right Arrow" style={styles.rightArrow}
+            <img src={rightArrow} style={styles.rightArrow}
               onClick={() => this.shiftRightByMaxRender()} />
           </div>
         </div>

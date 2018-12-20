@@ -59,19 +59,19 @@ export const styles = {
   bioImageSmall: {
     width: '300px',
     height: '300px',
-    borderRadius: '30px',
+    borderRadius: '20px',
     marginLeft: '-3.5vw'
   },
   bioImageMedium: {
     width: '350px',
     height: '350px',
-    borderRadius: '30px',
+    borderRadius: '20px',
     marginLeft: '2vw',
   },
   bioImageLarge: {
     width: '400px',
     height: '400px',
-    borderRadius: '30px',
+    borderRadius: '20px',
     marginLeft: '5vw',
   },
   buttonSmall: {
