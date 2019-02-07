@@ -38,7 +38,7 @@ export class MobileAbout extends Component {
         </Fade>
         <Fade clear>
           <div style={styles.buttonContainer}>
-            <a href="https://drive.google.com/file/d/1GOjYvA5OWn8F8FwGNyp5uU5qVyBIJID8/view?usp=sharing" target="_blank"
+            <a href="https://drive.google.com/file/d/1dVEcjfa69kRtsLYDlzKHjSd3obmYQ48w/view?usp=sharing" target="_blank"
               rel='noopener noreferrer' style={styles.linkContainer}>
               <button style={styles.button}>RESUME</button>
             </a>

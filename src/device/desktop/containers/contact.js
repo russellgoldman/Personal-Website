@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { styles } from './contact-styles';
-import { privateData } from '../../../data/privateData';
 import { websiteLogoWhite } from './../../../images/';
 import Fade from 'react-reveal/Fade';
 
@@ -8,7 +7,7 @@ export class DesktopContact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: privateData.email || 'sendemailto@gmail.com',
+      email: 'gold6650@mylaurier.ca',
       formValues: {
         name: '',
         email: '',
