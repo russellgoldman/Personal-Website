@@ -12,14 +12,12 @@ export class DesktopAbout extends Component {
     this.state = {
       icons: ToolkitIcons,
       maxRender: 6,
-      text: `Russell Goldman is a Computer Science undergrad in his 3rd year at Laurier.
-        During his spare time, he volunteers by organizing and mentoring hackathons,
-        associates and manages risk within the chapter of an international fraternity,
-        works part-time as a Full Stack Developer at a local tech startup, and improves
-        upon his programming skills by participating in hackathons and developing
-        open-source software. He is proficient in React (JS / Native) and is working to
-        expand his Node.js skills in the future. He hopes to provide value at a software
-        firm during the summer of 2019.`,
+      text: `Russell Goldman is a Computer Science undergrad going his 4th year at Laurier.
+        He's been involved with the on-campus Computer Science club helping design workshops for students
+        as well as working part-time as a Full Stack Developer at a local Waterloo tech startup during his 3rd year. 
+        He is consistently improving upon his programming skills by participating in hackathons and developing
+        open-source software. He is proficient in React (JS / Native) and is working to expand his Node.js
+        skills in the future.`
     };
   }
 
@@ -78,7 +76,7 @@ export class DesktopAbout extends Component {
 
   renderResponsiveButton() {
     return (
-      <a href="https://drive.google.com/file/d/1dVEcjfa69kRtsLYDlzKHjSd3obmYQ48w/view?usp=sharing" target="_blank"
+      <a href="https://drive.google.com/file/d/1qgLaBNyTxjSFa4o_Id-Uu1aCwmJLDhpy/view?usp=sharing" target="_blank"
         rel='noopener noreferrer' style={{ textDecoration: 'none', outline: 'none', }}>
         <Media
           query={{ maxWidth: 1300 }}
