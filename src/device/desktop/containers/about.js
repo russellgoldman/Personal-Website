@@ -12,8 +12,8 @@ export class DesktopAbout extends Component {
     this.state = {
       icons: ToolkitIcons,
       maxRender: 6,
-      text: `Russell Goldman is a Computer Science undergrad going his 4th year at Laurier.
-        He's been involved with the on-campus Computer Science club helping design workshops for students
+      text: `Russell Goldman is a Computer Science undergrad going into his 4th year at Laurier.
+        He's been involved with the on-campus Computer Science club assisting in designing workshops for students
         as well as working part-time as a Full Stack Developer at a local Waterloo tech startup during his 3rd year. 
         He is consistently improving upon his programming skills by participating in hackathons and developing
         open-source software. He is proficient in React (JS / Native) and is working to expand his Node.js
