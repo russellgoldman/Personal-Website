@@ -144,7 +144,6 @@ const styles = {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '100px',
     marginLeft: '45.5vw',
     marginRight: '45.5vw',
     height: '70px',

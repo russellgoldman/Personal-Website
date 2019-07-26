@@ -17,7 +17,7 @@ export class DesktopAbout extends Component {
         as well as working part-time as a Full Stack Developer at a local Waterloo tech startup during his 3rd year. 
         He is consistently improving upon his programming skills by participating in hackathons and developing
         open-source software. He is proficient in React (JS / Native) and is working to expand his Node.js
-        skills in the future.`
+        skills in the future.`,
     };
   }
 

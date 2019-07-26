@@ -4,23 +4,19 @@ const subtitle = '#8c8989';
 export const styles = {
   orientationContainer: {
     display: 'flex',
-    flex: 1,
     flexDirection: 'row',
-    height: '85vh',
+    marginRight: '8vw'
   },
   introContainer: {
     marginLeft: '8vw',
     display: 'flex',
-    flex: 6,
     flexDirection: 'column',
     flexWrap: 'wrap',
     height: '100%',
     justifyContent: 'center'
   },
-  logoContainer: {
-    flex: 6
-  },
   title: {
+    marginBottom: '70px',
     flex: 1,
     fontFamily: 'Roboto',
     fontSize: '65px',
@@ -34,7 +30,6 @@ export const styles = {
     fontWeight: 'bold',
   },
   subtitleContainer: {
-    flex: 6,
     flexWrap: 'wrap',
     fontFamily: 'Roboto',
     color: `${subtitle}`,
@@ -43,12 +38,8 @@ export const styles = {
     justifyContent: 'center',
   },
   iconsContainer: {
-    flex: 3.5,
     justifyContent: 'center',
     marginTop: '5px',
-  },
-  iconContainer: {
-    //
   },
   icon: {
     width: '55px',
