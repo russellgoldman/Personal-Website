@@ -12,7 +12,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'column',
     flexWrap: 'wrap',
-    height: '100%',
+    height: '100vh',
     justifyContent: 'center'
   },
   title: {
