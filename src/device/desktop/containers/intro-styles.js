@@ -11,7 +11,6 @@ export const styles = {
     marginLeft: '8vw',
     display: 'flex',
     flexDirection: 'column',
-    flexWrap: 'wrap',
     height: '100vh',
     justifyContent: 'center'
   },
@@ -36,6 +35,7 @@ export const styles = {
     fontSize: '25px',
     lineHeight: '1.5',
     justifyContent: 'center',
+    marginRight: '10vw'
   },
   iconsContainer: {
     justifyContent: 'center',
