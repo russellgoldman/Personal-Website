@@ -22,6 +22,9 @@ export class MobileAbout extends Component {
   render() {
     return (
       <div style={styles.outerContainer}>
+        <div style={styles.headerContainer}>
+            <Fade clear><div style={styles.header}>About</div></Fade>
+          </div>
         <Fade clear>
           <div style={styles.imageContainer}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>

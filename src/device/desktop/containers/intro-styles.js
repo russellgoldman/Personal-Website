@@ -8,6 +8,7 @@ export const styles = {
     marginRight: '8vw'
   },
   introContainer: {
+    height: '100vh',
     marginLeft: '8vw',
     display: 'flex',
     flexDirection: 'column',

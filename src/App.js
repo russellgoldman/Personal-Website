@@ -31,7 +31,7 @@ class App extends Component {
         name: 'Russell Goldman'
       },
       contactFormShow: false,
-      loading: true,
+      loading: false,
     }
   }
 
@@ -58,9 +58,6 @@ class App extends Component {
         <div>
           <MobileTitlebar name={this.state.titlebarState.name} callbackFromParent={toggleContactForm} />
           <MobileIntro />
-          <div style={styles.MobileHeaderContainer}>
-            <Fade clear><div style={styles.MobileHeader}>About</div></Fade>
-          </div>
           <MobileAbout />
           <div style={styles.MobileHeaderContainer}>
             <Fade clear><div style={styles.MobileHeader}>Projects</div></Fade>
@@ -92,9 +89,6 @@ class App extends Component {
         <ScrollableAnchor id={`home`}>
           <DesktopIntro />
         </ScrollableAnchor>
-        <div style={styles.DesktopHeaderContainer}>
-          <Fade clear><div style={styles.DesktopHeader}>About</div></Fade>
-        </div>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[0]}`}>
           <DesktopAbout />
         </ScrollableAnchor>

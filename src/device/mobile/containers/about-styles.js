@@ -1,9 +1,26 @@
 export const styles = {
   outerContainer: {
-    marginTop: '7.5vh',
+    height: '100vh',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center'
+  },
+  headerContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '100px',
+    marginLeft: '40vw',
+    marginRight: '40vw',
+    height: '70px',
+    color: 'black',
+    borderBottom: '3px solid black',
+    marginBottom: '50px'
+  },
+  header: {
+    fontFamily: 'Roboto',
+    fontSize: '35px',
+    fontWeight: 'bold',
   },
   imageContainer: {
     display: 'flex',

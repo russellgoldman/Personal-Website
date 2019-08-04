@@ -104,6 +104,9 @@ export class DesktopAbout extends Component {
     return (
       <div>
         <div style={styles.outerContainer}>
+          <div style={styles.headerContainer}>
+            <Fade clear><div style={styles.header}>About</div></Fade>
+          </div>
           <div style={styles.innerContainer}>
             <div style={styles.imageContainer}>
               <Fade clear>{this.renderResponsiveImage()}</Fade>
