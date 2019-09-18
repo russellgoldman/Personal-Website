@@ -35,8 +35,7 @@ export const styles = {
   },
   iconsContainer: {
     justifyContent: 'center',
-    marginTop: '5px',
-    marginBottom: '5vh'
+    paddingTop: '5px',
   },
   icon: {
     width: '55px',

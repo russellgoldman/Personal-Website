@@ -13,7 +13,7 @@ export default class DesktopIconView extends Component {
 
   renderIcons() {
     return this.state.icons.map((icon, index) => (
-      <div style={styles.icon} key={ Math.random() * Math.random() }>
+      <div style={styles.icon} key={index}>
         <OverlayTrigger placement="top" overlay={<Tooltip><h5>{icon.name}</h5></Tooltip>}>
           <img src={icon.imgPath} alt={icon.name} style={styles.icon} />
         </OverlayTrigger>

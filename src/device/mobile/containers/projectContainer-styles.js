@@ -15,8 +15,8 @@ export const styles = {
   },
   image: {
     marginTop: '2em',
-    height: '50vw',
-    width: '50vw',
+    height: '30vw',
+    width: '30vw',
   },
   title: {
     flex: '2',

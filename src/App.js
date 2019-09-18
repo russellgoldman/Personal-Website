@@ -154,7 +154,7 @@ const styles = {
     marginRight: '40vw',
     height: '70px',
     color: 'black',
-    borderBottom: '3px solid black'
+    borderBottom: '3px solid black',
   },
   DesktopHeader: {
     fontFamily: 'Roboto',

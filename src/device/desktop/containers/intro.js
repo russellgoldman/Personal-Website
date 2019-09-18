@@ -24,7 +24,7 @@ export class DesktopIntro extends Component {
             <div style={styles.subtitleContainer}>
               <p>
               I'm a <span style={{ color: 'black' }}><b>full-stack web / mobile developer </b></span>
-              from Toronto, Ontario, in my 3rd year of Computer Science studies at
+              from Toronto, Ontario, in my 4th year of Computer Science studies at
               <a href="https://www.wlu.ca/" target="_blank" rel='noopener noreferrer'
               style={{ textDecoration: 'none', color: '#8c8989', opacity: '0.' }}><span><i> Wilfrid Laurier University</i></span></a>.
               </p>

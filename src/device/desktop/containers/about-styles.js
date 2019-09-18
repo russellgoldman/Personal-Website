@@ -4,7 +4,7 @@ export const styles = {
     height: '100vh',
     flexDirection: 'column',
     flex: 1,
-    marginLeft: '10em',
+    marginLeft: '10vw',
     marginRight: '10vw'
   },
   headerContainer: {

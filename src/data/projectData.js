@@ -28,7 +28,7 @@ export const projectData = [
       'JavaScript',
       'React Native',
       'Redux',
-      'NodeJS',
+      'Node.js',
       'MongoDB',
       'Python',
     ]
@@ -44,8 +44,6 @@ export const projectData = [
     toolsUsed: [
       'JavaScript',
       'React Native',
-      'HTML',
-      'CSS',
     ],
   },
   {
@@ -58,9 +56,7 @@ export const projectData = [
     profileImgPath: `${rg}`,
     toolsUsed: [
       'JavaScript',
-      'ReactJS',
-      'HTML',
-      'CSS'
+      'React',
     ]
   },
   {

@@ -11,11 +11,11 @@ export class MobileAbout extends Component {
       icons: ToolkitIcons,
       maxRender: 3,
       text: `Russell Goldman is a Computer Science undergrad going into his 4th year at Laurier.
+      He recently completed an internship at Rover.io in Toronto as a full stack developer.
       He's been involved with the on-campus Computer Science club assisting in designing workshops for students
-      as well as working part-time as a Full Stack Developer at a local Waterloo tech startup during his 3rd year. 
+      as well as working part-time as a developer at a local Waterloo tech startup during his 3rd year. 
       He is consistently improving upon his programming skills by participating in hackathons and developing
-      open-source software. He is proficient in React (JS / Native) and is working to expand his Node.js
-      skills in the future.`,
+      open-source software.`,
     };
   }
 
@@ -39,12 +39,13 @@ export class MobileAbout extends Component {
         </Fade>
         <Fade clear>
           <div style={styles.buttonContainer}>
-            <a href="https://drive.google.com/file/d/1qgLaBNyTxjSFa4o_Id-Uu1aCwmJLDhpy/view?usp=sharing" target="_blank"
+            <a href="https://drive.google.com/file/d/1ef1TAChPcufTvcvUh1S4NEOJ68w-CQy3/view?usp=sharing" target="_blank"
               rel='noopener noreferrer' style={styles.linkContainer}>
               <button style={styles.button}>RESUME</button>
             </a>
           </div>
         </Fade>
+        <div style={{ paddingBottom: '5em' }}/>
       </div>
     );
   }

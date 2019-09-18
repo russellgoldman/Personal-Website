@@ -9,13 +9,12 @@ export const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '100px',
     marginLeft: '40vw',
     marginRight: '40vw',
     height: '70px',
     color: 'black',
     borderBottom: '3px solid black',
-    marginBottom: '50px'
+    marginBottom: '5vh'
   },
   header: {
     fontFamily: 'Roboto',
@@ -25,33 +24,28 @@ export const styles = {
   imageContainer: {
     display: 'flex',
     flexDirection: 'column',
-    flex: 1,
     justifyContent: 'center',
     marginBottom: '1vh'
   },
   bioImage: {
-    width: '300px',
-    height: '300px',
+    width: '45vw',
+    height: '45vw',
     borderRadius: '25px'
   },
   textContainer: {
     marginTop: '2.5vh',
     display: 'flex',
-    flex: 1,
     fontFamily: 'Roboto',
     fontWeight: '100',
     fontStyle: 'normal',
     fontSize: '16px',
     lineHeight: '2.5',
-    justifyContent: 'center',
     textAlign: 'center',
     marginLeft: '10vw',
     marginRight: '10vw',
     marginBottom: '4vh'
   },
   buttonContainer: {
-    display: 'flex',
-    flex: 2,
     marginLeft: '25vw',
     marginRight: '25vw'
   },
@@ -71,6 +65,6 @@ export const styles = {
     border: '0px',
     outline: 'none',
     justifyContent: 'center',
-    height: '60px'
+    height: '60px',
   }
 };
