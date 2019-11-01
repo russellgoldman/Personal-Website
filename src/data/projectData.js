@@ -28,7 +28,6 @@ export const projectData = [
       'JavaScript',
       'React Native',
       'Redux',
-      'Node.js',
       'MongoDB',
       'Python',
     ]
