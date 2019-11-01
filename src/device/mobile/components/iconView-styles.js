@@ -22,25 +22,21 @@ export const styles = {
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
-    height: '70px',
+    flexWrap: 'wrap',
+    width: '60vw',
     background: '#f2f2f2',
     borderRadius: '10px',
     opacity: '0.85',
     boxShadow: `3px 4px 3px ${shadow}`,
-    marginBottom: '50px'
-  },
-  iconsContainer: {
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    marginRight: '5vw'
+    marginBottom: '60px'
   },
   icon: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
     width: '35px',
     height: '35px',
-    marginLeft: '3vw',
-    marginRight: '3vw'
+    margin: '25px 10px'
   }
 };

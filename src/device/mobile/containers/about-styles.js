@@ -14,7 +14,7 @@ export const styles = {
     height: '70px',
     color: 'black',
     borderBottom: '3px solid black',
-    marginBottom: '5vh'
+    marginBottom: '35px'
   },
   header: {
     fontFamily: 'Roboto',
@@ -33,7 +33,7 @@ export const styles = {
     borderRadius: '25px'
   },
   textContainer: {
-    marginTop: '2.5vh',
+    marginTop: '25px',
     display: 'flex',
     fontFamily: 'Roboto',
     fontWeight: '100',
@@ -43,7 +43,7 @@ export const styles = {
     textAlign: 'center',
     marginLeft: '10vw',
     marginRight: '10vw',
-    marginBottom: '4vh'
+    marginBottom: '10px'
   },
   buttonContainer: {
     marginLeft: '25vw',

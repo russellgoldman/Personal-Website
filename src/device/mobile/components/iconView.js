@@ -35,9 +35,7 @@ export default class MobileIconView extends Component {
           <p style={styles.title}>What I Used</p>
         </div>
         <div style={styles.viewContainer}>
-          <div style={styles.iconsContainer}>
-            {this.renderIcons()}
-          </div>
+          {this.renderIcons()}
         </div>
       </div>
     );
