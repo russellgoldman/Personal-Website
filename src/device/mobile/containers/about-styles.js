@@ -1,9 +1,8 @@
 export const styles = {
   outerContainer: {
     height: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center'
+    display: 'relative',
+    marginBottom: '15vh',
   },
   headerContainer: {
     display: 'flex',
@@ -25,7 +24,7 @@ export const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    marginBottom: '1vh'
+    marginBottom: '25px'
   },
   bioImage: {
     width: '45vw',
@@ -47,7 +46,7 @@ export const styles = {
   },
   buttonContainer: {
     marginLeft: '25vw',
-    marginRight: '25vw'
+    marginRight: '25vw',
   },
   linkContainer: {
     display: 'flex',
