@@ -1,6 +1,7 @@
 import {
   js,
   react,
+  figma,
   sass,
   golang,
   docker,
@@ -68,6 +69,10 @@ export const ToolkitIcons = [
   {
     name: 'React Native',
     imgPath: reactnative
+  },
+  {
+    name: 'Figma',
+    imgPath: figma,
   },
   {
     name: 'Redux',

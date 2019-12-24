@@ -10,6 +10,7 @@ import postgresql from './postgresql.svg';
 import mongodb from './mongodb.svg';
 import ts from './ts.svg';
 import reactnative from './reactnative.png';
+import figma from './figma.svg';
 import redux from './redux.svg';
 import express from './express.svg';
 import python from './python.svg';
@@ -31,6 +32,7 @@ export {
   mongodb,
   ts,
   reactnative,
+  figma,
   redux,
   express,
   python,

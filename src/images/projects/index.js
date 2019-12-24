@@ -8,7 +8,8 @@ import comingSoonBanner from './comingSoonBanner.png';
 import gelato from './gelato.svg';
 import nova from './nova.png';
 import rg from './rg.png';
-import coursehawk from './coursehawk.png';
+import pawk from './pawk.png';
+import vapeCare from './vapeCare.svg';
 import careWear from './careWear.png';
 import beerBuddy from './beerBuddy.png';
 import comingSoon from './comingSoon.png';
@@ -24,7 +25,8 @@ export {
   gelato,
   nova,
   rg,
-  coursehawk,
+  pawk,
+  vapeCare,
   careWear,
   beerBuddy,
   comingSoon,
