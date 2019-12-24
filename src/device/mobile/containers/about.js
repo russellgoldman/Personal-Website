@@ -45,7 +45,6 @@ export class MobileAbout extends Component {
             </a>
           </div>
         </Fade>
-        <div style={{ paddingBottom: '5em' }}/>
       </div>
     );
   }

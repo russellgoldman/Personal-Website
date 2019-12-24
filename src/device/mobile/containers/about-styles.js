@@ -1,13 +1,12 @@
 export const styles = {
   outerContainer: {
-    height: '100vh',
     display: 'relative',
-    marginBottom: '15vh',
   },
   headerContainer: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: '100px',
     marginLeft: '40vw',
     marginRight: '40vw',
     height: '70px',

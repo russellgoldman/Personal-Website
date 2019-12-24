@@ -43,7 +43,6 @@ export const styles = {
     marginRight: '10vw'
   },
   toolsContainer: {
-    marginTop: '-1em',
     flex: 4
   },
   githubContainer: {

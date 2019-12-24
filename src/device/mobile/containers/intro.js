@@ -31,7 +31,6 @@ export const MobileIntro = () => {
           <img src={medium} alt="Medium" style={styles.icon} />
         </a>
       </div>
-      <div style={{ marginBottom: '18vh' }} />
     </div>
   );
 };
