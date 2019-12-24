@@ -2,8 +2,10 @@ import {
   gelatoBanner,
   novaBanner,
   rgBanner,
-  coursehawkBanner,
+  pawkBanner,
+  vapeCareBanner,
   careWearBanner,
+  mcBrewsBanner,
   beerBuddyBanner,
   comingSoonBanner,
   gelato,
@@ -12,6 +14,7 @@ import {
   pawk,
   vapeCare,
   careWear,
+  mcBrews,
   beerBuddy,
   comingSoon
 } from './../images/projects';
@@ -21,9 +24,19 @@ export const projectData = [
     id: 0,
     name: 'Pawk',
     title: 'Pawk',
-    description: `Pawk is a course and program exploration app for students at Laurier. The backend architecture utilizes a Dockerized environment to ensure consistency across platforms and scalability for our GraphQL API, PostgreSQL database, and migration manager. A custom Node.js webscraper is also used to fetch all course / program data from Laurier's academic calendar and mutate it into our Postgres database. The frontend client was developed for Android and the project was created in a team of five. Pawk was built as the second iteration of an independent side project that I developed in the summer of 2018.`,
+    description: `
+      Pawk is a course and program exploration app for students at Laurier.
+      The backend architecture utilizes a Dockerized environment to ensure
+      consistency across platforms and the ability to provide scalability
+      for our GraphQL API and PostgreSQL database. A custom Node.js webscraper
+      is also used to fetch all course / program data from Laurier's academic
+      calendar and mutate it into our Postgres database. The frontend client
+      was developed for Android and the project was created in a team of five.
+      Pawk was built as the second iteration of an independent side project
+      that I developed in the summer of 2018.
+    `,
     github: 'https://github.com/russellgoldman/Pawk',
-    bannerImgPath: `${coursehawkBanner}`,
+    bannerImgPath: `${pawkBanner}`,
     profileImgPath: `${pawk}`,
     toolsUsed: [
       'Android',
@@ -37,9 +50,19 @@ export const projectData = [
     id: 1,
     name: 'VapeCare',
     title: 'VapeCare',
-    description: `VapeCare is a health care tool to assist users in moderating their vape consumption, alerting them to danger signs and anonymously contributing to further research on the side effects of vaping. I'm quite proud of this project as I took on more of a project management role than in past, having come up with the idea, analyzed how to market it to judges and potential investors, and recruiting the right team to help bring it to life. My individual work consisted of scoping out our business plan and user experience, designing the user interface, and developing the cross platform mobile app all within 36 hours. VapeCare was built in a group of four at Hack the North 2019.`,
+    description: `
+      VapeCare is a health care tool to assist users in moderating their vape
+      consumption. I'm quite proud of this project as I took on more of a
+      project management role than in past, having come up with the idea,
+      analyzed how to market it to judges and potential investors, and
+      recruiting the right team to help bring it to life. My individual
+      work consisted of scoping out our business plan and user experience,
+      designing the user interface, and developing the cross platform mobile
+      app all within 36 hours. VapeCare was built in a group of four at Hack
+      the North 2019.
+    `,
     github: 'https://devpost.com/software/vapecare',
-    bannerImgPath: `${careWearBanner}`,
+    bannerImgPath: `${vapeCareBanner}`,
     profileImgPath: `${vapeCare}`,
     toolsUsed: [
       'JavaScript',
@@ -51,10 +74,20 @@ export const projectData = [
     id: 2,
     name: 'McBrews',
     title: 'McBrews',
-    description: `McBrews`,
+    description: `
+      McBrews is a bar concept which allows users to browse the drink menu
+      and place their order(s) right through their mobile devices. Bartenders
+      receive the order, prepare the drinks and place completed orders on
+      a conveyor belt queuing platform. Users receive a text notification
+      when their drink is ready, and tap their phones at any of the provided
+      pickup terminals (using NFC technology) to transport their order.
+      I came up with the idea, built the mobile app with React Native,
+      and completed the project in a team of 4 at McHacks 2019.
+      We were honoured to be a Top 6 Finalist.
+    `,
     github: 'https://github.com/russellgoldman/McBrews',
-    bannerImgPath: `${careWearBanner}`,
-    profileImgPath: `${careWear}`,
+    bannerImgPath: `${mcBrewsBanner}`,
+    profileImgPath: `${mcBrews}`,
     toolsUsed: [
       'JavaScript',
       'React Native',
@@ -64,7 +97,14 @@ export const projectData = [
     id: 3,
     name: 'CareWear',
     title: 'CareWear',
-    description: 'CareWear is a wearable which detects the environmental conditions around a child or pet and reports those results in real time to our React Native mobile application. A parent or pet owner can see those conditions and know if there is a danger to their loved one. It was built with React Native (mobile), Arduino (hardware), and Figma (design) at Hack the 6ix 2018 (hosted by Top Hat in Toronto) in a team of three.',
+    description: `
+      CareWear is a wearable which detects the environmental conditions around
+      a child or pet and reports those results in real time to our React Native
+      mobile application. A parent or pet owner can see those conditions and
+      know if there is a danger to their loved one. It was built with React
+      Native (mobile), Arduino (hardware), and Figma (design) at Hack the 6ix
+      2018 (hosted by Top Hat in Toronto) in a team of three.
+    `,
     github: 'https://github.com/russellgoldman/CareWear',
     bannerImgPath: `${careWearBanner}`,
     profileImgPath: `${careWear}`,
