@@ -37,7 +37,7 @@ export const projectData = [
     id: 1,
     name: 'VapeCare',
     title: 'VapeCare',
-    description: `VapeCare is a health care tool to assist users in tracking their vape consumption, alerting them to danger signs and anonymously contributing to further research on the side effects of vaping. I'm quite proud of this project as I took on more of a project management role than in past, having come up with the idea, analyzed how to market it to judges and potential investors, and recruiting the right team to help bring it to life. My individual work consisted of scoping out our business plan and user experience, designing the user interface, and developing the cross platform mobile app all within 36 hours. VapeCare was built in a group of four at Hack the North 2019.`,
+    description: `VapeCare is a health care tool to assist users in moderating their vape consumption, alerting them to danger signs and anonymously contributing to further research on the side effects of vaping. I'm quite proud of this project as I took on more of a project management role than in past, having come up with the idea, analyzed how to market it to judges and potential investors, and recruiting the right team to help bring it to life. My individual work consisted of scoping out our business plan and user experience, designing the user interface, and developing the cross platform mobile app all within 36 hours. VapeCare was built in a group of four at Hack the North 2019.`,
     github: 'https://devpost.com/software/vapecare',
     bannerImgPath: `${careWearBanner}`,
     profileImgPath: `${vapeCare}`,
