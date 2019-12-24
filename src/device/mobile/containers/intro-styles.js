@@ -12,7 +12,6 @@ export const styles = {
     marginTop: '15vw'
   },
   title: {
-    flex: 3,
     fontFamily: 'Roboto',
     fontWeight: 'bold',
     fontSize: '45px',
@@ -26,7 +25,6 @@ export const styles = {
     color: `${titleAccent}`,
   },
   subtitleContainer: {
-    flex: 5,
     flexWrap: 'wrap',
     fontFamily: 'Roboto',
     color: `${subtitle}`,
@@ -36,10 +34,8 @@ export const styles = {
     marginBottom: '30px',
   },
   iconsContainer: {
-    flex: 1,
     justifyContent: 'center',
-    marginTop: '5px',
-    marginBottom: '5vh'
+    paddingTop: '5px',
   },
   icon: {
     width: '55px',

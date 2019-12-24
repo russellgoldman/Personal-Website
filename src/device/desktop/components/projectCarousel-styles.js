@@ -20,6 +20,7 @@ export const styles = {
     marginRight: `${titleMarginX}vw`
   },
   carouselContainer: {
+    marginTop: '3em',
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
@@ -59,34 +60,33 @@ export const styles = {
     alignItems: 'center',
     width: '100%'
   },
-  bannerContainer: {
-    position: 'relative',
-  },
   banner: {
+    backgroundColor: '#F4F4F4',
     height: '3.5vw',
     width: '19.35vw',
     marginTop: '0.2em',
-    border: `6px solid black`,
+    border: `4px solid #C4C4C4`,
+    borderRadius: '10px',
+    marginLeft: '0.1em',
+    marginRight: '0.1em',
   },
   bannerSelected: {
+    backgroundColor: '#F4F4F4',
     height: '3.5vw',
     width: '19.35vw',
     marginTop: '0.2em',
-    border: `6px solid ${selectedAccent}`
-  },
-  bannerTextContainer: {
-    position: 'absolute',
-    top: '1vw',
-    height: '50%',
-    width: '100%',
+    border: `4px solid ${selectedAccent}`,
+    borderRadius: '10px',
+    marginLeft: '0.1em',
+    marginRight: '0.1em',
   },
   bannerText: {
+    marginTop: '0.3em',
     fontFamily: 'Roboto',
     fontWeight: 'bold',
     fontSize: '1.5vw',
-    color: 'white',
+    color: '#333333',
     textAlign: 'center',
-    letterSpacing: '3px',
-    textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black'
+    letterSpacing: '2px',
   }
 };

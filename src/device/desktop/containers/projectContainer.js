@@ -6,7 +6,9 @@ import {
   linkedin,
   github,
   medium,
-  githubHover
+  githubHover,
+  link,
+  linkHover
 } from './../../../images/networking-icons';
 import HoverImage from 'react-hover-image';
 import Fade from 'react-reveal/Fade';
@@ -71,7 +73,7 @@ export class DesktopProjectContainer extends Component {
               {this.state.projectData[this.state.currentProject].title}
               <span style={{ marginLeft: '50vw', marginTop: '-1.6em', display: 'block' }}>
                 <a href={this.state.projectData[this.state.currentProject].github} target="_blank" rel='noopener noreferrer'>
-                  <HoverImage src={github} hoverSrc={githubHover} style={styles.github} />
+                  <HoverImage src={link} hoverSrc={linkHover} style={styles.github} />
                 </a>
               </span>
             </p>

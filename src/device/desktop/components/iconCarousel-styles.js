@@ -53,8 +53,8 @@ export const styles = {
     justifyContent: 'flex-end',
   },
   rightArrow: {
-    width: '45px',
-    height: '45px',
+    width: '40px',
+    height: '40px',
     marginRight: '-4.25em',
     opacity: '0.5',
     backgroundColor: '#dbdbdb',
@@ -68,7 +68,7 @@ export const styles = {
     alignItems: 'center',
     width: '100%',
     marginLeft: '1vw',
-    marginRight: '2vw'
+    marginRight: '2.5vw'
   },
   icon: {
     width: '50px',

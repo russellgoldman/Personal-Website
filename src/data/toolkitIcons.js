@@ -1,117 +1,105 @@
 import {
-  android,
-  c,
-  express,
-  Java,
   js,
-  mocha,
-  mongodb,
-  node,
-  python,
   react,
-  reactnative,
-  sql,
-  django,
-  redux,
-  flask,
-  html,
-  css,
-  bootstrap,
+  figma,
   sass,
-  ios,
-  swift,
-  tensorflow,
+  golang,
+  docker,
+  graphql,
+  node,
+  sql,
+  postgresql,
+  mongodb,
+  ts,
+  reactnative,
+  redux,
+  express,
+  python,
+  flask,
+  java,
+  android,
+  c
 } from './../images/toolkit-icons';
 
 export const ToolkitIcons = [
   {
-    id: '0',
     name: 'JavaScript',
-    imgPath: `${js}`
+    imgPath: js
   },
   {
-    id: '1',
-    name: 'ReactJS',
-    imgPath: `${react}`
+    name: 'React',
+    imgPath: react,
   },
   {
-    id: '2',
-    name: 'React Native',
-    imgPath: `${reactnative}`
+    name: 'Sass',
+    imgPath: sass
   },
   {
-    id: '3',
+    name: 'Golang',
+    imgPath: golang
+  },
+  {
+    name: 'GraphQL',
+    imgPath: graphql
+  },
+  {
+    name: 'Docker',
+    imgPath: docker
+  },
+  {
     name: 'Node.js',
-    imgPath: `${node}`
+    imgPath: node
   },
   {
-    id: '4',
-    name: 'Python',
-    imgPath: `${python}`
-  },
-  {
-    id: '5',
-    name: 'Java',
-    imgPath: `${Java}`
-  },
-  {
-    id: '6',
-    name: 'C',
-    imgPath: `${c}`
-  },
-  {
-    id: '7',
-    name: 'Express',
-    imgPath: `${express}`
-  },
-  {
-    id: '8',
-    name: 'MongoDB',
-    imgPath: `${mongodb}`
-  },
-  {
-    id: '9',
-    name: 'Redux',
-    imgPath: `${redux}`
-  },
-  {
-    id: '10',
-    name: 'Flask',
-    imgPath: `${flask}`
-  },
-  {
-    id: '11',
-    name: 'Android',
-    imgPath: `${android}`
-  },
-  {
-    id: '12',
-    name: 'Django',
-    imgPath: `${django}`
-  },
-  {
-    id: '13',
     name: 'SQL',
-    imgPath: `${sql}`
+    imgPath: sql
   },
   {
-    id: '14',
-    name: 'Mocha',
-    imgPath: `${mocha}`
+    name: 'PostgreSQL',
+    imgPath: postgresql
   },
   {
-    id: '15',
-    name: 'HTML',
-    imgPath: `${html}`
+    name: 'MongoDB',
+    imgPath: mongodb
   },
   {
-    id: '16',
-    name: 'CSS',
-    imgPath: `${css}`
+    name: 'TypeScript',
+    imgPath: ts
   },
   {
-    id: '17',
-    name: 'Bootstrap',
-    imgPath: `${bootstrap}`
+    name: 'React Native',
+    imgPath: reactnative
   },
-];
+  {
+    name: 'Figma',
+    imgPath: figma,
+  },
+  {
+    name: 'Redux',
+    imgPath: redux,
+  },
+  {
+    name: 'Express.js',
+    imgPath: express
+  },
+  {
+    name: 'Python',
+    imgPath: python
+  },
+  {
+    name: 'Flask',
+    imgPath: flask
+  },
+  {
+    name: 'Java',
+    imgPath: java
+  },
+  {
+    name: 'Android',
+    imgPath: android
+  },
+  {
+    name: 'C',
+    imgPath: c
+  }
+]

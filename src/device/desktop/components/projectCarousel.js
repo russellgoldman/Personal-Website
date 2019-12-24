@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { styles } from './projectCarousel-styles';
 import { leftArrow, rightArrow } from './../../../images';
+import { defaultBanner } from './../../../images/projects';
 
 export default class DesktopProjectCarousel extends Component {
   constructor(props) {
@@ -32,13 +33,11 @@ export default class DesktopProjectCarousel extends Component {
     }
   }
 
-  renderSelectedBanner(banner, index) {
+  renderSelectedBanner(index) {
     if (index === this.state.selectedIndex) {
       return (
-        <div style={styles.bannerContainer} key={ Math.random() * Math.random() }>
-          <img src={banner} alt={banner.name} style={styles.bannerSelected}
-            onClick={() => this.selectProject(index, '')} />
-          <div style={styles.bannerTextContainer} onClick={() => this.selectProject(index)}>
+        <div style={styles.bannerContainer} key={index}>
+          <div style={styles.bannerSelected} onClick={() => this.selectProject(index, '')}>
             <p style={styles.bannerText}>
               {this.state.projectNames[this.state.firstIndex + index].toUpperCase()}
             </p>
@@ -47,10 +46,8 @@ export default class DesktopProjectCarousel extends Component {
       );
     } else {
       return (
-        <div style={styles.bannerContainer} key={ Math.random() * Math.random() }>
-          <img src={banner} alt={banner.name} style={styles.banner}
-            onClick={() => this.selectProject(index, '')} />
-          <div style={styles.bannerTextContainer} onClick={() => this.selectProject(index)}>
+        <div style={styles.bannerContainer} key={index}>
+          <div style={styles.banner} onClick={() => this.selectProject(index, '')}>
             <p style={styles.bannerText}>
               {this.state.projectNames[this.state.firstIndex + index].toUpperCase()}
             </p>
@@ -76,9 +73,9 @@ export default class DesktopProjectCarousel extends Component {
       }
     }
 
-    return bannerSelection.map((banner, index) => (
-      <div key={ Math.random() * Math.random() }>
-        {this.renderSelectedBanner(banner, index)}
+    return bannerSelection.map((_, index) => (
+      <div key={index}>
+        {this.renderSelectedBanner(index)}
       </div>
     ));
   }
@@ -122,9 +119,9 @@ export default class DesktopProjectCarousel extends Component {
   render() {
     return (
       <div>
-        <div style={styles.titleContainer}>
+        {/* <div style={styles.titleContainer}>
           <p style={styles.title}>My Projects</p>
-        </div>
+        </div> */}
         <div style={styles.carouselContainer}>
           <div style={styles.leftArrowContainer} key={ Math.random() }>
             <img src={leftArrow} style={styles.leftArrow}

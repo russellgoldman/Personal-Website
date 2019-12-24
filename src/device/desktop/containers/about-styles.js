@@ -1,10 +1,27 @@
 export const styles = {
   outerContainer: {
     display: 'flex',
+    height: '100vh',
     flexDirection: 'column',
     flex: 1,
-    marginLeft: '10em',
+    marginLeft: '10vw',
     marginRight: '10vw'
+  },
+  headerContainer: {
+    display: 'flex',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: '45.5vw',
+    marginRight: '45.5vw',
+    height: '70px',
+    color: 'black',
+    borderBottom: '3px solid black',
+  },
+  header: {
+    fontFamily: 'Roboto',
+    fontSize: '40px',
+    fontWeight: 'bold',
   },
   innerContainer: {
     marginTop: '5vw',

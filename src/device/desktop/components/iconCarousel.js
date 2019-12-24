@@ -93,14 +93,14 @@ export default class DesktopIconCarousel extends Component {
           <p style={styles.title}>My Toolkit</p>
         </div>
         <div style={styles.carouselContainer}>
-          <div style={styles.leftArrowContainer} key={ Math.random() } className={`animated ${this.state.leftArrowButtonClick}`}>
+          <div style={styles.leftArrowContainer} key={Math.random()} className={`animated ${this.state.leftArrowButtonClick}`}>
             <img src={leftArrow} alt="Left Arrow" style={styles.leftArrow}
               onClick={() => this.shiftLeftByMaxRender()} />
           </div>
           <div style={styles.iconsContainer}>
             {this.renderIcons()}
           </div>
-          <div style={styles.rightArrowContainer} key={ Math.random() } className={`animated ${this.state.rightArrowButtonClick}`}>
+          <div style={styles.rightArrowContainer} key={Math.random()} className={`animated ${this.state.rightArrowButtonClick}`}>
             <img src={rightArrow} alt="Right Arrow" style={styles.rightArrow}
               onClick={() => this.shiftRightByMaxRender()} />
           </div>

@@ -39,7 +39,7 @@ class App extends Component {
     // the setTimeout just simulates an async action, after which the component will render the content
     setTimeout(() => {
       this.setState({ loading: false });
-    }, 1500);
+    }, 1250);
   }
 
   renderContactForm() {
@@ -58,9 +58,6 @@ class App extends Component {
         <div>
           <MobileTitlebar name={this.state.titlebarState.name} callbackFromParent={toggleContactForm} />
           <MobileIntro />
-          <div style={styles.MobileHeaderContainer}>
-            <Fade clear><div style={styles.MobileHeader}>About</div></Fade>
-          </div>
           <MobileAbout />
           <div style={styles.MobileHeaderContainer}>
             <Fade clear><div style={styles.MobileHeader}>Projects</div></Fade>
@@ -92,9 +89,6 @@ class App extends Component {
         <ScrollableAnchor id={`home`}>
           <DesktopIntro />
         </ScrollableAnchor>
-        <div style={styles.DesktopHeaderContainer}>
-          <Fade clear><div style={styles.DesktopHeader}>About</div></Fade>
-        </div>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[0]}`}>
           <DesktopAbout />
         </ScrollableAnchor>
@@ -144,7 +138,6 @@ const styles = {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '100px',
     marginLeft: '45.5vw',
     marginRight: '45.5vw',
     height: '70px',
@@ -161,7 +154,7 @@ const styles = {
     marginRight: '40vw',
     height: '70px',
     color: 'black',
-    borderBottom: '3px solid black'
+    borderBottom: '3px solid black',
   },
   DesktopHeader: {
     fontFamily: 'Roboto',

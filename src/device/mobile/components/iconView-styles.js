@@ -27,7 +27,7 @@ export const styles = {
     borderRadius: '10px',
     opacity: '0.85',
     boxShadow: `3px 4px 3px ${shadow}`,
-    marginBottom: '50px'
+    marginBottom: '80px'
   },
   iconsContainer: {
     flex: 1,

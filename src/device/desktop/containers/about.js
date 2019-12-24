@@ -13,11 +13,11 @@ export class DesktopAbout extends Component {
       icons: ToolkitIcons,
       maxRender: 6,
       text: `Russell Goldman is a Computer Science undergrad going into his 4th year at Laurier.
-        He's been involved with the on-campus Computer Science club assisting in designing workshops for students
-        as well as working part-time as a Full Stack Developer at a local Waterloo tech startup during his 3rd year. 
-        He is consistently improving upon his programming skills by participating in hackathons and developing
-        open-source software. He is proficient in React (JS / Native) and is working to expand his Node.js
-        skills in the future.`
+      He recently completed an internship at Rover.io in Toronto as a full stack developer.
+      He's been involved with the on-campus Computer Science club assisting in designing workshops for students
+      as well as working part-time as a developer at a local Waterloo tech startup during his 3rd year. 
+      He is consistently improving upon his programming skills by participating in hackathons and developing
+      open-source software.`,
     };
   }
 
@@ -76,7 +76,7 @@ export class DesktopAbout extends Component {
 
   renderResponsiveButton() {
     return (
-      <a href="https://drive.google.com/file/d/1qgLaBNyTxjSFa4o_Id-Uu1aCwmJLDhpy/view?usp=sharing" target="_blank"
+      <a href="https://drive.google.com/file/d/1EzYdPOWW0lkLERs3OpxZKomoQd5k-lMz/view?usp=sharing" target="_blank"
         rel='noopener noreferrer' style={{ textDecoration: 'none', outline: 'none', }}>
         <Media
           query={{ maxWidth: 1300 }}
@@ -102,7 +102,10 @@ export class DesktopAbout extends Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
+        <div style={styles.headerContainer}>
+            <Fade clear><div style={styles.header}>About</div></Fade>
+        </div>
         <div style={styles.outerContainer}>
           <div style={styles.innerContainer}>
             <div style={styles.imageContainer}>
@@ -115,16 +118,16 @@ export class DesktopAbout extends Component {
               </div>
             </div>
           </div>
-          <div style={{ marginTop: '5%' }}></div>
+          <div style={{ paddingTop: '5%' }}></div>
           <div style={styles.carouselContainer}>
             <Fade clear>
               <DesktopIconCarousel icons={this.state.icons}
                 maxRender={this.state.maxRender}/>
             </Fade>
           </div>
-          <div style={{ marginBottom: '7.5%' }}></div>
+          <div style={{ paddingBottom: '50%' }}></div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 };
