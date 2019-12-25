@@ -44,8 +44,8 @@ export default class DesktopIconCarousel extends Component {
     }
 
     return iconSelection.map((icon, index) => (
-      <div style={styles.icon} key={ Math.random() * Math.random() }>
-        <OverlayTrigger placement="top" overlay={<Tooltip><h5>{icon.name}</h5></Tooltip>}>
+      <div style={styles.icon} key={Math.random() * Math.random()}>
+        <OverlayTrigger placement="top" overlay={<Tooltip id={icon.name}><h5>{icon.name}</h5></Tooltip>}>
           <img src={icon.imgPath} alt={icon.name} style={styles.icon} className={`animated ${this.state.iconAnimation}`} />
         </OverlayTrigger>
       </div>

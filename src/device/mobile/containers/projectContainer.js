@@ -60,17 +60,20 @@ export class MobileProjectContainer extends Component {
       <div style={styles.outerContainer}>
         <div style={styles.imageContainer}>
           <Fade clear>
-          <img src={this.state.projectData[this.state.currentProject].profileImgPath}
-          style={styles.image} />
+            <Image src={this.state.projectData[this.state.currentProject].profileImgPath} rounded
+            style={styles.image} />
           </Fade>
         </div>
         <Fade clear>
-          <p style={styles.title}>
-            {this.state.projectData[this.state.currentProject].title}
-          </p>
-        </Fade>
-        <Fade clear>
-          <div style={styles.githubContainer}>
+          <div style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}>
+            <p style={styles.title}>
+              {this.state.projectData[this.state.currentProject].title}
+            </p>
             <a href={this.state.projectData[this.state.currentProject].github} target="_blank" rel='noopener noreferrer'>
               <img src={github} style={styles.github} />
             </a>

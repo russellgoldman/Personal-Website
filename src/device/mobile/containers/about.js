@@ -10,12 +10,12 @@ export class MobileAbout extends Component {
     this.state = {
       icons: ToolkitIcons,
       maxRender: 3,
-      text: `Russell Goldman is a Computer Science undergrad going into his 4th year at Laurier.
-      He recently completed an internship at Rover.io in Toronto as a full stack developer.
-      He's been involved with the on-campus Computer Science club assisting in designing workshops for students
-      as well as working part-time as a developer at a local Waterloo tech startup during his 3rd year. 
-      He is consistently improving upon his programming skills by participating in hackathons and developing
-      open-source software.`,
+      text: `I'm a Computer Science undergrad going into my 4th year at Laurier.
+      I recently completed an internship during summer 2019 at Rover.io in Toronto as a full stack developer.
+      I've been involved with the on-campus Computer Science club assisting in designing workshops for students
+      and I worked part-time as a developer at a Waterloo tech startup during my 3rd year. 
+      I'm consistently improving upon my development skills by participating in hackathons and creating 
+      challenging side-projects.`,
     };
   }
 
@@ -34,7 +34,7 @@ export class MobileAbout extends Component {
         </Fade>
         <Fade clear>
           <div style={styles.textContainer}>
-            <p>{this.state.text}</p>
+            <p style={{ marginBottom: '0px' }}>{this.state.text}</p>
           </div>
         </Fade>
         <Fade clear>

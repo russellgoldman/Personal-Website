@@ -20,17 +20,16 @@ import LoadingScreen from 'react-loading-screen';
 
 import { websiteLogo } from './images';
 
-configureAnchors({ offset: -150, scrollDuration: 500 });
+configureAnchors({ offset: -70, scrollDuration: 500 });
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       titlebarState: {
-        anchors: ['about', 'projects', 'contact'],
+        anchors: ['about', 'projects'],
         name: 'Russell Goldman'
       },
-      contactFormShow: false,
       loading: true,
     }
   }
@@ -42,42 +41,21 @@ class App extends Component {
     }, 1250);
   }
 
-  renderContactForm() {
-    const toggleContactForm = () => {
-      this.toggleForm();
-    };
-
-    if (this.state.contactFormShow) {
-      return (
-        <div>
-          <MobileContact callbackFromParent={toggleContactForm}/>
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <MobileTitlebar name={this.state.titlebarState.name} callbackFromParent={toggleContactForm} />
-          <MobileIntro />
-          <MobileAbout />
-          <div style={styles.MobileHeaderContainer}>
-            <Fade clear><div style={styles.MobileHeader}>Projects</div></Fade>
-          </div>
-          <MobileProjects />
-        </div>
-      );
-    }
-  }
-
-  toggleForm() {
-    this.setState((prevState) => ({
-      contactFormShow: !prevState.contactFormShow,
-    }));
-  }
-
   isMobile() {
     return (
-      <div>
-        {this.renderContactForm()}
+      <div style={{
+        // disables horizontal overflow on mobile
+        overflowX: 'hidden',
+        position: 'relative'
+      }}>
+        <MobileTitlebar name={this.state.titlebarState.name} />
+        <MobileIntro />
+        <MobileAbout />
+        <div style={styles.MobileHeaderContainer}>
+          <Fade clear><div style={styles.MobileHeader}>Projects</div></Fade>
+        </div>
+        <MobileProjects />
+        <MobileContact />
       </div>
     );
   }
@@ -92,15 +70,10 @@ class App extends Component {
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[0]}`}>
           <DesktopAbout />
         </ScrollableAnchor>
-        <div style={styles.DesktopHeaderContainer}>
-          <Fade clear><div style={styles.DesktopHeader}>Projects</div></Fade>
-        </div>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[1]}`}>
           <DesktopProjects />
         </ScrollableAnchor>
-        <ScrollableAnchor id={`${this.state.titlebarState.anchors[2]}`}>
-          <DesktopContact />
-        </ScrollableAnchor>
+        <DesktopContact />
       </div>
     );
   }

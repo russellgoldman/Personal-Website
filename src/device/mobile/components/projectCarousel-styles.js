@@ -9,17 +9,8 @@ export const styles = {
     fontFamily: 'Roboto',
     fontSize: '30px'
   },
-  titleContainer: {
-    marginTop: '4em',
-    display: 'flex',
-    flexDirection: 'column',
-    flex: 1,
-    height: '50px',
-    borderRadius: '10px',
-    marginLeft: `${titleMarginX}vw`,
-    marginRight: `${titleMarginX}vw`
-  },
   carouselContainer: {
+    marginTop: '4em',
     display: 'flex',
     flexDirection: 'row',
     flex: 1,
@@ -35,6 +26,7 @@ export const styles = {
   leftArrow: {
     width: '25px',
     height: '25px',
+    marginTop: '0.25em',
     marginLeft: '-2.75em',
     opacity: '0.85',
     borderRadius: '50%'
@@ -46,6 +38,7 @@ export const styles = {
     justifyContent: 'flex-end',
   },
   rightArrow: {
+    marginTop: '0.25em',
     width: '25px',
     height: '25px',
     marginRight: '-2.75em',
@@ -59,34 +52,35 @@ export const styles = {
     alignItems: 'center',
     width: '100%'
   },
-  bannerContainer: {
-    position: 'relative',
-  },
   banner: {
-    height: '11vw',
+    backgroundColor: '#F4F4F4',
+    height: '10vw',
     width: '35vw',
     marginTop: '0.2em',
-    border: `3px solid black`,
+    border: `4px solid #C4C4C4`,
+    borderRadius: '10px',
+    marginLeft: '0.2em',
+    marginRight: '0.2em',
+    boxShadow: `1px 1px 0px #C4C4C4`,
   },
   bannerSelected: {
-    height: '11vw',
+    backgroundColor: '#F4F4F4',
+    height: '10vw',
     width: '35vw',
     marginTop: '0.2em',
-    border: `3px solid ${selectedAccent}`
-  },
-  bannerTextContainer: {
-    position: 'absolute',
-    top: '3.5vw',
-    height: '50%',
-    width: '100%',
+    border: `4px solid ${selectedAccent}`,
+    borderRadius: '10px',
+    marginLeft: '0.2em',
+    marginRight: '0.2em',
+    boxShadow: `1px 3px 0px ${selectedAccent}`,
   },
   bannerText: {
+    marginTop: '0.20em',
     fontFamily: 'Roboto',
     fontWeight: 'bold',
-    fontSize: '3.75vw',
-    color: 'white',
+    fontSize: '4.5vw',
+    color: '#333333',
     textAlign: 'center',
-    letterSpacing: '1px',
-    textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black'
-  },
+    letterSpacing: '0px',
+  }
 };
