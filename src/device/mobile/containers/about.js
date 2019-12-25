@@ -34,7 +34,7 @@ export class MobileAbout extends Component {
         </Fade>
         <Fade clear>
           <div style={styles.textContainer}>
-            <p>{this.state.text}</p>
+            <p style={{ marginBottom: '0px' }}>{this.state.text}</p>
           </div>
         </Fade>
         <Fade clear>

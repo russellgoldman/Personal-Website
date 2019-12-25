@@ -1,8 +1,5 @@
 export const styles = {
-  projectContainer: {
-    height: '85vh',
-  },
-  DesktopHeaderContainer: {
+  desktopHeaderContainer: {
     display: 'flex',
     flex: 1,
     justifyContent: 'center',
@@ -13,7 +10,7 @@ export const styles = {
     color: 'black',
     borderBottom: '3px solid black'
   },
-  DesktopHeader: {
+  desktopHeader: {
     fontFamily: 'Roboto',
     fontSize: '40px',
     fontWeight: 'bold',

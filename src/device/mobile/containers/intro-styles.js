@@ -9,14 +9,14 @@ export const styles = {
     alignItems: 'center',
     marginLeft: '10vw',
     marginRight: '10vw',
-    marginTop: '15vw'
+    marginTop: '5em'
   },
   title: {
     fontFamily: 'Roboto',
     fontWeight: 'bold',
     fontSize: '45px',
     textAlign: 'center',
-    marginBottom: '25px',
+    marginBottom: '0.75em',
     lineHeight: '1.3'
   },
   titleAccent: {
@@ -28,19 +28,19 @@ export const styles = {
     flexWrap: 'wrap',
     fontFamily: 'Roboto',
     color: `${subtitle}`,
-    fontSize: '20px',
-    lineHeight: '1.7',
-    textAlign: 'center',
-    marginBottom: '30px',
+    fontSize: '18px',
+    lineHeight: 1.75,
+    textAlign: 'justify',
+    marginBottom: '2em',
   },
   iconsContainer: {
     justifyContent: 'center',
     paddingTop: '5px',
   },
   icon: {
-    width: '55px',
-    height: '55px',
-    marginLeft: '20px',
-    marginRight: '20px'
+    width: '45px',
+    height: '45px',
+    marginLeft: '15px',
+    marginRight: '15px'
   }
 };

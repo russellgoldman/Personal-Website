@@ -13,7 +13,7 @@ export const styles = {
     position: 'sticky',
     top: '0',
     zIndex: 1,
-    width: '100vw'
+    width: '100%'
   },
   nameContainer: {
     display: 'flex',

@@ -118,14 +118,14 @@ export class DesktopAbout extends Component {
               </div>
             </div>
           </div>
-          <div style={{ paddingTop: '5%' }}></div>
+          <div style={{ paddingTop: '3.5em' }}></div>
           <div style={styles.carouselContainer}>
             <Fade clear>
               <DesktopIconCarousel icons={this.state.icons}
                 maxRender={this.state.maxRender}/>
             </Fade>
           </div>
-          <div style={{ paddingBottom: '50%' }}></div>
+          <div style={{ paddingBottom: '15em' }}></div>
         </div>
       </React.Fragment>
     );

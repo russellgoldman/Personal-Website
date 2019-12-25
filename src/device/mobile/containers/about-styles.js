@@ -36,12 +36,12 @@ export const styles = {
     fontFamily: 'Roboto',
     fontWeight: '100',
     fontStyle: 'normal',
-    fontSize: '16px',
-    lineHeight: '2.5',
-    textAlign: 'center',
+    fontSize: '14px',
+    lineHeight: 2,
+    textAlign: 'justify',
     marginLeft: '10vw',
     marginRight: '10vw',
-    marginBottom: '10px'
+    marginBottom: '2em'
   },
   buttonContainer: {
     marginLeft: '25vw',
@@ -63,6 +63,6 @@ export const styles = {
     border: '0px',
     outline: 'none',
     justifyContent: 'center',
-    height: '60px',
+    height: '2em',
   }
 };

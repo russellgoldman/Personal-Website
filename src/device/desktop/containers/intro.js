@@ -16,8 +16,8 @@ export class DesktopIntro extends Component {
     return (
       <div style={styles.orientationContainer} className="animated fadeIn">
         <div style={styles.introContainer}>
-          <img src={websiteLogo} alt="RG" style={{ marginTop: '17.5vh', alignSelf: 'flex-start' }}/>
-          <div style={{ marginTop: '8.5vh' }}>
+          <img src={websiteLogo} alt="RG" style={{ marginTop: '8em', alignSelf: 'flex-start' }}/>
+          <div style={{ marginTop: '4em' }}>
             <p style={styles.title}>
               Hey there, I'm <span style={styles.titleAccent}>Russell</span>.
             </p>
@@ -30,7 +30,7 @@ export class DesktopIntro extends Component {
               </p>
             </div>
           </div>
-          <div style={{ marginTop: '6vh', marginBottom: '33vh' }}>
+          <div style={{ marginTop: '4em', marginBottom: '15em' }}>
             <a href="https://www.linkedin.com/in/russell-goldman-35483986/" target="_blank"
               rel='noopener noreferrer' style={styles.iconContainer}>
               <HoverImage src={linkedin} hoverSrc={linkedinHover} style={styles.icon} />

@@ -30,7 +30,6 @@ class App extends Component {
         anchors: ['about', 'projects'],
         name: 'Russell Goldman'
       },
-      contactFormShow: false,
       loading: true,
     }
   }
@@ -42,42 +41,20 @@ class App extends Component {
     }, 1250);
   }
 
-  renderContactForm() {
-    const toggleContactForm = () => {
-      this.toggleForm();
-    };
-
-    if (this.state.contactFormShow) {
-      return (
-        <div>
-          <MobileContact callbackFromParent={toggleContactForm}/>
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <MobileTitlebar name={this.state.titlebarState.name} callbackFromParent={toggleContactForm} />
-          <MobileIntro />
-          <MobileAbout />
-          <div style={styles.MobileHeaderContainer}>
-            <Fade clear><div style={styles.MobileHeader}>Projects</div></Fade>
-          </div>
-          <MobileProjects />
-        </div>
-      );
-    }
-  }
-
-  toggleForm() {
-    this.setState((prevState) => ({
-      contactFormShow: !prevState.contactFormShow,
-    }));
-  }
-
   isMobile() {
     return (
-      <div>
-        {this.renderContactForm()}
+      <div style={{
+        overflowX: 'hidden',
+        position: 'relative'
+      }}>
+        <MobileTitlebar name={this.state.titlebarState.name} />
+        <MobileIntro />
+        <MobileAbout />
+        <div style={styles.MobileHeaderContainer}>
+          <Fade clear><div style={styles.MobileHeader}>Projects</div></Fade>
+        </div>
+        <MobileProjects />
+        <MobileContact />
       </div>
     );
   }

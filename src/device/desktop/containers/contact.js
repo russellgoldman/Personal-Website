@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
-import { styles } from './contact-styles';
-import { websiteLogoWhite } from './../../../images/';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 
 export const DesktopContact = () => {
@@ -16,7 +14,7 @@ export const DesktopContact = () => {
         <Fade clear>
           <p style={{
             textAlign: 'center',
-            fontSize: '16px',
+            fontSize: '15px',
             fontFamily: 'Roboto', 
             fontWeight: 'normal',
             color: 'white',
@@ -24,8 +22,14 @@ export const DesktopContact = () => {
           }}>
             Developed as a side-project
           </p>
-          <p style={{ textAlign: 'center', fontSize: '14px', fontFamily: 'Roboto', fontWeight: 'normal', color: 'white' }}>
-            Contact me @ <a style={{
+          <p style={{ 
+            textAlign: 'center',
+            fontSize: '13px',
+            fontFamily: 'Roboto',
+            fontWeight: 'normal',
+            color: 'white'
+          }}>
+            Feel free to contact me @ <a style={{
               fontFamily: 'Roboto',
               fontWeight: 'normal',
               color: 'white',

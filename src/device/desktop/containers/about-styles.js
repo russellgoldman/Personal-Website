@@ -1,7 +1,6 @@
 export const styles = {
   outerContainer: {
     display: 'flex',
-    height: '100vh',
     flexDirection: 'column',
     flex: 1,
     marginLeft: '10vw',

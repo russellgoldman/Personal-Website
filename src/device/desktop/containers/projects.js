@@ -32,9 +32,9 @@ export class DesktopProjects extends Component {
       this.setState({ currentProject: indexFromChild });
     };
     return (
-      <div style={styles.projectContainer}>
-        <div style={styles.DesktopHeaderContainer}>
-          <Fade clear><div style={styles.DesktopHeader}>Projects</div></Fade>
+      <React.Fragment>
+        <div style={styles.desktopHeaderContainer}>
+          <Fade clear><div style={styles.desktopHeader}>Projects</div></Fade>
         </div>
         <div style={styles.projectCarouselContainer}>
           <Fade clear>
@@ -44,7 +44,7 @@ export class DesktopProjects extends Component {
           </Fade>
         </div>
         <DesktopProjectContainer projectData={this.state.projectData} currentProject={this.state.currentProject}/>
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -82,14 +82,14 @@ export const projectData = [
   {
     id: 3,
     name: 'Gelato',
-    title: 'Gelato - Gamified Education Tool',
+    title: 'Gelato',
     description: `
-      Gelato is a ReactJS web app that allows teachers to put together education content
-      such as quizzes and other practice material into a dashboard which the app then uses
-      to populate questions with a game. The student section functions like an RPG game
-      based on the content the teacher has made for their class. It was built at
-      Equithon 2018 in a team of four. We were honoured to be a Hackathon Finalist for
-      the best hack addressing Access to Education.
+      Gelato is a K-12 gamified education tool that assists teachers in making learning more practical.
+      Educators populate teaching content such as quizzes into an admin dashboard which is then generated
+      into an RPG game for students. For example, if a student is battling a monster, they must get the
+      correct answer to deal damage and progress. Teachers also have the ability to access where students
+      are succeeding and require further assistance through an analytics dashboard. Gelato was built 
+      at Equithon 2018 in a team of four and we were honoured to be a Hackathon Finalist.
     `,
     github: 'https://github.com/russellgoldman/Project-Gelato',
     profileImgPath: `${gelato}`,
@@ -140,13 +140,13 @@ export const projectData = [
   {
     id: 6,
     name: 'Nova',
-    title: 'Nova - AI Mental Health Chatbot',
+    title: 'Nova',
     description: `
       Nova is an artificially intelligent chatbot designed to act as an intelligent
       and non-judgemental mental health assistant with the ability to redirect
       students to appropriate on-campus resources at their respective university.
       It was created in response to various suicide attempts at universities across
-      Ontario, and was developed in a team of 4 at StarterHacks 2018. We were honoured
+      Ontario, and was developed in a team of four at StarterHacks 2018. We were honoured
       to be awared Best Pitch sponsored by Deloitte Digital.
     `,
     github: 'https://github.com/russellgoldman/Nova',

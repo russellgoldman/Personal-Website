@@ -7,7 +7,10 @@ export const styles = {
   title: {
     flex: 1,
     fontFamily: 'Roboto',
-    fontSize: '25px'
+    fontSize: '25px',
+    width: '80vw',
+    marginLeft: '10vw',
+    marginRight: '10vw'
   },
   titleContainer: {
     display: 'flex',
@@ -15,7 +18,6 @@ export const styles = {
     flex: 1,
     height: '45px',
     borderRadius: '10px',
-    maxWidth: '40vw',
     zIndex: 1
   },
   viewContainer: {
@@ -23,11 +25,13 @@ export const styles = {
     flexDirection: 'row',
     flex: 1,
     height: '70px',
+    width: '80w',
     background: '#f2f2f2',
     borderRadius: '10px',
     opacity: '0.85',
     boxShadow: `3px 4px 3px ${shadow}`,
-    marginBottom: '80px'
+    marginLeft: '10vw',
+    marginRight: '10vw'
   },
   iconsContainer: {
     flex: 1,
