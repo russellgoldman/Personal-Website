@@ -49,7 +49,7 @@ export const projectData = [
       and completed the project in a team of 4 at McHacks 2019.
       We were honoured to be a Top 6 Finalist.
     `,
-    github: 'https://github.com/russellgoldman/McBrews',
+    github: 'https://devpost.com/software/mcbrews',
     profileImgPath: `${mcBrews}`,
     toolsUsed: [
       'JavaScript',
@@ -91,7 +91,7 @@ export const projectData = [
       are succeeding and require further assistance through an analytics dashboard. Gelato was built 
       at Equithon 2018 in a team of four and we were honoured to be a Hackathon Finalist.
     `,
-    github: 'https://github.com/russellgoldman/Project-Gelato',
+    github: 'https://devpost.com/software/gelato',
     profileImgPath: `${gelato}`,
     toolsUsed: [
       'JavaScript',
@@ -130,7 +130,7 @@ export const projectData = [
       Native (mobile), Arduino (hardware), and Figma (design) at Hack the 6ix
       2018 (hosted by Top Hat in Toronto) in a team of three.
     `,
-    github: 'https://github.com/russellgoldman/CareWear',
+    github: 'https://devpost.com/software/carewear',
     profileImgPath: `${careWear}`,
     toolsUsed: [
       'JavaScript',

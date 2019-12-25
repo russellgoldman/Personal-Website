@@ -4,6 +4,7 @@ import { ToolkitIcons } from './../../../data/toolkitIcons';
 import MobileIconView from './../components/iconView';
 import {
   linkedin,
+  link,
   github,
   medium,
   githubHover
@@ -75,7 +76,7 @@ export class MobileProjectContainer extends Component {
               {this.state.projectData[this.state.currentProject].title}
             </p>
             <a href={this.state.projectData[this.state.currentProject].github} target="_blank" rel='noopener noreferrer'>
-              <img src={github} style={styles.github} />
+              <img src={link} style={styles.github} />
             </a>
           </div>
         </Fade>
