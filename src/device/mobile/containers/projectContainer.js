@@ -60,7 +60,7 @@ export class MobileProjectContainer extends Component {
       <div style={styles.outerContainer}>
         <div style={styles.imageContainer}>
           <Fade clear>
-          <img src={this.state.projectData[this.state.currentProject].profileImgPath}
+          <Image src={this.state.projectData[this.state.currentProject].profileImgPath} response rounded
           style={styles.image} />
           </Fade>
         </div>

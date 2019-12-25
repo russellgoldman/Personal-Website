@@ -20,14 +20,14 @@ import LoadingScreen from 'react-loading-screen';
 
 import { websiteLogo } from './images';
 
-configureAnchors({ offset: -150, scrollDuration: 500 });
+configureAnchors({ offset: -70, scrollDuration: 500 });
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       titlebarState: {
-        anchors: ['about', 'projects', 'contact'],
+        anchors: ['about', 'projects'],
         name: 'Russell Goldman'
       },
       contactFormShow: false,
@@ -92,15 +92,10 @@ class App extends Component {
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[0]}`}>
           <DesktopAbout />
         </ScrollableAnchor>
-        <div style={styles.DesktopHeaderContainer}>
-          <Fade clear><div style={styles.DesktopHeader}>Projects</div></Fade>
-        </div>
         <ScrollableAnchor id={`${this.state.titlebarState.anchors[1]}`}>
           <DesktopProjects />
         </ScrollableAnchor>
-        <ScrollableAnchor id={`${this.state.titlebarState.anchors[2]}`}>
-          <DesktopContact />
-        </ScrollableAnchor>
+        <DesktopContact />
       </div>
     );
   }

@@ -1,8 +1,7 @@
 import {
   js,
   react,
-  figma,
-  sass,
+  css,
   golang,
   docker,
   graphql,
@@ -13,12 +12,14 @@ import {
   ts,
   reactnative,
   redux,
+  figma,
   express,
   python,
+  django,
   flask,
   java,
   android,
-  c
+  c,
 } from './../images/toolkit-icons';
 
 export const ToolkitIcons = [
@@ -31,8 +32,8 @@ export const ToolkitIcons = [
     imgPath: react,
   },
   {
-    name: 'Sass',
-    imgPath: sass
+    name: 'CSS',
+    imgPath: css
   },
   {
     name: 'Golang',
@@ -71,12 +72,12 @@ export const ToolkitIcons = [
     imgPath: reactnative
   },
   {
-    name: 'Figma',
-    imgPath: figma,
-  },
-  {
     name: 'Redux',
     imgPath: redux,
+  },
+  {
+    name: 'Figma',
+    imgPath: figma,
   },
   {
     name: 'Express.js',
@@ -85,6 +86,10 @@ export const ToolkitIcons = [
   {
     name: 'Python',
     imgPath: python
+  },
+  {
+    name: 'Django',
+    imgPath: django
   },
   {
     name: 'Flask',

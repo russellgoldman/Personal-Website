@@ -75,7 +75,7 @@ export const styles = {
     boxShadow: `1px 3px 0px ${selectedAccent}`,
   },
   bannerText: {
-    marginTop: '0.15em',
+    marginTop: '0.20em',
     fontFamily: 'Roboto',
     fontWeight: 'bold',
     fontSize: '4.5vw',

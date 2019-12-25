@@ -33,6 +33,9 @@ export class DesktopProjects extends Component {
     };
     return (
       <div style={styles.projectContainer}>
+        <div style={styles.DesktopHeaderContainer}>
+          <Fade clear><div style={styles.DesktopHeader}>Projects</div></Fade>
+        </div>
         <div style={styles.projectCarouselContainer}>
           <Fade clear>
             <DesktopProjectCarousel callbackFromParent={fetchCurrentProject}
