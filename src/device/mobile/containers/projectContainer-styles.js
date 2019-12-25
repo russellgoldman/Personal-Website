@@ -43,7 +43,7 @@ export const styles = {
     marginRight: '10vw'
   },
   github: {
-    marginBottom: '0.25em',
+    marginBottom: '0.20em',
     width: '30px',
     height: '30px'
   }
