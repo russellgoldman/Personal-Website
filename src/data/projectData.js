@@ -44,7 +44,7 @@ export const projectData = [
       'GraphQL',
       'PostgreSQL',
       'Node.js',
-    ]
+    ],
   },
   {
     id: 1,
@@ -115,32 +115,55 @@ export const projectData = [
   },
   {
     id: 4,
-    name: 'Portfolio Site',
+    name: 'Portfolio',
     title: 'Portfolio Site',
-    description: `This portfolio site (which you are currently reading) was built as a non-school related, independent software side-project. The aim of this website was tell a bit more about who I am as a person, my software related accomplishments, and to display my front-end web development skills firsthand. If you're interested in learning more, feel free to shoot me a message in the Contact form located at the bottom of this site!`,
+    description: `
+      This portfolio site (which you are currently reading) was built as a non-school
+      related, independent software side-project. The aim of this website was tell a 
+      bit more about who I am as a person, my software related accomplishments, and
+      to display my front-end web development skills firsthand.
+    `,
     github: 'https://github.com/russellgoldman/Personal-Website',
     bannerImgPath: `${rgBanner}`,
     profileImgPath: `${rg}`,
     toolsUsed: [
       'JavaScript',
       'React',
-    ]
+    ],
   },
   {
     id: 5,
     name: 'Nova',
     title: 'Nova - AI Mental Health Chatbot',
-    description: 'Nova is an artificially intelligent chatbot designed to act as an intelligent and non-judgemental mental health assistant with the ability to redirect students to appropriate on-campus resources at their respective university. It was created in response to the recent increase in suicide attempts at various universities across Ontario, and was developed in a team of 4 at the StarterHacks 2018 hosted at the University of Waterloo.',
+    description: `
+      Nova is an artificially intelligent chatbot designed to act as an intelligent
+      and non-judgemental mental health assistant with the ability to redirect
+      students to appropriate on-campus resources at their respective university.
+      It was created in response to various suicide attempts at universities across
+      Ontario, and was developed in a team of 4 at StarterHacks 2018. We were honoured
+      to be awared Best Pitch sponsored by Deloitte Digital.
+    `,
     github: 'https://github.com/russellgoldman/Nova',
     bannerImgPath: `${novaBanner}`,
     profileImgPath: `${nova}`,
-    toolsUsed: ['Java', 'Android', 'NodeJS']
+    toolsUsed: [
+      'Java',
+      'Android',
+      'NodeJS',
+    ],
   },
   {
     id: 6,
     name: 'Gelato',
     title: 'Gelato - Gamified Education Tool',
-    description: 'Gelato is a ReactJS web app that allows teachers to put together education content such as quizzes and other practice material into a dashboard which the app then uses to populate questions with a game. The student section functions like an RPG game based on the content the teacher has made for their class. It was built at the Equithon 2018 hosted at the University of Waterloo in a team of four.',
+    description: `
+      Gelato is a ReactJS web app that allows teachers to put together education content
+      such as quizzes and other practice material into a dashboard which the app then uses
+      to populate questions with a game. The student section functions like an RPG game
+      based on the content the teacher has made for their class. It was built at
+      Equithon 2018 in a team of four. We were honoured to be a Hackathon Finalist for
+      the best hack addressing Access to Education.
+    `,
     github: 'https://github.com/russellgoldman/Project-Gelato',
     bannerImgPath: `${gelatoBanner}`,
     profileImgPath: `${gelato}`,

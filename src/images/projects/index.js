@@ -10,7 +10,7 @@ import beerBuddyBanner from './beerBuddyBanner.png';
 import comingSoonBanner from './comingSoonBanner.png';
 import gelato from './gelato.svg';
 import nova from './nova.png';
-import rg from './rg.png';
+import rg from './rg.svg';
 import pawk from './pawk.png';
 import vapeCare from './vapeCare.svg';
 import careWear from './careWear.png';

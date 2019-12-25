@@ -67,8 +67,9 @@ export const styles = {
     marginTop: '0.2em',
     border: `4px solid #C4C4C4`,
     borderRadius: '10px',
-    marginLeft: '0.1em',
-    marginRight: '0.1em',
+    marginLeft: '0.2em',
+    marginRight: '0.2em',
+    boxShadow: `1px 2px 0px #C4C4C4`,
   },
   bannerSelected: {
     backgroundColor: '#F4F4F4',
@@ -77,16 +78,17 @@ export const styles = {
     marginTop: '0.2em',
     border: `4px solid ${selectedAccent}`,
     borderRadius: '10px',
-    marginLeft: '0.1em',
-    marginRight: '0.1em',
+    marginLeft: '0.2em',
+    marginRight: '0.2em',
+    boxShadow: `1px 4px 0px ${selectedAccent}`,
   },
   bannerText: {
-    marginTop: '0.3em',
+    marginTop: '0.35em',
     fontFamily: 'Roboto',
     fontWeight: 'bold',
     fontSize: '1.5vw',
     color: '#333333',
     textAlign: 'center',
-    letterSpacing: '2px',
+    letterSpacing: '0px',
   }
 };
