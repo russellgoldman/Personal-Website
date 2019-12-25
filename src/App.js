@@ -44,6 +44,7 @@ class App extends Component {
   isMobile() {
     return (
       <div style={{
+        // disables horizontal overflow on mobile
         overflowX: 'hidden',
         position: 'relative'
       }}>

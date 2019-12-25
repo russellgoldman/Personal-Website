@@ -16,8 +16,8 @@ export class DesktopIntro extends Component {
     return (
       <div style={styles.orientationContainer} className="animated fadeIn">
         <div style={styles.introContainer}>
-          <img src={websiteLogo} alt="RG" style={{ marginTop: '8em', alignSelf: 'flex-start' }}/>
-          <div style={{ marginTop: '4em' }}>
+          <img src={websiteLogo} alt="RG" style={{ marginTop: '8.5em', alignSelf: 'flex-start' }}/>
+          <div style={{ marginTop: '4.5em' }}>
             <p style={styles.title}>
               Hey there, I'm <span style={styles.titleAccent}>Russell</span>.
             </p>
