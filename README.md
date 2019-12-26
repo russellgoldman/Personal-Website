@@ -5,4 +5,5 @@ This is the GitHub repository for my Personal Website. It was built using React 
 
 ## Contributions:
 **Russell Goldman:** Front-End Development
+
 **Grace Ma:** Design Mockups
