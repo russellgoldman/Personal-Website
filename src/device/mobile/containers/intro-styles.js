@@ -28,7 +28,7 @@ export const styles = {
     flexWrap: 'wrap',
     fontFamily: 'Roboto',
     color: `${subtitle}`,
-    fontSize: '18px',
+    fontSize: '20px',
     lineHeight: 1.75,
     textAlign: 'justify',
     marginBottom: '2em',
@@ -38,8 +38,8 @@ export const styles = {
     paddingTop: '5px',
   },
   icon: {
-    width: '45px',
-    height: '45px',
+    width: '50px',
+    height: '50px',
     marginLeft: '15px',
     marginRight: '15px'
   }
