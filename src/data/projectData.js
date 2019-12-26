@@ -106,8 +106,8 @@ export const projectData = [
     description: `
       This portfolio site (which you are currently reading) was built as a non-school
       related, independent software side-project during the summer of 2018. The aim of
-      this website was tell a bit more about who I am, my software development projects,
-      and use it as an opportunity to continue improving my frontend skills. This site
+      this website was to tell a bit more about who I am, my software development projects,
+      and to use it as an opportunity to continue improving my frontend skills. This site
       is currently being maintained.
     `,
     github: 'https://github.com/russellgoldman/Personal-Website',
