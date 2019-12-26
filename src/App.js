@@ -17,7 +17,6 @@ import { configureAnchors } from 'react-scrollable-anchor';
 import Fade from 'react-reveal/Fade';
 
 import LoadingScreen from 'react-loading-screen';
-import CacheBuster from './CacheBuster';
 
 import { websiteLogo } from './images';
 
@@ -81,44 +80,30 @@ class App extends Component {
 
   render() {
     return (
-      // https://github.com/flexdinesh/cache-busting-example/blob/master/src/App.js
-      <CacheBuster>
-        {({ loading, isLatestVersion, refreshCacheAndReload }) => {
-          if (loading) return null;
-          if (!loading && !isLatestVersion) {
-            // You can decide how and when you want to force reload
-            refreshCacheAndReload();
-          }
-
-          return (
-            <div>
-              <LoadingScreen
-                loading={this.state.loading}
-                bgColor='#fff'
-                spinnerColor='#000'
-                logoSrc={websiteLogo}
-              >
-                <Media query="(max-width: 1000px)">
-                  {matches =>
-                    matches ? (
-                      this.isMobile()
-                    ) : (
-                      this.isDesktop()
-                    )
-                  }
-                </Media>
-              </LoadingScreen>
-            </div>
-          );
-        }}
-      </CacheBuster>
+      <div>
+        <LoadingScreen
+          loading={this.state.loading}
+          bgColor='#fff'
+          spinnerColor='#000'
+          logoSrc={websiteLogo}
+        >
+          <Media query="(max-width: 1000px)">
+            {matches =>
+              matches ? (
+                this.isMobile()
+              ) : (
+                this.isDesktop()
+              )
+            }
+          </Media>
+        </LoadingScreen>
+      </div>
     );
   }
 }
 
 export default App;
 
-const shadow = '#c5c5c5';
 const styles = {
   DesktopHeaderContainer: {
     display: 'flex',
