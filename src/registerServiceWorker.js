@@ -65,16 +65,13 @@ function registerValidSW(swUrl) {
               // the fresh content will have been added to the cache.
               // It's the perfect time to display a "New content is
               // available; please refresh." message in your web app.
-              console.log('New content is available; please refresh.');
-              console.log('Clearing cache and hard reloading...')
+              console.log('New content is available, clearing cache');
               if (caches) {
                 // Service worker cache should be cleared with caches.delete()
                 caches.keys().then(function(names) {
                   for (let name of names) caches.delete(name);
                 });
               }
-              // delete browser cache and hard reload
-              window.location.reload(true);
             } else {
               // At this point, everything has been precached.
               // It's the perfect time to display a
