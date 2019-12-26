@@ -9,6 +9,9 @@ const semverGreaterThan = (versionA, versionB) => {
   const versionsA = versionA.split(/\./g);
 
   const versionsB = versionB.split(/\./g);
+
+  console.log(versionsA);
+  console.log(versionsB);
   while (versionsA.length || versionsB.length) {
     const a = Number(versionsA.shift());
 
