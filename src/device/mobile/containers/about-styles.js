@@ -36,7 +36,7 @@ export const styles = {
     fontFamily: 'Roboto',
     fontWeight: '100',
     fontStyle: 'normal',
-    fontSize: '14px',
+    fontSize: '16px',
     lineHeight: 2,
     textAlign: 'justify',
     marginLeft: '10vw',
