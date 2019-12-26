@@ -90,31 +90,24 @@ class App extends Component {
             refreshCacheAndReload();
           }
 
-          console.log(global.appVersion);
-
-          // return (
-          //   <div>
-          //     <LoadingScreen
-          //       loading={this.state.loading}
-          //       bgColor='#fff'
-          //       spinnerColor='#000'
-          //       logoSrc={websiteLogo}
-          //     >
-          //       <Media query="(max-width: 1000px)">
-          //         {matches =>
-          //           matches ? (
-          //             this.isMobile()
-          //           ) : (
-          //             this.isDesktop()
-          //           )
-          //         }
-          //       </Media>
-          //     </LoadingScreen>
-          //   </div>
-          // );
           return (
             <div>
-              <p>hi</p>
+              <LoadingScreen
+                loading={this.state.loading}
+                bgColor='#fff'
+                spinnerColor='#000'
+                logoSrc={websiteLogo}
+              >
+                <Media query="(max-width: 1000px)">
+                  {matches =>
+                    matches ? (
+                      this.isMobile()
+                    ) : (
+                      this.isDesktop()
+                    )
+                  }
+                </Media>
+              </LoadingScreen>
             </div>
           );
         }}

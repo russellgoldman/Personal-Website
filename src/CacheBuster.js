@@ -1,7 +1,7 @@
 // https://github.com/flexdinesh/cache-busting-example/blob/master/src/CacheBuster.js
 
 import React from 'react';
-import packageJson from '../package.json';
+const packageJson = require('../package.json');
 global.appVersion = packageJson.version;
 
 // version from response - first param, local version second param
