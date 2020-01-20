@@ -60,7 +60,7 @@ export const styles = {
     fontFamily: 'Roboto',
     flex: 1,
     fontSize: '18px',
-    marginLeft: '5vw',
+    marginLeft: '4vw',
     fontWeight: '100',
     fontStyle: 'normal',
   },
