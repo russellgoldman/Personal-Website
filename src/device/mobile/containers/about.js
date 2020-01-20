@@ -11,7 +11,7 @@ export class MobileAbout extends Component {
       icons: ToolkitIcons,
       maxRender: 3,
       text: `I'm a Computer Science undergrad going into my 4th year at Laurier.
-      I recently completed an internship during summer 2019 at Rover.io in Toronto as a full stack developer.
+      I recently completed an internship during summer 2019 at Rover.io in Toronto as a Full Stack Developer.
       I've been involved with the on-campus Computer Science club assisting in designing workshops for students
       and I worked part-time as a developer at a Waterloo tech startup during my 3rd year. 
       I'm consistently improving upon my development skills by participating in hackathons and creating 
