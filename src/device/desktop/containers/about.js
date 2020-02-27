@@ -12,7 +12,7 @@ export class DesktopAbout extends Component {
     this.state = {
       icons: ToolkitIcons,
       maxRender: 6,
-      text: `I'm a Computer Science undergrad going into my 4th year at Laurier.
+      text: `I'm a Computer Science undergrad in my 4th year at Laurier.
       I recently completed an internship during summer 2019 at Rover.io in Toronto as a Full Stack Developer.
       I've been involved with the on-campus Computer Science club assisting in designing workshops for students
       and I worked part-time as a developer at a Waterloo tech startup during my 3rd year. 
